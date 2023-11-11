@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-Bold.eot');
+    src: local('Euclid Circular B Bold'), local('../fonts/EuclidCircularB-Bold'),
+        url('../fonts/EuclidCircularB-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EuclidCircularB-Bold.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-Bold.woff') format('woff'),
+        url('../fonts/EuclidCircularB-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('EuclidCircularB-Italic.eot');
+    src: local('Euclid Circular B Italic'), local('EuclidCircularB-Italic'),
+        url('EuclidCircularB-Italic.eot?#iefix') format('embedded-opentype'),
+        url('EuclidCircularB-Italic.woff2') format('woff2'),
+        url('EuclidCircularB-Italic.woff') format('woff'),
+        url('EuclidCircularB-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-Medium.eot');
+    src: local('Euclid Circular B Medium'), local('../fonts/EuclidCircularB-Medium'),
+        url('../fonts/EuclidCircularB-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EuclidCircularB-Medium.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-Medium.woff') format('woff'),
+        url('../fonts/EuclidCircularB-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-SemiBoldItalic.eot');
+    src: local('Euclid Circular B SemiBold Italic'), local('../fonts/EuclidCircularB-SemiBoldItalic'),
+        url('../fonts/EuclidCircularB-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EuclidCircularB-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-SemiBoldItalic.woff') format('woff'),
+        url('../fonts/EuclidCircularB-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-BoldItalic.eot');
+    src: local('Euclid Circular B Bold Italic'), local('../fonts/EuclidCircularB-BoldItalic'),
+        url('../fonts/EuclidCircularB-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EuclidCircularB-BoldItalic.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-BoldItalic.woff') format('woff'),
+        url('../fonts/EuclidCircularB-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/../fonts/EuclidCircularB-MediumItalic.eot');
+    src: local('Euclid Circular B Medium Italic'), local('../fonts/../fonts/EuclidCircularB-MediumItalic'),
+        url('../fonts/../fonts/EuclidCircularB-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/../fonts/EuclidCircularB-MediumItalic.woff2') format('woff2'),
+        url('../fonts/../fonts/EuclidCircularB-MediumItalic.woff') format('woff'),
+        url('../fonts/../fonts/EuclidCircularB-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-SemiBold.eot');
+    src: local('Euclid Circular B SemiBold'), local('../fonts/EuclidCircularB-SemiBold'),
+        url('../fonts/EuclidCircularB-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EuclidCircularB-SemiBold.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-SemiBold.woff') format('woff'),
+        url('../fonts/EuclidCircularB-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-Light.eot');
+    src: local('Euclid Circular B Light'), local('../fonts/EuclidCircularB-Light'),
+        url('../fonts/EuclidCircularB-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EuclidCircularB-Light.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-Light.woff') format('woff'),
+        url('../fonts/EuclidCircularB-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-Regular.eot');
+    src: local('Euclid Circular B Regular'), local('../fonts/EuclidCircularB-Regular'),
+        url('../fonts/EuclidCircularB-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EuclidCircularB-Regular.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-Regular.woff') format('woff'),
+        url('../fonts/EuclidCircularB-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-LightItalic.eot');
+    src: local('Euclid Circular B Light Italic'), local('../fonts/EuclidCircularB-LightItalic'),
+        url('../fonts/EuclidCircularB-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EuclidCircularB-LightItalic.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-LightItalic.woff') format('woff'),
+        url('../fonts/EuclidCircularB-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Vasek';
+    src: url('../fonts/Vasek.ttf') format('truetype');
+}
+
+@import url('../styles/components/event-card/event-card.css');
+:root{
+    --primary-color:#14004E;
+    --primary-hover-color:#423270;
+    --primary-press-color:#372668;
+    --white-color:#FFFFFF;
+    --text00-color:#242424;
+    --text01-color:#606C7D;
+    --text02-color:#B6C0CF;
+    --base00-color:#F6F8FC;
+    --base02-color:#313033;
+    --pink-color:#EF036C;
+    --green-color:#31EC56;
+    --warning-color:#FFC700;
+    --purple-color:#6200EA;
+    --purple-hover-color:#7F31EC;
+    --purple-press-color:#9555EE;
+    --orange-color:#FF6F00;
+    --blue-color:#3D5AFE;
+}
+.vasek {
+    font-family: 'Vasek';
+    font-style: italic;
+    font-weight: 400;
+    line-height: 64px;
+}
+
+
+.title_xl {
+    color: #14004E;
+    font-family: "Euclid Circular B";
+    font-size: 48px;
+    font-style: normal;
+    line-height: 64px;
+    font-weight: 500;
+}
+
+.title_lg {
+    font-family: "Euclid Circular B";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 56px;
+}
+
+.title_md {
+    font-family: "Euclid Circular B";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.text_xl {
+    font-family: "Euclid Circular B";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.text_md {
+    font-family: "Euclid Circular B";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.text_sm {
+    font-family: "Euclid Circular B";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* event-card */
