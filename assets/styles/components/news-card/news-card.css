@@ -1,0 +1,126 @@
+.news__card-bottom {
+    display: flex;
+    gap: 8px;
+    color: var(--text02-color);
+}
+
+.news__card-bottom-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.news__card {
+    /* max-width: 437px; */
+    width: calc(33% - 18px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+.news__card-top {
+    display: flex;
+    min-height: 246px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.news__card-top img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.news__card-middle-date {
+    color: var(--text02-color);
+    margin-top: 24px;
+}
+
+.news__card .text_xl {
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.news__card-bottom {
+    margin-top: 8px;
+}
+
+
+.news__card.first {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    gap: 16px;
+    /* max-width: 899px; */
+    position: relative;
+    height: 100%;
+    width: calc(66% - 12px);
+}
+
+.news__card.first .news__card-top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.news__card.first .news__card-middle-date {
+    color: var(--text02-color);
+    margin-top: 126px;
+}
+
+.news__card.first .news__card-bottom {
+    margin-top: unset;
+}
+
+.news__card.first .title_md {
+    color: var(--white-color);
+    margin-top: 8px;
+}
+
+.news__card.last {
+    padding: 24px;
+    background: var(--white-color);
+}
+
+.news__card.last .text_lg {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.news__card.last .text_sm {
+    color: var(--text01-color);
+    margin-top: 8px;
+}
+
+.news__card.last .main__button {
+    margin-top: auto;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+@media(max-width:800px) {
+    .news__card.first {
+        width: 100%;
+    }
+    .news__card{
+        width: 100%;
+    }
+    .news__card.first .title_md{
+        font-size: 18px;
+    }
+    .news__card.first .news__card-middle-date{
+        margin-top: 190px;
+    }
+    .news__card.last .main__button{
+        margin-top: 24px;
+    }
+    .news__card.last{
+        padding: 16px;
+    }
+}

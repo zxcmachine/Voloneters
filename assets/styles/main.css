@@ -1,7 +1,36 @@
+@import url('./header.css');
+@import url('./footer.css');
+@import url('../../pages/main_page/main_page.css');
+@import url('../styles/components/event-card/event-card.css');
+@import url('../styles/components/popup/popup.css');
+@import url('../styles/components/news-card/news-card.css');
+@import url('../styles/components/universal-banner/universal-banner.css');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    background: var(--base00-color)
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@media(max-width:1440px) {
+    .container {
+        margin: 0 40px;
+    }
+}
+
+@media(max-width:1199px) {
+    .container {
+        margin: 0 16px;
+    }
 }
 
 @font-face {
@@ -129,26 +158,42 @@
     src: url('../fonts/Vasek.ttf') format('truetype');
 }
 
-@import url('../styles/components/event-card/event-card.css');
-:root{
-    --primary-color:#14004E;
-    --primary-hover-color:#423270;
-    --primary-press-color:#372668;
-    --white-color:#FFFFFF;
-    --text00-color:#242424;
-    --text01-color:#606C7D;
-    --text02-color:#B6C0CF;
-    --base00-color:#F6F8FC;
-    --base02-color:#313033;
-    --pink-color:#EF036C;
-    --green-color:#31EC56;
-    --warning-color:#FFC700;
-    --purple-color:#6200EA;
-    --purple-hover-color:#7F31EC;
-    --purple-press-color:#9555EE;
-    --orange-color:#FF6F00;
-    --blue-color:#3D5AFE;
+:root {
+    --primary-color: #14004E;
+    --primary-hover-color: #423270;
+    --primary-press-color: #372668;
+    --white-color: #FFFFFF;
+    --text00-color: #242424;
+    --text01-color: #606C7D;
+    --text02-color: #B6C0CF;
+    --base00-color: #F6F8FC;
+    --base02-color: #313033;
+    --pink-color: #EF036C;
+    --green-color: #31EC56;
+    --warning-color: #FFC700;
+    --purple-color: #6200EA;
+    --purple-hover-color: #7F31EC;
+    --purple-press-color: #9555EE;
+    --orange-color: #FF6F00;
+    --blue-color: #3D5AFE;
+    --margin-sm: 24px;
+    --margin-medium: 32px;
+    --margin-2xl: 96px;
+    --margin-xl: 48px;
 }
+
+.mt-sm {
+    margin-top: var(--margin-sm);
+}
+
+.mt-md {
+    margin-top: var(--margin-medium);
+}
+
+.mt-2xl {
+    margin-top: var(--margin-2xl);
+}
+
 .vasek {
     font-family: 'Vasek';
     font-style: italic;
@@ -158,7 +203,6 @@
 
 
 .title_xl {
-    color: #14004E;
     font-family: "Euclid Circular B";
     font-size: 48px;
     font-style: normal;
@@ -170,7 +214,6 @@
     font-family: "Euclid Circular B";
     font-size: 40px;
     font-style: normal;
-    font-weight: 500;
     line-height: 56px;
 }
 
@@ -178,7 +221,6 @@
     font-family: "Euclid Circular B";
     font-size: 32px;
     font-style: normal;
-    font-weight: 500;
     line-height: 48px;
 }
 
@@ -186,15 +228,20 @@
     font-family: "Euclid Circular B";
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
     line-height: 32px;
+}
+
+.text_lg {
+    font-family: "Euclid Circular B";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 28px;
 }
 
 .text_md {
     font-family: "Euclid Circular B";
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
     line-height: 24px;
 }
 
@@ -202,8 +249,57 @@
     font-family: "Euclid Circular B";
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
     line-height: 20px;
+}
+
+.text_sl {
+    font-family: "Euclid Circular B";
+    font-size: 12px;
+    font-style: normal;
+    line-height: 20px;
+}
+
+.main__button {
+    color: var(--primary-color);
+    font-family: "Euclid Circular B";
+    background: #EFE9FF;
+    border-radius: 8px;
+    padding: 16px 24px;
+    width: fit-content;
+}
+
+.main__button.white {
+    background-color: var(--white-color);
+    font-weight: 500;
+    color: var(--primary-color);
+    border: 1px solid #EFE9FF;
+}
+@media(max-width:1199px) {
+    .title_xl {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+    .title_md {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+    .text_md {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .mt-2xl {
+        margin-top: var(--margin-xl);
+    }
+    .title_lg {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+    }
 }
 
 /* event-card */
