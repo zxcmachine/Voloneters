@@ -5,16 +5,30 @@
     position: relative;
     overflow: hidden;
 }
+
 .universal__banner .title_md {
     color: var(--white-color);
     z-index: 1;
 }
+
 .universal__banner .text_md {
     color: var(--white-color);
     z-index: 1;
 }
-.universal__banner-bg{
+
+.universal__banner-bg {
     position: absolute;
     top: -100px;
     right: 0;
+}
+
+@media(max-width:1199px) {
+    .universal__banner-bg {
+        width: 50%;
+        right: -50px;
+    }
+
+    .universal__banner {
+        padding: 24px 16px;
+    }
 }

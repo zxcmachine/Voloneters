@@ -2,6 +2,7 @@
 @import url('./footer.css');
 @import url('../../pages/main_page/main_page.css');
 @import url('../styles/components/event-card/event-card.css');
+@import url('../styles/components/popup/popup.css');
 @import url('../styles/components/news-card/news-card.css');
 @import url('../styles/components/universal-banner/universal-banner.css');
 
@@ -23,6 +24,12 @@ body {
 @media(max-width:1440px) {
     .container {
         margin: 0 40px;
+    }
+}
+
+@media(max-width:1199px) {
+    .container {
+        margin: 0 16px;
     }
 }
 
@@ -172,6 +179,7 @@ body {
     --margin-sm: 24px;
     --margin-medium: 32px;
     --margin-2xl: 96px;
+    --margin-xl: 48px;
 }
 
 .mt-sm {
@@ -243,6 +251,7 @@ body {
     font-style: normal;
     line-height: 20px;
 }
+
 .text_sl {
     font-family: "Euclid Circular B";
     font-size: 12px;
@@ -257,6 +266,40 @@ body {
     border-radius: 8px;
     padding: 16px 24px;
     width: fit-content;
+}
+
+.main__button.white {
+    background-color: var(--white-color);
+    font-weight: 500;
+    color: var(--primary-color);
+    border: 1px solid #EFE9FF;
+}
+@media(max-width:1199px) {
+    .title_xl {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+    .title_md {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+    .text_md {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .mt-2xl {
+        margin-top: var(--margin-xl);
+    }
+    .title_lg {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+    }
 }
 
 /* event-card */

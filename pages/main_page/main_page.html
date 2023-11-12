@@ -16,6 +16,16 @@
     <header id="header">
         <div class="container">
             <div class="header-wrapper ">
+                <div class="header-burger" onclick="openPopupMenu()"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 4C0 1.79086 1.79086 0 4 0H36C38.2091 0 40 1.79086 40 4V36C40 38.2091 38.2091 40 36 40H4C1.79086 40 0 38.2091 0 36V4Z"
+                            fill="#14004E" />
+                        <path
+                            d="M29 20C29 20.1989 28.921 20.3897 28.7803 20.5303C28.6397 20.671 28.4489 20.75 28.25 20.75H11.75C11.5511 20.75 11.3603 20.671 11.2197 20.5303C11.079 20.3897 11 20.1989 11 20C11 19.8011 11.079 19.6103 11.2197 19.4697C11.3603 19.329 11.5511 19.25 11.75 19.25H28.25C28.4489 19.25 28.6397 19.329 28.7803 19.4697C28.921 19.6103 29 19.8011 29 20ZM11.75 14.75H28.25C28.4489 14.75 28.6397 14.671 28.7803 14.5303C28.921 14.3897 29 14.1989 29 14C29 13.8011 28.921 13.6103 28.7803 13.4697C28.6397 13.329 28.4489 13.25 28.25 13.25H11.75C11.5511 13.25 11.3603 13.329 11.2197 13.4697C11.079 13.6103 11 13.8011 11 14C11 14.1989 11.079 14.3897 11.2197 14.5303C11.3603 14.671 11.5511 14.75 11.75 14.75ZM28.25 25.25H11.75C11.5511 25.25 11.3603 25.329 11.2197 25.4697C11.079 25.6103 11 25.8011 11 26C11 26.1989 11.079 26.3897 11.2197 26.5303C11.3603 26.671 11.5511 26.75 11.75 26.75H28.25C28.4489 26.75 28.6397 26.671 28.7803 26.5303C28.921 26.3897 29 26.1989 29 26C29 25.8011 28.921 25.6103 28.7803 25.4697C28.6397 25.329 28.4489 25.25 28.25 25.25Z"
+                            fill="white" />
+                    </svg>
+                </div>
                 <div class="header-logo"><img src="../../assets/imgs/Logo Bashmolodej.png" alt="logo"></div>
                 <div class="header-items text_md">
                     <div class="header-item">Мероприятия</div>
@@ -58,33 +68,66 @@
                 </span> самостоятельно</p>
         </div>
         <div class="main__page-cards mt-md">
-            <div class="main__page-card">
-                <p class="title_md">Волонтёрство</p>
-                <p class="text_md">Добро меняет мир</p>
-                <div class="main__page-card-button main__button">Стать волонтёром</div>
-                <div class="main__page-card-bg"><svg width="593" height="564" viewBox="0 0 593 564" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M457.893 554C426.545 431.773 288.936 85.5064 488.974 17.8969C724.51 -61.7103 500.132 490.368 9.99998 339.241"
-                            stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
+
+
+            <div class="swiper main__page-cards-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main__page-card">
+                            <p class="title_md">Волонтёрство</p>
+                            <p class="text_md">Добро меняет мир</p>
+                            <div class="main__page-card-button main__button">Стать волонтёром</div>
+                            <div class="main__page-card-bg"><svg width="593" height="564" viewBox="0 0 593 564"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M457.893 554C426.545 431.773 288.936 85.5064 488.974 17.8969C724.51 -61.7103 500.132 490.368 9.99998 339.241"
+                                        stroke="white" stroke-width="20" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="main__page-card-image"><img
+                                    src="../../assets/imgs/vinicius-amnx-amano-0NCjjD0zGnw-unsplash 1.png" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main__page-card">
+                            <p class="title_md">Волонтёрство</p>
+                            <p class="text_md">Добро меняет мир</p>
+                            <div class="main__page-card-button main__button">Стать волонтёром</div>
+                            <div class="main__page-card-bg"><svg width="593" height="564" viewBox="0 0 593 564"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M457.893 554C426.545 431.773 288.936 85.5064 488.974 17.8969C724.51 -61.7103 500.132 490.368 9.99998 339.241"
+                                        stroke="white" stroke-width="20" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="main__page-card-image"><img
+                                    src="../../assets/imgs/vinicius-amnx-amano-0NCjjD0zGnw-unsplash 1.png" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main__page-card">
+                            <p class="title_md">Волонтёрство</p>
+                            <p class="text_md">Добро меняет мир</p>
+                            <div class="main__page-card-button main__button">Стать волонтёром</div>
+                            <div class="main__page-card-bg"><svg width="593" height="564" viewBox="0 0 593 564"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M457.893 554C426.545 431.773 288.936 85.5064 488.974 17.8969C724.51 -61.7103 500.132 490.368 9.99998 339.241"
+                                        stroke="white" stroke-width="20" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="main__page-card-image"><img
+                                    src="../../assets/imgs/vinicius-amnx-amano-0NCjjD0zGnw-unsplash 1.png" alt="image">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="main__page-card-image"><img
-                        src="../../assets/imgs/vinicius-amnx-amano-0NCjjD0zGnw-unsplash 1.png" alt="image"></div>
-            </div>
-            <div class="main__page-card">
-                <p class="title_md">Волонтёрство</p>
-                <p class="text_md">Добро меняет мир</p>
-                <div class="main__page-card-button main__button">Стать волонтёром</div>
-                <div class="main__page-card-bg"><svg width="593" height="564" viewBox="0 0 593 564" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M457.893 554C426.545 431.773 288.936 85.5064 488.974 17.8969C724.51 -61.7103 500.132 490.368 9.99998 339.241"
-                            stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </div>
-                <div class="main__page-card-image"><img
-                        src="../../assets/imgs/vinicius-amnx-amano-0NCjjD0zGnw-unsplash 1.png" alt="image"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
@@ -677,20 +720,62 @@
     </div>
     <div class="container ">
         <div class="main__page-about__logos mt-2xl">
-            <div class="about__logo">
-                <div class="about__logo-img"><img src="../../assets/imgs/Logo.png" alt="logo"></div>
-                <p class="text_md">Название компании</p>
+            <div>
+                <div class="about__logo">
+                    <div class="about__logo-img"><img src="../../assets/imgs/Logo.png" alt="logo"></div>
+                    <p class="text_md">Название компании</p>
+                </div>
             </div>
-            <div class="about__logo">
-                <div class="about__logo-img"><img src="../../assets/imgs/Logo.png" alt="logo"></div>
-                <p class="text_md">Название компании</p>
+            <div>
+                <div class="about__logo">
+                    <div class="about__logo-img"><img src="../../assets/imgs/Logo.png" alt="logo"></div>
+                    <p class="text_md">Название компании</p>
+                </div>
             </div>
-            <div class="about__logo">
-                <div class="about__logo-img"><img src="../../assets/imgs/Logo.png" alt="logo"></div>
-                <p class="text_md">Название компании</p>
+            <div>
+                <div class="about__logo">
+                    <div class="about__logo-img"><img src="../../assets/imgs/Logo.png" alt="logo"></div>
+                    <p class="text_md">Название компании</p>
+                </div>
             </div>
-
-
+            <div>
+                <div class="about__logo">
+                    <div class="about__logo-img"><img src="../../assets/imgs/Logo.png" alt="logo"></div>
+                    <p class="text_md">Название компании</p>
+                </div>
+            </div>
+            <div>
+                <div class="about__logo">
+                    <div class="about__logo-img"><img src="../../assets/imgs/Logo.png" alt="logo"></div>
+                    <p class="text_md">Название компании</p>
+                </div>
+            </div>
+            <div>
+                <div class="about__logo">
+                    <div class="about__logo-img"><img src="../../assets/imgs/Logo.png" alt="logo"></div>
+                    <p class="text_md">Название компании</p>
+                </div>
+            </div>
+        </div>
+        <div class="main__page-about__logos under">
+            <div>
+                <div class="about__logo">
+                    <div class="about__logo-img"><img src="../../assets/imgs/Logo.png" alt="logo"></div>
+                    <p class="text_md">Название компании</p>
+                </div>
+            </div>
+            <div>
+                <div class="about__logo">
+                    <div class="about__logo-img"><img src="../../assets/imgs/Logo.png" alt="logo"></div>
+                    <p class="text_md">Название компании</p>
+                </div>
+            </div>
+            <div>
+                <div class="about__logo">
+                    <div class="about__logo-img"><img src="../../assets/imgs/Logo.png" alt="logo"></div>
+                    <p class="text_md">Название компании</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -706,7 +791,8 @@
                     <path
                         d="M10.2311 549.841C97.5253 270.307 200.76 205.421 254.5 361.636C319.547 550.717 674.501 101.524 920.102 35.7151C1143.74 -24.21 1329.72 13.1384 1387.81 229.909C1510.79 688.859 525.546 1283.89 27.561 1185.11"
                         stroke="#FFC700" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
-                </svg></div>
+                </svg>
+            </div>
             <div class="main__page-change__world-top">
                 <p class="main__page-change__world-top-tab text_md active">Волонёр</p>
                 <p class="main__page-change__world-top-tab text_md">Организация</p>
@@ -717,11 +803,11 @@
                     <div class="title_lg">Станьте <span><img src="../../assets/imgs/nc-design-proposal.png"
                                 alt="span"></span> <span class="vasek">волонтёром
 
-                            <div class="underline"><svg xmlns="http://www.w3.org/2000/svg" width="239" height="9"
-                                    viewBox="0 0 239 9" fill="none">
-                                    <path d="M1 5C78.0449 -3.72206 159.5 18 238 1.5" stroke="#FFC700" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg></div>
+                            <svg class="underline" xmlns="http://www.w3.org/2000/svg" width="239" height="9"
+                                viewBox="0 0 239 9" fill="none">
+                                <path d="M1 5C78.0449 -3.72206 159.5 18 238 1.5" stroke="#FFC700" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </span> и внесите перемены в мир</div>
                     <div class="text_sm">Откройте дверь к бесконечным источникам радости: помощь другим – заряд для вас.
                         Волонтёрство - путь к новым навыкам, дружбам и сердечным воспоминаниям</div>
@@ -933,6 +1019,45 @@
 
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="menu__popup">
+        <div class="menu__popup-header">
+            <div class="menu__popup-header-close" onclick="closePopupMenu()">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 4C0 1.79086 1.79086 0 4 0H36C38.2091 0 40 1.79086 40 4V36C40 38.2091 38.2091 40 36 40H4C1.79086 40 0 38.2091 0 36V4Z"
+                        fill="#EFE9FF" />
+                    <path
+                        d="M27.2806 26.2198C27.3502 26.2895 27.4055 26.3722 27.4432 26.4632C27.4809 26.5543 27.5003 26.6519 27.5003 26.7504C27.5003 26.849 27.4809 26.9465 27.4432 27.0376C27.4055 27.1286 27.3502 27.2114 27.2806 27.281C27.2109 27.3507 27.1281 27.406 27.0371 27.4437C26.9461 27.4814 26.8485 27.5008 26.7499 27.5008C26.6514 27.5008 26.5538 27.4814 26.4628 27.4437C26.3717 27.406 26.289 27.3507 26.2193 27.281L19.9999 21.0607L13.7806 27.281C13.6398 27.4218 13.449 27.5008 13.2499 27.5008C13.0509 27.5008 12.86 27.4218 12.7193 27.281C12.5786 27.1403 12.4995 26.9494 12.4995 26.7504C12.4995 26.5514 12.5786 26.3605 12.7193 26.2198L18.9396 20.0004L12.7193 13.781C12.5786 13.6403 12.4995 13.4494 12.4995 13.2504C12.4995 13.0514 12.5786 12.8605 12.7193 12.7198C12.86 12.5791 13.0509 12.5 13.2499 12.5C13.449 12.5 13.6398 12.5791 13.7806 12.7198L19.9999 18.9401L26.2193 12.7198C26.36 12.5791 26.5509 12.5 26.7499 12.5C26.949 12.5 27.1398 12.5791 27.2806 12.7198C27.4213 12.8605 27.5003 13.0514 27.5003 13.2504C27.5003 13.4494 27.4213 13.6403 27.2806 13.781L21.0602 20.0004L27.2806 26.2198Z"
+                        fill="#14004E" />
+                </svg>
+            </div>
+            <div class="menu__popup-header-logo">
+                <img src="../../assets/imgs/Logo Bashmolodej.png" alt="logo">
+            </div>
+            <div class="menu__popup-header-div"></div>
+        </div>
+        <div class="menu__popup-user">
+            <div class="menu__popup-user-icon">
+                <img src="../../assets/imgs/Avatars.png" alt="user-logo">
+            </div>
+            <p class="menu__popup-user-name text_md">Фамилия Имя Отчёство</p>
+            <div class="menu__popup-user-goals">0 Б</div>
+            <div class="main__button white">Профиль</div>
+        </div>
+        <div class="menu__popup-content">
+            <a class="text_md" href="#">Мероприятия</a>
+            <div class="line"></div>
+            <a class="text_md" href="#">О нас</a>
+            <div class="line"></div>
+            <a class="text_md" href="#">Новости</a>
+            <div class="line"></div>
+            <a class="text_md" href="#">Партнёры</a>
+            <div class="line"></div>
+            <a class="text_md" href="#">Мотивация</a>
+            <div class="line"></div>
+            <a class="text_md" href="#">Рейтинг волонтёров</a>
         </div>
     </div>
     <script src="./main_page.js"></script>

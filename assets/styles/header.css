@@ -34,3 +34,17 @@
     border-radius: 8px;
     background:  #FFEDF5;
 }
+.header-burger{
+    display: none;
+}
+@media(max-width:1199px){
+    .header-items{
+        display: none;
+    }
+    .header-login-item.count{
+        display: none;
+    }
+    .header-burger{
+        display: flex;
+    }
+}

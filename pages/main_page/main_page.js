@@ -4,7 +4,24 @@ document.addEventListener("DOMContentLoaded", () => {
     header.addEventListener('click', () => toggleAccordion(index + 1));
   });
 
-
+   new Swiper(".main__page-cards-swiper", {
+    slidesPerView: 2,
+    spaceBetween: 24,
+    breakpoints: {
+      320: {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+      },
+      800: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      1920: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+    },
+  });
 });
 
 function toggleAccordion(index) {
@@ -15,4 +32,17 @@ function toggleAccordion(index) {
   } else {
     content.style.maxHeight = content.scrollHeight + 'px';
   }
+}
+
+
+function openPopupMenu(){
+  document.querySelector('.menu__popup').classList.add('active')
+  document.querySelector('body').style.overflow = 'hidden'
+}
+
+
+function closePopupMenu(){
+  document.querySelector('.menu__popup').classList.remove('active')
+  document.querySelector('body').style.overflow = 'unset'
+
 }
