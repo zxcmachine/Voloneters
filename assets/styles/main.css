@@ -3,6 +3,7 @@
 @import url('./header.css');
 @import url('./footer.css');
 @import url('../../pages/main_page/main_page.css');
+@import url('../../pages/publish_events/publish_events.css');
 @import url('../styles/components/event-card/event-card.css');
 @import url('../styles/components/popup/popup.css');
 @import url('../styles/components/news-card/news-card.css');
