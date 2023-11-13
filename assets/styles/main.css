@@ -1,3 +1,5 @@
+@import url('../styles/components/event-card/event-card.css');
+@import url("../styles/components/button/button.css");
 @import url('./header.css');
 @import url('./footer.css');
 @import url('../../pages/main_page/main_page.css');
@@ -5,6 +7,57 @@
 @import url('../styles/components/popup/popup.css');
 @import url('../styles/components/news-card/news-card.css');
 @import url('../styles/components/universal-banner/universal-banner.css');
+
+/*ABOUT_US */
+@import url("../../pages/about_us/about_us.css");
+
+
+:root {
+    --primary-color: #14004E;
+    --primary-hover-color: #423270;
+    --primary-press-color: #372668;
+    --white-color: #FFFFFF;
+    --text00-color: #242424;
+    --text01-color: #606C7D;
+    --text02-color: #B6C0CF;
+    --base00-color: #F6F8FC;
+    --base02-color: #313033;
+    --pink-color: #EF036C;
+    --green-color: #31EC56;
+    --warning-color: #FFC700;
+    --purple-color: #6200EA;
+    --purple-hover-color: #7F31EC;
+    --purple-press-color: #9555EE;
+    --orange-color: #FF6F00;
+    --blue-color: #3D5AFE;
+    --margin-sm: 24px;
+    --margin-medium: 32px;
+    --margin-2xl: 96px;
+}
+
+:root {
+    --primary-color: #14004E;
+    --primary-hover-color: #423270;
+    --primary-press-color: #372668;
+    --white-color: #FFFFFF;
+    --text00-color: #242424;
+    --text01-color: #606C7D;
+    --text02-color: #B6C0CF;
+    --base00-color: #F6F8FC;
+    --base02-color: #313033;
+    --pink-color: #EF036C;
+    --green-color: #31EC56;
+    --warning-color: #FFC700;
+    --purple-color: #6200EA;
+    --purple-hover-color: #7F31EC;
+    --purple-press-color: #9555EE;
+    --orange-color: #FF6F00;
+    --blue-color: #3D5AFE;
+    --margin-sm: 24px;
+    --margin-medium: 32px;
+    --margin-2xl: 96px;
+    --margin-xl: 48px;
+}
 
 * {
     padding: 0;
@@ -158,30 +211,6 @@ body {
     src: url('../fonts/Vasek.ttf') format('truetype');
 }
 
-:root {
-    --primary-color: #14004E;
-    --primary-hover-color: #423270;
-    --primary-press-color: #372668;
-    --white-color: #FFFFFF;
-    --text00-color: #242424;
-    --text01-color: #606C7D;
-    --text02-color: #B6C0CF;
-    --base00-color: #F6F8FC;
-    --base02-color: #313033;
-    --pink-color: #EF036C;
-    --green-color: #31EC56;
-    --warning-color: #FFC700;
-    --purple-color: #6200EA;
-    --purple-hover-color: #7F31EC;
-    --purple-press-color: #9555EE;
-    --orange-color: #FF6F00;
-    --blue-color: #3D5AFE;
-    --margin-sm: 24px;
-    --margin-medium: 32px;
-    --margin-2xl: 96px;
-    --margin-xl: 48px;
-}
-
 .mt-sm {
     margin-top: var(--margin-sm);
 }
@@ -202,57 +231,58 @@ body {
 }
 
 
-.title_xl {
+.title-xl {
+    color: #14004E;
     font-family: "Euclid Circular B";
     font-size: 48px;
     font-style: normal;
     line-height: 64px;
-    font-weight: 500;
 }
 
-.title_lg {
+.title-lg {
     font-family: "Euclid Circular B";
     font-size: 40px;
     font-style: normal;
     line-height: 56px;
 }
 
-.title_md {
+.title-md {
     font-family: "Euclid Circular B";
     font-size: 32px;
     font-style: normal;
     line-height: 48px;
 }
 
-.text_xl {
+.text-xl {
     font-family: "Euclid Circular B";
     font-size: 20px;
     font-style: normal;
+    font-weight: 500;
     line-height: 32px;
 }
 
-.text_lg {
+.text-lg {
     font-family: "Euclid Circular B";
     font-size: 18px;
     font-style: normal;
     line-height: 28px;
 }
 
-.text_md {
+.text-md {
     font-family: "Euclid Circular B";
     font-size: 16px;
     font-style: normal;
     line-height: 24px;
 }
 
-.text_sm {
+.text-sm {
     font-family: "Euclid Circular B";
     font-size: 14px;
     font-style: normal;
     line-height: 20px;
 }
 
-.text_sl {
+.text-sl {
     font-family: "Euclid Circular B";
     font-size: 12px;
     font-style: normal;
@@ -275,19 +305,25 @@ body {
     border: 1px solid #EFE9FF;
 }
 @media(max-width:1199px) {
-    .title_xl {
+    .title-xl {
         font-size: 24px;
         font-weight: 500;
         line-height: 32px;
     }
 
-    .title_md {
+    .title-md {
         font-size: 24px;
         font-weight: 500;
         line-height: 32px;
     }
 
-    .text_md {
+    .text-lg {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    .text-md {
         font-size: 14px;
         line-height: 24px;
     }
@@ -295,11 +331,16 @@ body {
     .mt-2xl {
         margin-top: var(--margin-xl);
     }
-    .title_lg {
+    .title-lg {
         font-size: 24px;
         font-weight: 500;
         line-height: 32px;
     }
 }
 
+@media (max-width: 600px) {
+  .container {
+    margin: 0 16px;
+  }
+}
 /* event-card */

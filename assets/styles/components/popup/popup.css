@@ -89,7 +89,7 @@
     margin-top: 8px;
     margin-bottom: 8px;
 }
-.menu__popup-user-name.text_md{
+.menu__popup-user-name.text-md{
     color: var(--text00-color);
     font-weight: 500;
     font-size: 16px;

@@ -6,12 +6,12 @@
     overflow: hidden;
 }
 
-.universal__banner .title_md {
+.universal__banner .title-md {
     color: var(--white-color);
     z-index: 1;
 }
 
-.universal__banner .text_md {
+.universal__banner .text-md {
     color: var(--white-color);
     z-index: 1;
 }

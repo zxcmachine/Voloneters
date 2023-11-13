@@ -44,5 +44,4 @@ function openPopupMenu(){
 function closePopupMenu(){
   document.querySelector('.menu__popup').classList.remove('active')
   document.querySelector('body').style.overflow = 'unset'
-
 }

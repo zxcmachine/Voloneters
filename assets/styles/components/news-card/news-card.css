@@ -36,7 +36,7 @@
     margin-top: 24px;
 }
 
-.news__card .text_xl {
+.news__card .text-xl {
     font-weight: 500;
     margin-top: 8px;
 }
@@ -76,7 +76,7 @@
     margin-top: unset;
 }
 
-.news__card.first .title_md {
+.news__card.first .title-md {
     color: var(--white-color);
     margin-top: 8px;
 }
@@ -86,12 +86,12 @@
     background: var(--white-color);
 }
 
-.news__card.last .text_lg {
+.news__card.last .text-lg {
     color: var(--primary-color);
     font-weight: 500;
 }
 
-.news__card.last .text_sm {
+.news__card.last .text-sm {
     color: var(--text01-color);
     margin-top: 8px;
 }
@@ -111,7 +111,7 @@
     .news__card{
         width: 100%;
     }
-    .news__card.first .title_md{
+    .news__card.first .title-md{
         font-size: 18px;
     }
     .news__card.first .news__card-middle-date{

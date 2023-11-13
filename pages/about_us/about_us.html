@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/styles/main.css">
+  <link rel="stylesheet" href="../../assets/styles/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+<header id="header">
+  <div class="container">
+    <div class="header-wrapper ">
+      <div class="header-burger" onclick="openPopupMenu()"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+        <path
+                d="M0 4C0 1.79086 1.79086 0 4 0H36C38.2091 0 40 1.79086 40 4V36C40 38.2091 38.2091 40 36 40H4C1.79086 40 0 38.2091 0 36V4Z"
+                fill="#14004E" />
+        <path
+                d="M29 20C29 20.1989 28.921 20.3897 28.7803 20.5303C28.6397 20.671 28.4489 20.75 28.25 20.75H11.75C11.5511 20.75 11.3603 20.671 11.2197 20.5303C11.079 20.3897 11 20.1989 11 20C11 19.8011 11.079 19.6103 11.2197 19.4697C11.3603 19.329 11.5511 19.25 11.75 19.25H28.25C28.4489 19.25 28.6397 19.329 28.7803 19.4697C28.921 19.6103 29 19.8011 29 20ZM11.75 14.75H28.25C28.4489 14.75 28.6397 14.671 28.7803 14.5303C28.921 14.3897 29 14.1989 29 14C29 13.8011 28.921 13.6103 28.7803 13.4697C28.6397 13.329 28.4489 13.25 28.25 13.25H11.75C11.5511 13.25 11.3603 13.329 11.2197 13.4697C11.079 13.6103 11 13.8011 11 14C11 14.1989 11.079 14.3897 11.2197 14.5303C11.3603 14.671 11.5511 14.75 11.75 14.75ZM28.25 25.25H11.75C11.5511 25.25 11.3603 25.329 11.2197 25.4697C11.079 25.6103 11 25.8011 11 26C11 26.1989 11.079 26.3897 11.2197 26.5303C11.3603 26.671 11.5511 26.75 11.75 26.75H28.25C28.4489 26.75 28.6397 26.671 28.7803 26.5303C28.921 26.3897 29 26.1989 29 26C29 25.8011 28.921 25.6103 28.7803 25.4697C28.6397 25.329 28.4489 25.25 28.25 25.25Z"
+                fill="white" />
+      </svg>
+      </div>
+      <div class="header-logo"><img src="../../assets/imgs/Logo Bashmolodej.png" alt="logo"></div>
+      <div class="header-items text-md">
+        <div class="header-item">Мероприятия</div>
+        <div class="header-item">О нас</div>
+        <div class="header-item">Новости</div>
+        <div class="header-item">Партнёры</div>
+        <div class="header-item">Мотивация</div>
+        <div class="header-item">Рейтинг волонтёров</div>
+        <div class="header-item">Афиша</div>
+      </div>
+      <!-- <div class="text-md">Войти</div> -->
+      <div class="header-login-items">
+        <div class="header-login-item count text-md">0 Б</div>
+        <div class="header-login-item">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M0 8C0 3.58172 3.58172 0 8 0H24C28.4183 0 32 3.58172 32 8V24C32 28.4183 28.4183 32 24 32H8C3.58172 32 0 28.4183 0 24V8Z"
+                    fill="#F6F8FC" />
+            <path
+                    d="M22.4324 21.2497C21.4806 19.6041 20.0137 18.4241 18.3018 17.8647C19.1486 17.3607 19.8065 16.5925 20.1744 15.6784C20.5424 14.7642 20.6001 13.7545 20.3387 12.8043C20.0773 11.8542 19.5112 11.0161 18.7274 10.4188C17.9436 9.82153 16.9854 9.49805 15.9999 9.49805C15.0145 9.49805 14.0563 9.82153 13.2724 10.4188C12.4886 11.0161 11.9225 11.8542 11.6611 12.8043C11.3997 13.7545 11.4574 14.7642 11.8254 15.6784C12.1934 16.5925 12.8513 17.3607 13.6981 17.8647C11.9862 18.4235 10.5193 19.6035 9.56743 21.2497C9.53252 21.3067 9.50936 21.37 9.49933 21.436C9.4893 21.502 9.49259 21.5694 9.509 21.6341C9.52542 21.6988 9.55463 21.7596 9.59492 21.8128C9.63521 21.8661 9.68575 21.9107 9.74357 21.9441C9.80138 21.9775 9.8653 21.999 9.93156 22.0073C9.99781 22.0156 10.065 22.0105 10.1293 21.9924C10.1936 21.9743 10.2536 21.9435 10.3057 21.9018C10.3579 21.8601 10.4012 21.8084 10.4331 21.7497C11.6106 19.7147 13.6918 18.4997 15.9999 18.4997C18.3081 18.4997 20.3893 19.7147 21.5668 21.7497C21.5987 21.8084 21.642 21.8601 21.6941 21.9018C21.7463 21.9435 21.8063 21.9743 21.8705 21.9924C21.9348 22.0105 22.002 22.0156 22.0683 22.0073C22.1345 21.999 22.1985 21.9775 22.2563 21.9441C22.3141 21.9107 22.3646 21.8661 22.4049 21.8128C22.4452 21.7596 22.4744 21.6988 22.4908 21.6341C22.5073 21.5694 22.5106 21.502 22.5005 21.436C22.4905 21.37 22.4673 21.3067 22.4324 21.2497ZM12.4999 13.9997C12.4999 13.3075 12.7052 12.6308 13.0898 12.0553C13.4744 11.4797 14.021 11.0311 14.6605 10.7662C15.3001 10.5013 16.0038 10.432 16.6827 10.567C17.3617 10.702 17.9853 11.0354 18.4748 11.5249C18.9643 12.0144 19.2976 12.638 19.4327 13.3169C19.5677 13.9959 19.4984 14.6996 19.2335 15.3391C18.9686 15.9787 18.52 16.5253 17.9444 16.9099C17.3688 17.2945 16.6922 17.4997 15.9999 17.4997C15.072 17.4988 14.1823 17.1297 13.5261 16.4735C12.87 15.8174 12.5009 14.9277 12.4999 13.9997Z"
+                    fill="#14004E" />
+          </svg>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="about-us">
+    <div class="about-us__about-block container">
+      <div class="about-us__about-info">
+        <p class="text-lg">О нас</p>
+        <p class="title-lg">Наше сообщество<span class="vasek vasek-volonteer">волонтеров</span><span
+            class="about-us__about-info-novisible"></span>стремится к созданию
+          позитивных
+          изменений в жизни людей и окружающей среды.
+          Мы верим, что даже маленькие действия могут иметь большое значение, а вместе мы способны сделать наш мир
+          более добрым <span class="about-us__about-info-image"></span> <span class="about-us__about-info-span">и</span>
+          <span class="vasek vasek-support">поддерживающим</span>
+        </p>
+      </div>
+      <div class="about-us__about-swiper swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <img src="../../assets/imgs/about-us.png" alt="">
+          </li>
+          <li class="swiper-slide">
+            <img src="../../assets/imgs/about-us.png" alt="">
+          </li>
+          <li class="swiper-slide">
+            <img src="../../assets/imgs/about-us.png" alt="">
+          </li>
+          <li class="swiper-slide">
+            <img src="../../assets/imgs/about-us.png" alt="">
+          </li>
+          <li class="swiper-slide">
+            <img src="../../assets/imgs/about-us.png" alt="">
+          </li>
+          <li class="swiper-slide">
+            <img src="../../assets/imgs/about-us.png" alt="">
+          </li>
+          <li class="swiper-slide">
+            <img src="../../assets/imgs/about-us.png" alt="">
+          </li>
+          <li class="swiper-slide">
+            <img src="../../assets/imgs/about-us.png" alt="">
+          </li>
+          <li class="swiper-slide">
+            <img src="../../assets/imgs/about-us.png" alt="">
+          </li>
+          <li class="swiper-slide">
+            <img src="../../assets/imgs/about-us.png" alt="">
+          </li>
+        </ul>
+        <div class="swiper-pagination"><span class="swiper-pagination__current-slide text-sm">1</span><span
+            class="swiper-pagination__total-slide text-sm">10</span></div>
+        <div class="swiper-control-buttons">
+          <button class="swiper-button-left">
+            <img src="../../assets/imgs/icons/ArrowLeft.svg" alt="">
+          </button>
+          <button class="swiper-button-right">
+            <img src="../../assets/imgs/icons/ArrowRight.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="about-us__running-lines">
+      <ul class="running-line__list">
+        <li class="running-line__list-item title-lg">
+          <span class="running-line__list-item_green">345+</span>зарегистрированных организаций
+        </li>
+        <li class="running-line__list-item title-lg">
+          <span class="running-line__list-item_red">653+</span>зарегистрированных мероприятия
+        </li>
+        <li class="running-line__list-item title-lg">
+          <span class="running-line__list-item_red">653+</span>зарегистрированных мероприятия
+        </li>
+        <li class="running-line__list-item title-lg">
+          <span class="running-line__list-item_red">653+</span>зарегистрированных мероприятия
+        </li>
+      </ul>
+      <ul class="running-line__list">
+        <li class="running-line__list-item title-lg">
+          <span class="running-line__list-item_green">65 502+</span>часов работы волонтёров
+        </li>
+        <li class="running-line__list-item title-lg">
+          <span class="running-line__list-item_green">203+</span>партнёра
+        </li>
+        <li class="running-line__list-item title-lg">
+          <span class="running-line__list-item_green">1502+</span>зарегистрированных волонтёров
+        </li>
+        <li class="running-line__list-item title-lg">
+          <span class="running-line__list-item_green">1502+</span>зарегистрированных волонтёров
+        </li>
+        <li class="running-line__list-item title-lg">
+          <span class="running-line__list-item_green">1502+</span>зарегистрированных волонтёров
+        </li>
+      </ul>
+    </div>
+    <div class="interaction-map container">
+      <div class="interaction-map__text-info_mobile">
+        <p class="interaction-map__text-info-title title-md"><span class="vasek">Волонтёрские</span>штабы　Республики
+          Башкортостан</p>
+        <p class="interaction-map__text-info-subtitle text-md">*Добавить текст описания интерактивной карты*</p>
+      </div>
+      <div class="interaction-map__image-block">
+        <img src="../../assets/imgs/rb-map.svg" class="interaction-map__image" alt="Карта республики башкортостан">
+      </div>
+      <div class="interaction-map__info">
+        <div class="interaction-map__text-info">
+          <p class="interaction-map__text-info-title title-md"><span class="vasek">Волонтёрские</span>штабы　Республики
+            Башкортостан</p>
+          <p class="interaction-map__text-info-subtitle text-md">*Добавить текст описания интерактивной карты*</p>
+        </div>
+        <div class="interaction-map__info-area">
+          <ul class="area__list">
+            <li class="area-list__item">
+              <img src="../../assets/imgs/icons/Logo - Учалинский район.svg" width="32">
+              <p class="area-list__item-name text-md">Аургазинский район</p>
+              <p class="area-list__item-count text-sm">1 штаб</p>
+            </li>
+            <li class="area-list__item">
+              <img src="../../assets/imgs/icons/Logo - Учалинский район (1).svg" width="32">
+              <p class="area-list__item-name text-md">Баймакский район</p>
+              <p class="area-list__item-count text-sm">1 штаб</p>
+            </li>
+            <li class="area-list__item">
+              <img src="../../assets/imgs/icons/Logo - Учалинский район (2).svg" width="32">
+              <p class="area-list__item-name text-md">Учалинский район</p>
+              <p class="area-list__item-count text-sm">1 штаб</p>
+            </li>
+            <li class="area-list__item">
+              <img src="../../assets/imgs/icons/Logo - Учалинский район (3).svg" width="32">
+              <p class="area-list__item-name text-md">Альшеевский район</p>
+              <p class="area-list__item-count text-sm">1 штаб</p>
+            </li>
+            <li class="area-list__item">
+              <img src="../../assets/imgs/icons/Logo - Учалинский район (4).svg" width="32">
+              <p class="area-list__item-name text-md">Архангельский район</p>
+              <p class="area-list__item-count text-sm">1 штаб</p>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+      <button class="interaction-map__info-show-btn btn btn-primary"><span class="text-md">Список волонтёрских
+          штабов</span></button>
+    </div>
+  </main>
+
+<div id="footer" class="mt-2xl">
+  <div class="container">
+    <div class="footer-wrapper ">
+      <div class="footer-top">
+        <div class="footer-item phone">
+          <p class="text-sm">Телефон</p>
+          <p class="title-lg">+ 7 (999) 999-99-99</p>
+        </div>
+        <div class="footer-item email">
+          <p class="text-md"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M23.1853 11.6962C23.1525 11.6222 22.3584 9.86062 20.5931 8.09531C18.2409 5.74312 15.27 4.5 12 4.5C8.72999 4.5 5.75905 5.74312 3.40687 8.09531C1.64155 9.86062 0.843741 11.625 0.814679 11.6962C0.772035 11.7922 0.75 11.896 0.75 12.0009C0.75 12.1059 0.772035 12.2097 0.814679 12.3056C0.847491 12.3797 1.64155 14.1403 3.40687 15.9056C5.75905 18.2569 8.72999 19.5 12 19.5C15.27 19.5 18.2409 18.2569 20.5931 15.9056C22.3584 14.1403 23.1525 12.3797 23.1853 12.3056C23.2279 12.2097 23.25 12.1059 23.25 12.0009C23.25 11.896 23.2279 11.7922 23.1853 11.6962ZM12 18C9.11437 18 6.59343 16.9509 4.50655 14.8828C3.65028 14.0313 2.92179 13.0603 2.34374 12C2.92164 10.9396 3.65014 9.9686 4.50655 9.11719C6.59343 7.04906 9.11437 6 12 6C14.8856 6 17.4066 7.04906 19.4934 9.11719C20.3514 9.9684 21.0815 10.9394 21.6609 12C20.985 13.2619 18.0403 18 12 18ZM12 7.5C11.11 7.5 10.2399 7.76392 9.49993 8.25839C8.7599 8.75285 8.18313 9.45566 7.84253 10.2779C7.50194 11.1002 7.41282 12.005 7.58646 12.8779C7.76009 13.7508 8.18867 14.5526 8.81801 15.182C9.44735 15.8113 10.2492 16.2399 11.1221 16.4135C11.995 16.5872 12.8998 16.4981 13.7221 16.1575C14.5443 15.8169 15.2471 15.2401 15.7416 14.5001C16.2361 13.76 16.5 12.89 16.5 12C16.4988 10.8069 16.0242 9.66303 15.1806 8.81939C14.337 7.97575 13.1931 7.50124 12 7.5ZM12 15C11.4066 15 10.8266 14.8241 10.3333 14.4944C9.83993 14.1648 9.45542 13.6962 9.22835 13.1481C9.00129 12.5999 8.94188 11.9967 9.05764 11.4147C9.17339 10.8328 9.45911 10.2982 9.87867 9.87868C10.2982 9.45912 10.8328 9.1734 11.4147 9.05764C11.9967 8.94189 12.5999 9.0013 13.148 9.22836C13.6962 9.45542 14.1648 9.83994 14.4944 10.3333C14.824 10.8266 15 11.4067 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15Z"
+                    fill="white" />
+          </svg>
+            Версия для слабовидящих</p>
+          <a href="#"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M0 8C0 3.58172 3.58172 0 8 0H32C36.4183 0 40 3.58172 40 8V32C40 36.4183 36.4183 40 32 40H8C3.58172 40 0 36.4183 0 32V8Z"
+                    fill="#EFE9FF" />
+            <path
+                    d="M30.2075 10.4553C30.0913 10.355 29.9499 10.2882 29.7986 10.2623C29.6473 10.2364 29.4917 10.2522 29.3487 10.3081L10.3494 17.7434C10.0801 17.8482 9.85214 18.0375 9.6998 18.283C9.54745 18.5284 9.47898 18.8168 9.50468 19.1045C9.53037 19.3923 9.64886 19.6639 9.84229 19.8785C10.0357 20.0931 10.2936 20.2391 10.5772 20.2944L15.5 21.2609V26.75C15.499 27.049 15.5879 27.3414 15.755 27.5893C15.9222 27.8372 16.1599 28.0291 16.4375 28.1403C16.7146 28.2535 17.0194 28.2806 17.3121 28.2183C17.6049 28.1559 17.8721 28.0069 18.0791 27.7906L20.4528 25.3288L24.2187 28.625C24.4904 28.866 24.8409 28.9994 25.2041 29C25.3632 28.9999 25.5214 28.9749 25.6728 28.9259C25.9203 28.8474 26.1428 28.7055 26.3183 28.5142C26.4938 28.3229 26.6162 28.0889 26.6731 27.8356L30.4784 11.2813C30.5125 11.132 30.5052 10.9762 30.4575 10.8307C30.4098 10.6852 30.3234 10.5554 30.2075 10.4553ZM24.4756 13.8303L16.0766 19.8453L11.4266 18.9331L24.4756 13.8303ZM17 26.75V22.2988L19.3241 24.3369L17 26.75ZM25.2059 27.5L17.4547 20.7031L28.6109 12.7072L25.2059 27.5Z"
+                    fill="#14004E" />
+          </svg>
+          </a>
+        </div>
+        <div class="footer-item supervisor">
+          <p class="text-sm">E-mail</p>
+          <p class="title-lg">testmail@gmail.com</p>
+        </div>
+        <div class="footer-item wrap">
+          <p class="text-md">Мероприятия</p>
+          <p class="text-md">О нас</p>
+          <p class="text-md">Новости</p>
+          <p class="text-md">Партнёры</p>
+          <p class="text-md">Мотивация</p>
+          <p class="text-md">Рейтинг волонтёров</p>
+          <p class="text-md">Как стать волонтёром?</p>
+          <p class="text-md">Как стать организатором?</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-item">
+          <p class="text-sl">© 2023 Добро.РБ</p>
+        </div>
+        <div class="footer-bottom-item">
+          <p class="text-sl">Пользовательское соглашение</p>
+          <p class="text-sl">Политика конфиденциальности</p>
+          <p class="text-sl">Правила пользования</p>
+          <p class="text-sl">Сделано — Yes Idea</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="menu__popup">
+  <div class="menu__popup-header">
+    <div class="menu__popup-header-close" onclick="closePopupMenu()">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+                d="M0 4C0 1.79086 1.79086 0 4 0H36C38.2091 0 40 1.79086 40 4V36C40 38.2091 38.2091 40 36 40H4C1.79086 40 0 38.2091 0 36V4Z"
+                fill="#EFE9FF" />
+        <path
+                d="M27.2806 26.2198C27.3502 26.2895 27.4055 26.3722 27.4432 26.4632C27.4809 26.5543 27.5003 26.6519 27.5003 26.7504C27.5003 26.849 27.4809 26.9465 27.4432 27.0376C27.4055 27.1286 27.3502 27.2114 27.2806 27.281C27.2109 27.3507 27.1281 27.406 27.0371 27.4437C26.9461 27.4814 26.8485 27.5008 26.7499 27.5008C26.6514 27.5008 26.5538 27.4814 26.4628 27.4437C26.3717 27.406 26.289 27.3507 26.2193 27.281L19.9999 21.0607L13.7806 27.281C13.6398 27.4218 13.449 27.5008 13.2499 27.5008C13.0509 27.5008 12.86 27.4218 12.7193 27.281C12.5786 27.1403 12.4995 26.9494 12.4995 26.7504C12.4995 26.5514 12.5786 26.3605 12.7193 26.2198L18.9396 20.0004L12.7193 13.781C12.5786 13.6403 12.4995 13.4494 12.4995 13.2504C12.4995 13.0514 12.5786 12.8605 12.7193 12.7198C12.86 12.5791 13.0509 12.5 13.2499 12.5C13.449 12.5 13.6398 12.5791 13.7806 12.7198L19.9999 18.9401L26.2193 12.7198C26.36 12.5791 26.5509 12.5 26.7499 12.5C26.949 12.5 27.1398 12.5791 27.2806 12.7198C27.4213 12.8605 27.5003 13.0514 27.5003 13.2504C27.5003 13.4494 27.4213 13.6403 27.2806 13.781L21.0602 20.0004L27.2806 26.2198Z"
+                fill="#14004E" />
+      </svg>
+    </div>
+    <div class="menu__popup-header-logo">
+      <img src="../../assets/imgs/Logo Bashmolodej.png" alt="logo">
+    </div>
+    <div class="menu__popup-header-div"></div>
+  </div>
+  <div class="menu__popup-user">
+    <div class="menu__popup-user-icon">
+      <img src="../../assets/imgs/Avatars.png" alt="user-logo">
+    </div>
+    <p class="menu__popup-user-name text-md">Фамилия Имя Отчёство</p>
+    <div class="menu__popup-user-goals">0 Б</div>
+    <div class="main__button white">Профиль</div>
+  </div>
+  <div class="menu__popup-content">
+    <a class="text-md" href="#">Мероприятия</a>
+    <div class="line"></div>
+    <a class="text-md" href="#">О нас</a>
+    <div class="line"></div>
+    <a class="text-md" href="#">Новости</a>
+    <div class="line"></div>
+    <a class="text-md" href="#">Партнёры</a>
+    <div class="line"></div>
+    <a class="text-md" href="#">Мотивация</a>
+    <div class="line"></div>
+    <a class="text-md" href="#">Рейтинг волонтёров</a>
+  </div>
+</div>
+  <script src="./about_us.js"></script>
+</body>
+
+</html>
