@@ -94,7 +94,7 @@
     flex-direction: column;
     gap: 8px;
 }
-.event__card-bottom .text_md{
+.event__card-bottom .text-md{
     font-weight: 500;
 }
 .event__card-bottom-item{
@@ -103,11 +103,11 @@
     gap: 8px;
     color: var(--text00-color);
 }
-.event__card.last .text_lg{
+.event__card.last .text-lg{
     color: var(--primary-color);
     font-weight: 500;
 }
-.event__card.last .text_sm{
+.event__card.last .text-sm{
     color: var(--text01-color);
 }
 .event__card.last .main__button{

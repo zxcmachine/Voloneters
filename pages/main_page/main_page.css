@@ -1,3 +1,5 @@
+@im
+
 .main_page-title {
     text-align: center;
     max-width: 1200px;
@@ -58,13 +60,13 @@
     right: -50px;
 }
 
-.main__page-card .title_md {
+.main__page-card .title-md {
     color: var(--white-color);
     position: relative;
     z-index: 3;
 }
 
-.main__page-card .text_md {
+.main__page-card .text-md {
     color: var(--white-color);
     position: relative;
     z-index: 3;
@@ -181,13 +183,13 @@
     z-index: 2;
 }
 
-.main__page-change__world-content__left .title_lg {
+.main__page-change__world-content__left .title-lg {
     font-weight: 500;
     line-height: 56px;
-    
+
 }
 
-.main__page-change__world-content__left .text_sm {
+.main__page-change__world-content__left .text-sm {
     max-width: 397px;
     margin-top: 8px;
 }
@@ -280,7 +282,7 @@
     gap: 24px;
 }
 
-.main__page-answers-left .text_sm {
+.main__page-answers-left .text-sm {
     color: var(--text01-color);
 }
 
@@ -381,7 +383,7 @@
         width: 125px;
         overflow: hidden;
     }
-    .main__page-change__world-content__left .title_lg{
+    .main__page-change__world-content__left .title-lg{
         line-height: 32px;
     }
     .main__page-answers{

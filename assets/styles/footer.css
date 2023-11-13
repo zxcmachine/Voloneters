@@ -36,7 +36,7 @@
     order: 4;
 }
 
-.footer-item .text_sm {
+.footer-item .text-sm {
     color: var(--text02-color);
 }
 
@@ -95,5 +95,5 @@
     .footer-bottom p:nth-child(2) {
         margin-left: unset;
     }
- 
+
 }
