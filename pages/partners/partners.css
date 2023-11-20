@@ -1,0 +1,142 @@
+.partners-page .universal__banner {
+    margin-top: 24px;
+    background-color: #1CB87A;
+}
+
+.partners-page__partners-list-item-text {
+    font-weight: 500;
+    margin-top: 8px;
+
+}
+
+.partners-page__partners-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: var(--margin-sm);
+    gap: 24px;
+}
+
+.partners-page__partners-list-item {
+    background-color: var(--white-color);
+    padding: 16px 0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: calc(25% - 24px);
+    /* Дополнительно можно добавить некоторые отступы */
+    padding: 10px;
+}
+
+.partners-popup {
+    display: none;
+}
+
+.partners-popup__background {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 4;
+    left: 0;
+    background-color: #000000;
+    opacity: 0;
+}
+
+.partners-popup__wrapper {
+    width: 540px;
+    background-color: var(--white-color);
+    padding: 32px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 546px;
+    z-index: 5;
+    padding: 32px;
+    opacity: 0;
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.partners-popup__title {
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.partners-popup__send-form-btn {
+    margin-top: var(--margin-medium);
+    width: 100%;
+}
+
+.partners-popup-input__label {
+    color: var(--text01-color);
+    padding-bottom: 8px;
+    margin-top: 8px;
+}
+
+.partners-popup_active {
+    opacity: 1;
+    display: block;
+}
+
+.partners-popup_active .partners-popup__background{
+    opacity: .34;
+}
+
+.partners-popup_active .partners-popup__wrapper {
+    opacity: 1;
+}
+
+.partners-popup__confirm-form {
+    line-height: 16px;
+    margin-top: 12px;
+}
+
+.partners-popup-input__element {
+    font-family: Euclid Circular B;
+    background-color: var(--base00-color);
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    border-radius: 8px;
+    width: 100%; 
+}
+
+.partners-popup__close-btn {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #EFE9FF;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+    .partners-page__partners-list-item {
+      flex-basis: calc(50% - 24px); /* 2 элемента в строке с учетом gap: 24px */
+    }
+  }
+  
+@media (max-width: 600px) {
+    .partners-page__partners-list-item {
+        flex-basis: 100%; /* 1 элемент в строке с учетом gap: 24px */
+    }
+
+    .partners-popup__wrapper {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding-top: 64px;
+    }
+
+    .partners-popup__close-btn {
+        display: flex;
+    }
+}

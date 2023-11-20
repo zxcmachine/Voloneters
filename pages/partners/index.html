@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../assets/styles/main.css">
     <link rel="stylesheet" href="../../assets/styles/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="./partners.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
@@ -54,6 +54,75 @@
             </div>
         </div>
     </header>
+    <main class="main partners-page">
+        <div class="container">
+            <div class="universal__banner" onclick="togglePartnerPopup(true)">
+                <p class="title-md">Партнёры</p>
+                <p class="text-md">*Добавить текст описания*. Стать партнером</p>
+                <div class="universal__banner-bg"> <img src="../../assets/imgs/nc-people-holding-cards.png" alt="bg">
+                </div>
+            </div>
+            <ul class="partners-page__partners-list">
+                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>
+                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>
+                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>
+                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>
+                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>
+                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>
+                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>
+                <li class="partners-page__partners-list-item">
+                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
+                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                </li>
+            </ul>
+        </div>
+
+    </main>
     <div id="footer" class="mt-2xl">
         <div class="container">
             <div class="footer-wrapper ">
@@ -150,8 +219,52 @@
             <a class="text-md" href="#">Рейтинг волонтёров</a>
         </div>
     </div>
+    <div class="partners-page__popup-be-partner partners-popup">
+        <div class="partners-popup__background"></div>
+        <div class="partners-popup__wrapper">
+            <h1 class="partners-popup__title title-sm">Стань партнёром</h1>
+            <label class="partners-popup-input">
+                <p class="partners-popup-input__label text-sm">
+                    Название организации
+                </p>
+                <input type="text" placeholder="OOO «Добрые дела»" class="partners-popup-input__element"/>
+            </label> 
+            <label class="partners-popup-input">
+                <p class="partners-popup-input__label text-sm">
+                    E-mail
+                </p>
+                <input type="text" placeholder="Уфа" class="partners-popup-input__element"/>
+            </label> 
+            <label class="partners-popup-input">
+                <p class="partners-popup-input__label text-sm">
+                    Телефон
+                </p>
+                <input type="number" placeholder="+7 (999) 999-99-99" class="partners-popup-input__element"/>
+            </label>
+            <label class="partners-popup-input">
+                <p class="partners-popup-input__label text-sm">
+                    Телефон
+                </p>
+                <textarea
+                    type="text" 
+                    placeholder="Хочу рассказать о..." 
+                    class="partners-popup-input__element"
+                ></textarea>
+            </label>
+            <button class="partners-popup__send-form-btn btn btn-primary"><span class="text-md">Отправить заявку</span>
+            </button>
+            <button class="partners-popup__close-btn" onclick="togglePartnerPopup(false)">
+                <img src="../../assets/imgs/icons/close-icon.svg" class="partners-popup__send-form-btn-icon" alt="">
+
+            </button>
+            <p class="partners-popup__confirm-form text-sl">
+                Нажимая кнопку «Отправить заявку», вы соглашаетесь с <a href="" class="partners-popup__confirm-form-link">политикой конфиденциальности</a> 
+            </p>
+        </div>
+    </div>    
     <script src="./main_page.js"></script>
-    <script src="../about_us/about_us.js"></script>
+    <script src="./partners.js"></script>
+
 </body>
 
 </html>
