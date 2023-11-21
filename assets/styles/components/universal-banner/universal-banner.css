@@ -9,6 +9,7 @@
 .universal__banner .title-md {
     color: var(--white-color);
     z-index: 1;
+    max-width: 643px;
 }
 
 .universal__banner .text-md {
@@ -21,7 +22,12 @@
     top: -100px;
     right: 0;
 }
-
+.universal__banner.red{
+    background: #F44336;
+}
+.universal__banner.orange{
+    background: var(--orange-color);
+}
 @media(max-width:1199px) {
     .universal__banner-bg {
         width: 50%;
@@ -31,4 +37,20 @@
     .universal__banner {
         padding: 24px 16px;
     }
+}
+@media(max-width:800px){
+    .universal__banner-bg.hide-mobile{
+        display: none;
+    }
+}
+.breadcrumbs {
+    margin-bottom: 24px;
+}
+.breadcrumbs p{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.breadcrumbs p.white{
+    color: white;
 }

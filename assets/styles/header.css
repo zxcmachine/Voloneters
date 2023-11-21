@@ -15,7 +15,15 @@
     align-items: center;
     
 }
-
+.header-item{
+    font-weight: 500;
+    color: var(--text00-color);
+    transition: .4s;
+    cursor: pointer;
+}
+.header-item:hover{
+    color: var(--primary-color);
+}
 .header-login-items {
     display: flex;
     gap: 24px;

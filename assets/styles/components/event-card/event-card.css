@@ -117,6 +117,34 @@
     text-align: center;
 }
 
+.event__card-features{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.event__card-features-items{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+.event__card-info .text-sm{
+    color: var(--text01-color);
+}
+
+.event__card-info{
+    background-color: var(--base00-color);
+    padding: 8px 16px;
+    border-radius: 8px;
+    position: relative;
+}
+.event__card-info-holder{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+.event__card.publish{
+    width: 100%;
+}
 @media(max-width:800px){
     .event__card{
         width: 100%;
@@ -127,4 +155,5 @@
     .event__card.last .main__button{
         margin-top: 24px;
     }
+   
 }
