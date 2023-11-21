@@ -1,0 +1,38 @@
+.universal__filter{
+    background-color: var(--white-color);
+    position: relative;
+    padding: 16px;
+    border-radius: 8px;
+    max-width: 245px;
+    width: 100%;
+}
+.universal__filter p{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+.universal__filter-items{
+    position: absolute;
+    top: 70px;
+    background-color: var(--white-color);
+    left: 0;
+    padding: 16px;
+    z-index: 10;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.universal__filter-items.active{
+    opacity: 1;
+    visibility: visible;
+}
+@media (max-width:800px) {
+    .universal__filter{
+        max-width: unset;
+    }
+    .caret-down{
+        margin-left: auto;
+    }
+}
