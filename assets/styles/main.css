@@ -22,6 +22,10 @@
 /* news */
 @import url('../../pages/news/news.css');
 
+/* news detail */
+@import url('../../pages/news_detail/news_detail.css');
+
+
 :root {
     --primary-color: #14004E;
     --primary-hover-color: #423270;
@@ -374,6 +378,14 @@ body {
     font-size: 18px;
     font-weight: 500;
     line-height: 28px; 
+  }
+  .title-sm{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .mobile-full{
+    width: 100%;
+    text-align: center;
   }
 }
 /* event-card */
