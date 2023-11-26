@@ -25,6 +25,8 @@
 /* news detail */
 @import url('../../pages/news_detail/news_detail.css');
 
+/* what need volonters */
+@import url('../../pages/what_need_volonters/what_need_volonters.css');
 
 :root {
     --primary-color: #14004E;
@@ -332,10 +334,12 @@ body {
     font-weight: 500;
     color: var(--white-color);
 }
+
 .main__button.full {
-   width: 100%;
-   text-align: center;
+    width: 100%;
+    text-align: center;
 }
+
 @media(max-width:1199px) {
     .title-xl {
         font-size: 24px;
@@ -350,9 +354,9 @@ body {
     }
 
     .text-lg {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
     }
 
     .text-md {
@@ -363,29 +367,51 @@ body {
     .mt-2xl {
         margin-top: var(--margin-xl);
     }
+
     .title-lg {
         font-size: 24px;
         font-weight: 500;
         line-height: 32px;
     }
+
 }
 
 @media (max-width: 600px) {
-  .container {
-    margin: 0 16px;
-  }
-  .title-md{
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 28px; 
-  }
-  .title-sm{
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .mobile-full{
-    width: 100%;
-    text-align: center;
-  }
+    .container {
+        margin: 0 16px;
+    }
+
+    .title-md {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .title-sm {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .mobile-full {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mt-sm {
+        margin-top: 16px;
+    }
 }
+
+.swiper-pagination-bullet {
+    background: #EFE9FF;
+    opacity: 0.9;
+    backdrop-filter: blur(4px);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+    opacity: 0.9;
+    backdrop-filter: blur(4px);
+}
+
 /* event-card */
