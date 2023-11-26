@@ -61,18 +61,18 @@
             <div class="what__need-top">
                 <div class="text-lg">Что нужно делать:</div>
                 <div class="what__need-top-tabs">
-                    <p class="what__need-top-tab title-sm active">Волонтёру</p>
-                    <p class="what__need-top-tab title-sm">Организатору</p>
+                    <p class="what__need-top-tab title-sm ">Волонтёру</p>
+                    <p class="what__need-top-tab title-sm active">Организатору</p>
                 </div>
             </div>
             <div class="what__need-swiper-container mt-sm">
                 <div class="what__need-swiper__dots">
                     <div class="what__need-swiper__dot text-sm active" onclick="slideTo(0)">01 · Регистрация</div>
-                    <div class="what__need-swiper__dot text-sm" onclick="slideTo(1)">02 · Заявки на участие</div>
-                    <div class="what__need-swiper__dot text-sm" onclick="slideTo(2)">03 · Участие в мероприятии</div>
-                    <div class="what__need-swiper__dot text-sm" onclick="slideTo(3)">04 · Отправка отчёта</div>
-                    <div class="what__need-swiper__dot text-sm" onclick="slideTo(4)">05 · Получение баллов</div>
-                    <div class="what__need-swiper__dot text-sm" onclick="slideTo(5)">06 · Баллы на подарки</div>
+                    <div class="what__need-swiper__dot text-sm" onclick="slideTo(1)">02 · Проверка профиля</div>
+                    <div class="what__need-swiper__dot text-sm" onclick="slideTo(2)">03 · Создание мероприятия</div>
+                    <div class="what__need-swiper__dot text-sm" onclick="slideTo(3)">04 · Набор волонтёров</div>
+                    <div class="what__need-swiper__dot text-sm" onclick="slideTo(4)">05 · Выставление баллов за
+                        мероприятие</div>
                 </div>
                 <div class="what__need-swiper-wrapper">
                     <div class="swiper what__need-swiper mt-sm">
@@ -94,26 +94,6 @@
                                     <p class="text-md">Простой шаг позволит вам получить доступ к разнообразным
                                         волонтёрским возможностям и ресурсам.</p>
                                     <div class="main__button mt-sm mobile-full">Регистрация</div>
-                                </div>
-
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="what__need-swiper-slide-left">
-                                    <img src="../../assets/imgs/what__need.png" alt="img">
-                                </div>
-                                <div class="what__need-swiper-slide-right">
-                                    <div class="title-md"> <span class="vasek"> Зарегистрируйтесь
-                                            <div class="underline"><svg xmlns="http://www.w3.org/2000/svg" width="334"
-                                                    height="15" viewBox="0 0 334 15" fill="none">
-                                                    <path
-                                                        d="M1 13.5862C20.2905 11.1331 38.5178 9.6184 56 8.73211M333 1.5C297.457 7.98736 265.482 8.15521 235 9.02604M161 8.63698C134.367 7.98645 107.546 7.23902 79 7.89322M198.5 9.33367C192.814 9.28483 187.152 9.19999 181.5 9.09346L198.5 9.33367Z"
-                                                        stroke="#EF036C" stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg></div>
-                                        </span> на сайте</div>
-                                    <p class="text-md">Простой шаг позволит вам получить доступ к разнообразным
-                                        волонтёрским возможностям и ресурсам.</p>
-                                    <div class="main__button mt-sm">Регистрация</div>
                                 </div>
 
                             </div>
@@ -242,17 +222,16 @@
                 el.classList.add('active')
             }))
         }
-        const slideTo = (id) => {
-            swiper_what_need.slideTo(id)
-        }
         const setDot = () => {
             document.querySelectorAll('.what__need-swiper__dot').forEach(el => {
                 el.classList.remove('active')
             })
-            setTimeout(()=>{
+            setTimeout(() => {
                 document.querySelectorAll('.what__need-swiper__dot')[swiper_what_need.realIndex].classList.add('active')
-
-            },10)
+            }, 10)
+        }
+        const slideTo = (id) => {
+            swiper_what_need.slideTo(id)
         }
     </script>
 
