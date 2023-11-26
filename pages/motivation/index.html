@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../assets/styles/main.css">
     <link rel="stylesheet" href="../../assets/styles/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./partners.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
@@ -54,74 +54,53 @@
             </div>
         </div>
     </header>
-    <main class="main partners-page">
+    <main class="main motivation">
         <div class="container">
-            <div class="universal__banner" onclick="togglePartnerPopup(true)">
-                <p class="title-md">Партнёры</p>
+            <div class="motivation__banner universal__banner" onclick="togglePartnerPopup(true)">
+                <p class="title-md">Мотивация</p>
                 <p class="text-md">*Добавить текст описания*. Стать партнером</p>
                 <div class="universal__banner-bg"> <img src="../../assets/imgs/nc-people-holding-cards.png" alt="bg">
                 </div>
             </div>
-            <ul class="partners-page__partners-list">
-                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+            <div class="motivation__filter">
+                <button class="motivation__filter-button btn btn-secondary">
+                    <img src="../../assets/imgs/icons/ArrowsDownUp.svg" alt="">
+                    <p class="text-md motivation__filter-button-text">Сначала дешевые</p>
+                    <img src="../../assets/imgs/icons/CaretDown.svg" alt="">
+
+                </button>
+            </div>
+            <ul class="motivation__list">
+                <li class="motivation__list-item">
+                    <div class="motivation__list-item-img-container">
+                        <img src="../../assets/imgs/djinsovka.png" class="motivation__list-item-img" alt="">
+                    </div>
+                    <p class="motivation__list-item-title text-lg">Джинсовка</p>
+                    <button class="motivation__list-btn btn btn-secondary"><p class="text-md">100 баллов</p></button>
                 </li>
-                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                <li class="motivation__list-item">
+                    <div class="motivation__list-item-img-container">
+                        <img src="../../assets/imgs/djinsovka.png" class="motivation__list-item-img" alt="">
+                    </div>
+                    <p class="motivation__list-item-title text-lg">Джинсовка</p>
+                    <button class="motivation__list-btn btn btn-secondary"><p class="text-md">100 баллов</p></button>
                 </li>
-                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                <li class="motivation__list-item">
+                    <div class="motivation__list-item-img-container">
+                        <img src="../../assets/imgs/djinsovka.png" class="motivation__list-item-img" alt="">
+                    </div>
+                    <p class="motivation__list-item-title text-lg">Джинсовка</p>
+                    <button class="motivation__list-btn btn btn-secondary"><p class="text-md">100 баллов</p></button>
                 </li>
-                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
-                </li>
-                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
-                </li>                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
-                </li>                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
-                </li>                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
-                </li>                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
-                </li>                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
-                </li>                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
-                </li>                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
-                </li>                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
-                </li>
-                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
-                </li>
-                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
-                </li>
-                <li class="partners-page__partners-list-item">
-                    <img src="../../assets/imgs/icons/image 23.png" alt="" class="partners-page__partners-list-item-img">
-                    <p class="partners-page__partners-list-item-text text-md" >Название компании</p>
+                <li class="motivation__list-item">
+                    <div class="motivation__list-item-img-container">
+                        <img src="../../assets/imgs/djinsovka.png" class="motivation__list-item-img" alt="">
+                    </div>
+                    <p class="motivation__list-item-title text-lg">Джинсовка</p>
+                    <button class="motivation__list-btn btn btn-secondary"><p class="text-md">100 баллов</p></button>
                 </li>
             </ul>
         </div>
-
     </main>
     <div id="footer" class="mt-2xl">
         <div class="container">
@@ -180,7 +159,7 @@
             </div>
         </div>
     </div>
-    <div class=" menu__popup">
+    <div class="menu__popup">
         <div class="menu__popup-header">
             <div class="menu__popup-header-close" onclick="closePopupMenu()">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -219,51 +198,81 @@
             <a class="text-md" href="#">Рейтинг волонтёров</a>
         </div>
     </div>
-    <div class="partners-page__popup-be-partner partners-popup">
-        <div class="partners-popup__background" onclick="togglePartnerPopup(false)"></div>
-        <div class="partners-popup__wrapper">
-            <h1 class="partners-popup__title title-sm">Стань партнёром</h1>
-            <label class="partners-popup-input">
-                <p class="partners-popup-input__label text-sm">
-                    Название организации
-                </p>
-                <input type="text" placeholder="OOO «Добрые дела»" class="partners-popup-input__element"/>
-            </label> 
-            <label class="partners-popup-input">
-                <p class="partners-popup-input__label text-sm">
-                    E-mail
-                </p>
-                <input type="text" placeholder="Уфа" class="partners-popup-input__element"/>
-            </label> 
-            <label class="partners-popup-input">
-                <p class="partners-popup-input__label text-sm">
-                    Телефон
-                </p>
-                <input type="number" placeholder="+7 (999) 999-99-99" class="partners-popup-input__element"/>
-            </label>
-            <label class="partners-popup-input">
-                <p class="partners-popup-input__label text-sm">
-                    Телефон
-                </p>
-                <textarea
-                    type="text" 
-                    placeholder="Хочу рассказать о..." 
-                    class="partners-popup-input__element"
-                ></textarea>
-            </label>
-            <button class="partners-popup__send-form-btn btn btn-primary"><span class="text-md">Отправить заявку</span>
-            </button>
-            <button class="partners-popup__close-btn" onclick="togglePartnerPopup(false)">
-                <img src="../../assets/imgs/icons/close-icon.svg" class="partners-popup__send-form-btn-icon" alt="">
-            </button>
-            <p class="partners-popup__confirm-form text-sl">
-                Нажимая кнопку «Отправить заявку», вы соглашаетесь с <a href="" class="partners-popup__confirm-form-link">политикой конфиденциальности</a> 
-            </p>
+    <!-- motivation-popup_active -->
+    <div class="motivation__popup-1 motivation-popup">
+        <div class="motivation-popup__background" onclick="togglePartnerPopup(false)"></div>
+        <div class="motivation-popup__wrapper motivation-popup__wrapper_1 first-popup">
+            <div class="first-popup__img-container">
+                <img src="../../assets//imgs/djinsovka.png" alt="">
+            </div>
+            <div class="first-popup__info-wrapper">
+                <div class="first-popup__info">                
+                    <p class="first-popup__info-title title-sm">Джинсовка</p>
+                    <div class="first-popup__info-price">
+                        <p class="first-popup__info-price-name text-sm">Стоимость</p>
+                        <p class="first-popup__info-price-count text-md">100 Б</p>
+                    </div>
+                    <div class="first-popup__info-balance">
+                        <div class="first-popup__info-balance-current">
+                            <p class="first-popup__info-balance-current-name text-sm">Текущий баланс</p>
+                            <p class="first-popup__info-balance-current-count_pink text-md">258 баллов</p>
+                        </div>
+                        <div class="first-popup__info-balance-will">
+                            <img src="../../assets/imgs/ArrowRight.svg" alt="">
+                            <p class="first-popup__info-balance-will-name text-sm">Останется баллов</p>
+                            <p class="first-popup__info-balance-will-count_pink text-md">258 баллов</p>
+                        </div>
+                    </div>
+                    <div class="first-popup__info-balance-only-current">
+                        <div class="first-popup__info-balance-current">
+                            <p class="first-popup__info-balance-current-name text-sm">Текущий баланс</p>
+                            <p class="first-popup__info-balance-current-count_pink text-md">258 баллов</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary first-popup__info-btn text-md">Оформить заявку - 100 баллов</button>
+                <button class="btn btn-secondary first-popup__close-btn text-md">Закрыть</button>
+    
+            </div>
+           
         </div>
-    </div>    
-    <script src="./main_page.js"></script>
-    <script src="./partners.js"></script>
-
+        <div class="motivation-popup__wrapper motivation-popup__wrapper_2 second-popup">
+            <img src="../../assets/imgs/icons/CheckCircle.svg" alt="">
+            <p class="second-popup__title title-sm">Успешное оформление заявки</p>
+            <p class="second-popup__desc text-md">
+                Для уточнение деталей заказа, *менеджер* свяжется с вами по <span>testmail@gmail.com</span>
+            </p>
+            <div class="second-popup__products">
+                <div class="second-popup__products-img-container">
+                    <img src="../../assets/imgs/djinsovka.png" alt="" class="second-popup__products-img">
+                </div>
+                <div class="second-popup__prodcuts-text">
+                    <p class="second-popup__products-name text-sm">Шоппер</p>
+                <p class="second-popup__products-count text-md">100 баллов</p>
+                </div>
+            </div>
+            <button class="btn btn-primary text-md second-popup__btn">Отлично</button>
+        </div>
+        <div class="motivation-popup__wrapper motivation-popup__wrapper_3 third-popup">
+            <p class="third-popup__title title-sm">Выдача подарков происходит в последнюю неделю квартала</p>
+            <div class="third-popup__address">
+                <p class="third-popup__address-label text-sm">Адрес</p>
+                <p class="third-popup__address-name text-md">г. Уфа, Молодежное пространство «Йэшлек.House»</p>
+            </div>
+            <div class="third-popup__phone">
+                <p class="third-popup__phone-label text-sm">Телефон</p>
+                <p class="third-popup__phone-name text-md">+ 7 (347) 251-89-76</p>
+            </div>
+            <div class="third-popup__email">
+                <p class="third-popup__email-label text-sm">E-mail</p>
+                <p class="third-popup__email-name text-md">vz.rb@yandex.ru</p>
+            </div>
+        </div>
+        <button class="motivation-popup__close-btn">
+            <img src="../../assets/imgs/icons/close-icon.svg" alt="">       
+        </button>
+    </div>  
+    <script src="../main_page/main_page.js"></script>
+    <script src="./script.js"></script>
 </body>
-
 </html>
