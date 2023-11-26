@@ -105,17 +105,17 @@
   width: 100%;
 } */
 
-.swiper-slide {
+.about-us__about-swiper .swiper-wrapper .swiper-slide {
   border-radius: 32px;
   overflow: hidden;
   width: 100%;
 }
 
-.swiper-slide img {
+.about-us__about-swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
 }
 
-.swiper {
+.about-us__about-swiper {
   margin-top: var(--margin-medium);
   width: 100%;
   padding-bottom: 40px !important;
