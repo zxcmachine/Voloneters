@@ -2,3 +2,18 @@
     width: 100%;
     text-align: center;
 }
+.main__page-events-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+@media(max-width:1199px){
+    .main__page-events-top{
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        gap: 16px;
+    }
+}

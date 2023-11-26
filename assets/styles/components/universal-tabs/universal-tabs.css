@@ -1,0 +1,25 @@
+.universal__tabs{
+    display: flex;
+    gap: 12px;
+    overflow: auto;
+  
+}
+.universal__tab{
+    white-space: nowrap;
+    font-weight: 500;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 8px;   
+}
+.universal__tab.primary{
+    background: var(--primary-color);
+}
+.universal__tab.orange{
+    background: var(--orange-color);
+}
+.universal__tab.purple{
+    background: var(--purple-color);
+}
+.universal__tab.blue{
+    background: var(--blue-color);
+}
