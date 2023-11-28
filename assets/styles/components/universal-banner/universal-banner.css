@@ -34,6 +34,9 @@
 .universal__banner.red {
     background: #F44336;
 }
+.universal__banner.lightblue {
+    background: #00B8D4;
+}
 
 .universal__banner.orange {
     background: var(--orange-color);
