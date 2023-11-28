@@ -28,6 +28,9 @@
 /* what need volonters */
 @import url('../../pages/what_need_volonters/what_need_volonters.css');
 
+/* rating */
+@import url('../../pages/rating/rating.css');
+
 :root {
     --primary-color: #14004E;
     --primary-hover-color: #423270;
