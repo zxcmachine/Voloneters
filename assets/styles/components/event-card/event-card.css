@@ -143,8 +143,16 @@
     right: 16px;
 }
 .event__card.publish{
-    width: 100%;
+    width: 100% !important;
 }
+.event__card-placeholder-wait{
+    font-weight: 500;
+    padding: 4px 8px;
+    background: #EFE9FF;
+    margin-top: 16px;
+    border-radius: 8px;
+}
+
 @media(max-width:800px){
     .event__card{
         width: 100%;
@@ -155,5 +163,8 @@
     .event__card.last .main__button{
         margin-top: 24px;
     }
-   
+    .event__card-count {
+        padding: 4px 8px;
+    }
+
 }
