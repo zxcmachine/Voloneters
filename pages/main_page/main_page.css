@@ -1,3 +1,9 @@
+@import url("./auth.css");
+@import url("./reg.css");
+@import url("./reg-org.css");
+@import url("./reset-pass.css");
+@import url("./new-pass.css");
+
 .main_page-title {
     text-align: center;
     max-width: 1200px;

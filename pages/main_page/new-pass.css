@@ -1,0 +1,257 @@
+.new-pass-popup {
+    display: none;
+}
+
+.new-pass-popup__background {
+    position: fixed; 
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 4;
+    left: 0;
+    background-color: #000000;
+    opacity: 0;
+}
+
+.new-pass-popup__wrapper {
+    background-color: var(--white-color);
+    padding: 32px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    padding: 32px;
+    opacity: 0;
+    transition: .4s;
+    border-radius: 24px;
+    min-width: 1200px;
+    display: flex;
+    gap: 32px;
+}
+
+.new-pass-popup_active {
+    opacity: 1;
+    display: block;
+}
+
+.new-pass-popup_active .new-pass-popup__background{
+    opacity: .34;
+}
+
+.new-pass-popup_active .new-pass-popup__wrapper {
+    opacity: 1;
+}
+
+.new-pass-popup__form {
+    width: 50%;
+}
+
+.new-pass-popup__image-container {
+    position: relative;
+    width: 55%;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.new-pass-popup__image-container img {
+    min-width: 100%;
+    height: 100%;
+}
+
+.new-pass-popup__image-text {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    color: var(--white-color);
+}
+
+.new-pass-poup__image-container-hello {
+    font-size: 67px !important;
+    position: relative;
+    line-height: normal !important;
+}
+
+.new-pass-popup__vasek-underline {
+    position: absolute;
+    left: -3px;
+    bottom: 6px;
+}
+
+.new-pass-form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.new-pass-form__title {
+    font-weight: 500;
+}
+
+.new-pass-form__title-desc {
+    margin-top: 8px;
+    color: var(--text01-color);
+}
+
+.new-pass-form__title-desc a {
+    color: var(--primary-color);
+}
+
+.new-pass-form__vk-new-pass-btn {
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid #0077FF;
+    background-color: transparent;
+    color: #0077FF;
+    font-weight: 500;
+    outline: solid 1px #0077FF;
+
+}
+
+.new-pass-form__seporator {
+    margin-top: 24px;
+    display: flex;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.new-pass-form__seporator div {
+    width: 50%;
+    height: 1px;
+    background-color: #E6EFFD;
+    margin-top: 10px;
+}
+
+.new-pass-form__seporator-text {
+    color: var(--text01-color);
+    padding: 0 16px;
+}
+
+.new-pass-form__full-name { 
+    display: flex;
+    gap: 16px;
+}
+
+.new-pass-form-input__label {
+    color: var(--text01-color);
+    padding-bottom: 8px;
+    margin-top: 16px;
+}
+
+.new-pass-form-input__element {
+    font-family: Euclid Circular B;
+    background-color: var(--base00-color);
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    border-radius: 8px;
+    width: 100%; 
+}
+
+.new-pass-form__select {
+    font-family: Euclid Circular B;
+    background-color: var(--base00-color);
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    border-radius: 8px;
+    width: 100%; 
+    position: relative;
+    cursor: pointer;
+
+}
+
+.new-pass-form__select-placeholder {
+    color: var(--text01-color);
+}
+
+.new-pass-form__select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../assets/imgs/icons/CaretDown.svg");
+    background-repeat: no-repeat;
+    right: 16px;
+    transform: translateY(-50%);
+}
+
+.new-pass-form-input:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+
+.new-pass-form__forgot-password {
+    margin-top: 8px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.new-pass-form__enter-btn {
+    width: 100%;
+    font-weight: 500;
+}
+
+.new-pass-form__secondary {
+    margin-top: 8px;
+    width: 100%;
+    font-weight: 500;
+}
+
+.new-pass-form__secondary span {
+    color: var(--text01-color);
+    font-weight: 400;
+}
+
+.new-pass-form__be-subtrext {
+    margin-top: 16px;
+}
+
+.new-pass-form__be-subtrext a{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.new-pass-form__bottom {
+    margin-top: 24px;
+}
+
+@media (max-width: 800px) {
+    .new-pass-popup {
+        width: 100%;
+        height: 100%;
+    }
+    .new-pass-popup__wrapper {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transform: none;
+        border-radius: 0;
+        padding: 16px;
+    }
+
+    .new-pass-popup__image-container {
+        display: none;
+    }
+
+    .new-pass-popup__form {
+        width: 100%;
+    }
+
+    .new-pass-form__full-name { 
+        display: block;
+    }
+
+    .new-pass-form__up {
+        overflow: scroll;
+    }
+}

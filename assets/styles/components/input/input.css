@@ -1,0 +1,32 @@
+.input__label {
+    color: var(--text01-color);
+    padding-bottom: 8px;
+    margin-top: 8px;
+}
+
+.input__element {
+    font-family: Euclid Circular B;
+    background-color: var(--base00-color);
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    border-radius: 8px;
+    width: 100%; 
+}
+
+.input__element_error {
+    background-color: #FFEDF5;
+    border: 1px solid var(--pink-color)
+}
+
+.input__element_success {
+    background-color: #ECFAEF;
+    border: 1px solid var(--green-color)
+}
+
+.input__element:focus {
+    background-color: #E6EFFD;
+    color: var(--text02-color);
+}

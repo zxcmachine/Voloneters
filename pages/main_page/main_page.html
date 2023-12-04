@@ -1167,7 +1167,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
     <div class="menu__popup">
         <div class="menu__popup-header">
             <div class="menu__popup-header-close" onclick="closePopupMenu()">
@@ -1206,6 +1206,369 @@
             <div class="line"></div>
             <a class="text-md" href="#">Рейтинг волонтёров</a>
         </div>
+    </div>
+    <div class="some-popup"> 
+        <div class="some-popup__background"></div>
+        <div class="some-popup__wrapper">
+            <div class="auth-popup__image-container">
+                <div class="auth-popup__image-text">
+                    <p class="auth-poup__image-container-hello vasek">Здравствуйте!
+                        <svg class="auth-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector 2" d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </p>
+                    <p class="auth-poup__image-container-greeting text-md">Приятно снова видеть вас</p>                 
+                </div>
+                <img src="../../assets/imgs/Rectangle 27.png" alt="" class="auth-popup__image">
+            </div>
+            <div class="auth-popup__form auth-form">
+                <div class="auth-form__up">
+                    <p class="auth-form__title title-md">Вход</p>
+                    <p class="auth-form__title-desc text-sm">Еще нет аккаунта? <a href="">Зарегистрироваться</a></p>
+                    <button class="auth-form__vk-auth-btn btn">
+                        <img src="../../assets/imgs/icons/Clip path group.svg" alt="">
+                        <p class="text-md">ВКонтакте</p>
+                    </button>
+                    <div class="auth-form__seporator">
+                        <div class="auth-form__seporator-left"></div>
+                        <p class="auth-form__seporator-text text-sm">или</p>
+                        <div class="auth-form__seporator-right"></div>
+                    </div>
+                    <label class="auth-form-input">
+                        <p class="auth-form-input__label text-sm">
+                            E-mail
+                        </p>
+                        <input type="text" placeholder="testmail@gmail.com" class="auth-form-input__element"/>
+                    </label>  
+                    <label class="auth-form-input">
+                        <p class="auth-form-input__label text-sm">
+                            Пароль
+                        </p>
+                        <input type="password" placeholder="***********" class="auth-form-input__element"/>
+                    </label>  
+                    <p class="auth-form__forgot-password">
+                    <a href="" class="text-sm">Забыли пароль?</a>
+
+                    </p>
+                </div>
+                <div class="auth-form__bottom">
+                    <button class="auth-form__enter-btn btn btn-primary text-md">Войти</button>
+                    <button class="auth-form__register-org btn btn-outline text-md">Регистрация организации</button>
+                    <p class="auth-form__be-subtrext text-sm">Как стать: <a href="">волонтёром</a> или <a href="">волонтёром</a>?</p>
+                </div>
+            </div>
+        </div>
+        <button class="some-popup__close-btn">
+            <img src="../../assets/imgs/icons/close-icon.svg" alt="">       
+        </button>
+    </div>
+    <!-- some-popup_active -->
+    <div class="some-popup">  
+        <div class="some-popup__background"></div>
+        <div class="some-popup__wrapper">
+            <div class="reg-popup__image-container">
+                <div class="reg-popup__image-text">
+                    <p class="reg-poup__image-container-hello vasek">Здравствуйте!
+                        <svg class="reg-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector 2" d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </p>
+                    <p class="reg-poup__image-container-greeting text-md">Приятно снова видеть вас</p>                 
+                </div>
+                <img src="../../assets/imgs/Rectangle 27.png" alt="" class="reg-popup__image">
+            </div>
+            <div class="reg-popup__form reg-form">
+                <div class="reg-form__up">
+                    <p class="reg-form__title title-md">Регистрация волонтёра</p>
+                    <p class="reg-form__title-desc text-sm">У вас уже есть аккаунт? <a href="">Вход</a></p>
+                    <button class="reg-form__vk-reg-btn btn">
+                        <img src="../../assets/imgs/icons/Clip path group.svg" alt="">
+                        <p class="text-md">ВКонтакте</p>
+                    </button>
+                    <div class="reg-form__seporator">
+                        <div class="reg-form__seporator-left"></div>
+                        <p class="reg-form__seporator-text text-sm">или</p>
+                        <div class="reg-form__seporator-right"></div>
+                    </div>
+                    <div class="reg-form__full-name">
+                        <label class="reg-form-input">
+                            <p class="reg-form-input__label text-sm">
+                                Фамилия
+                            </p>
+                            <input type="text" placeholder="Иванов" class="reg-form-input__element"/>
+                        </label>  
+                        <label class="reg-form-input">
+                            <p class="reg-form-input__label text-sm">
+                                Имя
+                            </p>
+                            <input type="text" placeholder="Иван" class="reg-form-input__element"/>
+                        </label>  
+                    </div>
+                    <label class="reg-form-input">
+                        <p class="reg-form-input__label text-sm">
+                            Волонтёрская организация
+                        </p>
+                        <div placeholder="Уфа" class="reg-form__select">
+                            <p class="reg-form__select-placeholder">Выберите организацию</p>
+                        </div>
+                    </label> 
+                    <label class="reg-form-input">
+                        <p class="reg-form-input__label text-sm">
+                            Населенный пункт
+                        </p>
+                        <input type="text" placeholder="Уфа" class="reg-form-input__element"/>
+                    </label>  
+                    <label class="reg-form-input">
+                        <p class="reg-form-input__label text-sm">
+                            E-mail
+                        </p>
+                        <input type="text" placeholder="testmail@gmail.com" class="reg-form-input__element"/>
+                    </label>  
+                </div>
+                <div class="reg-form__bottom">
+                    <button class="reg-form__enter-btn btn btn-primary text-md">Зарегистрироваться</button>
+                    <p class="reg-form__be-subtrext text-sm">Как стать: <a href="">волонтёром</a> или <a href="">волонтёром</a>?</p>
+                </div>
+            </div>
+        </div>
+        <button class="some-popup__close-btn">
+            <img src="../../assets/imgs/icons/close-icon.svg" alt="">       
+        </button>
+    </div>
+    <div class="some-popup"> 
+        <div class="some-popup__background"></div>
+        <div class="some-popup__wrapper">
+            <div class="reg-org-popup__image-container">
+                <div class="reg-org-popup__image-text">
+                    <p class="reg-org-poup__image-container-hello vasek">Здравствуйте!
+                        <svg class="reg-org-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector 2" d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </p>
+                    <p class="reg-org-poup__image-container-greeting text-md">Приятно снова видеть вас</p>                 
+                </div>
+                <img src="../../assets/imgs/Rectangle 27.png" alt="" class="reg-org-popup__image">
+            </div>
+            <div class="reg-org-popup__form reg-org-form">
+                <div class="reg-org-form__up">
+                    <p class="reg-org-form__title title-md">Регистрация волонтёра</p>
+                    <p class="reg-org-form__title-desc text-sm">У вас уже есть аккаунт? <a href="">Вход</a></p>
+                    <button class="reg-org-form__vk-reg-org-btn btn">
+                        <img src="../../assets/imgs/icons/Clip path group.svg" alt="">
+                        <p class="text-md">ВКонтакте</p>
+                    </button>
+                    <div class="reg-org-form__seporator">
+                        <div class="reg-org-form__seporator-left"></div>
+                        <p class="reg-org-form__seporator-text text-sm">или</p>
+                        <div class="reg-org-form__seporator-right"></div>
+                    </div>
+                    <div class="reg-org-form__full-name">
+                        <label class="reg-org-form-input">
+                            <p class="reg-org-form-input__label text-sm">
+                                Фамилия
+                            </p>
+                            <input type="text" placeholder="Иванов" class="reg-org-form-input__element"/>
+                        </label>  
+                        <label class="reg-org-form-input">
+                            <p class="reg-org-form-input__label text-sm">
+                                Имя
+                            </p>
+                            <input type="text" placeholder="Иван" class="reg-org-form-input__element"/>
+                        </label>  
+                    </div>
+                    <label class="reg-org-form-input">
+                        <p class="reg-org-form-input__label text-sm">
+                            Волонтёрская организация
+                        </p>
+                        <div placeholder="Уфа" class="reg-org-form__select">
+                            <p class="reg-org-form__select-placeholder">Выберите организацию</p>
+                        </div>
+                    </label> 
+                    <label class="reg-org-form-input">
+                        <p class="reg-org-form-input__label text-sm">
+                            Населенный пункт
+                        </p>
+                        <input type="text" placeholder="Уфа" class="reg-org-form-input__element"/>
+                    </label>  
+                    <label class="reg-org-form-input">
+                        <p class="reg-org-form-input__label text-sm">
+                            E-mail
+                        </p>
+                        <input type="text" placeholder="testmail@gmail.com" class="reg-org-form-input__element"/>
+                    </label>  
+                </div>
+                <div class="reg-org-form__bottom">
+                    <button class="reg-org-form__enter-btn btn btn-primary text-md">Зарегистрироваться</button>
+                    <p class="reg-org-form__be-subtrext text-sm">Как стать: <a href="">волонтёром</a> или <a href="">волонтёром</a>?</p>
+                </div>
+            </div>
+        </div>
+        <button class="some-popup__close-btn">
+            <img src="../../assets/imgs/icons/close-icon.svg" alt="">       
+        </button>
+    </div>
+    <div class="some-popup"> 
+        <div class="some-popup__background"></div>
+        <div class="some-popup__wrapper reg-org-popup__wrapper">
+            <div class="reg-org-popup__image-container">
+                <div class="reg-org-popup__image-text">
+                    <p class="reg-org-poup__image-container-hello vasek">Здравствуйте!
+                        <svg class="reg-org-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector 2" d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </p>
+                    <p class="reg-org-poup__image-container-greeting text-md">Приятно снова видеть вас</p>                 
+                </div>
+                <img src="../../assets/imgs/reg-org.png" alt="" class="reg-org-popup__image">
+            </div>
+            <div class="reg-org-popup__form reg-org-form">
+                <div class="reg-org-form__up">
+                    <p class="reg-org-form__title title-md">Регистрация организации</p>
+                    <p class="reg-org-form__title-desc text-sm">У вас уже есть аккаунт? <a href="">Вход</a></p>
+                    <button class="reg-org-form__vk-reg-org-btn btn">
+                        <img src="../../assets/imgs/icons/Clip path group.svg" alt="">
+                        <p class="text-md">ВКонтакте</p>
+                    </button>
+                    <div class="reg-org-form__seporator">
+                        <div class="reg-org-form__seporator-left"></div>
+                        <p class="reg-org-form__seporator-text text-sm">или</p>
+                        <div class="reg-org-form__seporator-right"></div>
+                    </div>
+                    <label class="reg-org-form-input">
+                        <p class="reg-org-form-input__label text-sm">
+                            Название организации
+                        </p>
+                        <input type="text" placeholder="OOO «Добрые дела»" class="reg-org-form-input__element"/>
+                    </label>  
+                    <label class="reg-org-form-input">
+                        <p class="reg-org-form-input__label text-sm">
+                            Населенный пункт
+                        </p>
+                        <input type="text" placeholder="Уфа" class="reg-org-form-input__element"/>
+                    </label> 
+                    
+                    <label class="reg-org-form-input">
+                        <p class="reg-org-form-input__label text-sm">
+                            E-mail
+                        </p>
+                        <input type="text" placeholder="testmail@gmail.com" class="reg-org-form-input__element"/>
+                    </label>   
+                    <label class="reg-org-form-input">
+                        <p class="reg-org-form-input__label text-sm">
+                            Телефон
+                        </p>
+                        <input type="number" placeholder="+7 (999) 999-99-99" class="reg-org-form-input__element"/>
+                    </label>  
+                    <div class="reg-org-form__full-name">
+                        <label class="reg-org-form-input">
+                            <p class="reg-org-form-input__label text-sm">
+                                Пароль
+                            </p>
+                            <input type="password" placeholder="Введите пароль" class="reg-org-form-input__element"/>
+                        </label>  
+                        <label class="reg-org-form-input">
+                            <p class="reg-org-form-input__label text-sm">
+                                Повторите пароль
+                            </p>
+                            <input type="password" placeholder="Повторите пароль" class="reg-org-form-input__element"/>
+                        </label> 
+                    </div>  
+                </div>
+                <div class="reg-org-form__bottom">
+                    <button class="reg-org-form__enter-btn btn btn-primary text-md">Зарегистрироваться</button>
+                    <p class="reg-org-form__be-subtrext text-sm">Нажимая кнопку «Зарегистрироваться», вы соглашаетесь c <a href="">политикой конфиденциальности</a></p>
+                </div>
+            </div>
+        </div>
+        <button class="some-popup__close-btn">
+            <img src="../../assets/imgs/icons/close-icon.svg" alt="">       
+        </button>
+    </div>
+    <div class="some-popup"> 
+        <div class="some-popup__background"></div>
+        <div class="some-popup__wrapper ">
+            <div class="reset-pass-popup__image-container">
+                <div class="reset-pass-popup__image-text">
+                    <p class="reset-pass-poup__image-container-hello vasek">Здравствуйте!
+                        <svg class="reset-pass-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector 2" d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </p>
+                    <p class="reset-pass-poup__image-container-greeting some-popup__title text-md">Приятно снова видеть вас</p>                 
+                </div>
+                <img src="../../assets/imgs/Rectangle 27.png " alt="" class="reset-pass-popup__image">
+            </div>
+            <div class="reset-pass-popup__form reset-pass-form">
+                <div class="reset-pass-form__up">
+                    <p class="reset-pass-form__title title-md">Восстановление пароля</p>
+                    <p class="reset-pass-form__title-desc text-sm">Введите адрес электронной почты, связанный с вашим аккаунтом, и мы вышлем вам ссылку для изменения пароля</p>
+                    <label class="reset-pass-form-input">
+                        <p class="reset-pass-form-input__label text-sm">
+                            E-mail
+                        </p>
+                        <input type="text" placeholder="testmail@gmail.com" class="reset-pass-form-input__element"/>
+                    </label>   
+                  
+                </div>
+                <div class="reset-pass-form__bottom">
+                    <button class="reset-pass-form__enter-btn btn btn-primary text-md">Зарегистрироваться</button>
+                    <button class="reset-pass-form__secondary btn btn-outline text-md">Войти <span>или</span> зарегистрироваться</button>
+
+                </div>
+            </div>
+        </div>
+        <button class="some-popup__close-btn">
+            <img src="../../assets/imgs/icons/close-icon.svg" alt="">       
+        </button>
+    </div>
+    <div class="some-popup"> 
+        <div class="some-popup__background"></div>
+        <div class="some-popup__wrapper ">
+            <div class="new-pass-popup__image-container">
+                <div class="new-pass-popup__image-text">
+                    <p class="new-pass-poup__image-container-hello vasek">Здравствуйте!
+                        <svg class="new-pass-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector 2" d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </p>
+                    <p class="new-pass-poup__image-container-greeting some-popup__title text-md">Приятно снова видеть вас</p>                 
+                </div>
+                <img src="../../assets/imgs/Rectangle 27.png " alt="" class="new-pass-popup__image">
+            </div>
+            <div class="new-pass-popup__form new-pass-form">
+                <div class="new-pass-form__up">
+                    <p class="new-pass-form__title title-md">Новый пароль</p>
+                    <p class="new-pass-form__title-desc text-sm">Введите новый пароль</p>
+                    <label class="new-pass-form-input">
+                        <p class="new-pass-form-input__label text-sm">
+                            Пароль
+                        </p>
+                        <input type="password" placeholder="**************" class="new-pass-form-input__element"/>
+                    </label>   
+                    <label class="new-pass-form-input">
+                        <p class="new-pass-form-input__label text-sm">
+                            Повторите пароль
+                        </p>
+                        <input type="password" placeholder="**************" class="new-pass-form-input__element"/>
+                    </label>   
+                  
+                </div>
+                <div class="new-pass-form__bottom">
+                    <button class="new-pass-form__enter-btn btn btn-primary text-md">Изменить пароль</button>
+                    <button class="new-pass-form__secondary btn btn-outline text-md">Войти <span>или</span> зарегистрироваться</button>
+
+                </div>
+            </div>
+        </div>
+        <button class="some-popup__close-btn">
+            <img src="../../assets/imgs/icons/close-icon.svg" alt="">       
+        </button>
     </div>
     <script src="./main_page.js"></script>
     <script src="../about_us/about_us.js"></script>
