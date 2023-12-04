@@ -35,6 +35,9 @@
 
 @import url('../../pages/lk_profile/lk_profile.css');
 
+/* lc-events */
+@import url('../../pages/lk_events/lk_events.css');
+
 :root {
     --primary-color: #14004E;
     --primary-hover-color: #423270;
