@@ -93,7 +93,10 @@
 
 body {
     background: var(--base00-color);
+}
 
+a {
+    text-decoration: none;
 }
 
 .container {

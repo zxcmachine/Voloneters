@@ -16,3 +16,9 @@
   background-color: var(--primary-container);
   color: var(--primary-color)
 }
+
+.btn-outline {
+  background-color:transparent;
+  border: 1px solid var(--primary-container);
+  color: var(--primary-color);
+}
