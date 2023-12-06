@@ -36,6 +36,10 @@
 /* lc-events */
 @import url('../../pages/lk_events/lk_events.css');
 
+/* lc_events_history */
+
+@import url('../../pages/lk_events_history/lk_events_history.css');
+
 
 :root {
     --primary-color: #14004E;
@@ -333,6 +337,9 @@ a {
     border-radius: 8px;
     padding: 16px 24px;
     width: fit-content;
+}
+.main__button.pd-sm{
+    padding: 6px;
 }
 
 .main__button.white {

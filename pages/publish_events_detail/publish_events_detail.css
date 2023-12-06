@@ -136,6 +136,10 @@
     border-radius: 16px;
 }
 
+.partner__logo.history {
+    width: calc(33% - 18px);
+}
+
 .partner__logo-img {
     max-width: 64px;
     min-height: 64px;
@@ -240,6 +244,14 @@
         width: 100%;
     }
     .detail__content-right.profile{
+        width: 100%;
+    }
+}
+@media(max-width:700px){
+    .detail__content-right-partners-items.history{
+        flex-direction: column;
+    }
+    .partner__logo.history{
         width: 100%;
     }
 }
