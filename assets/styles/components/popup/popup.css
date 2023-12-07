@@ -10,7 +10,8 @@
     visibility: hidden;
     transition: .4s;
 }
-.menu__popup.active{
+
+.menu__popup.active {
     opacity: 1;
     visibility: visible;
 }
@@ -83,19 +84,22 @@
     padding: 8px 0px;
 
 }
-.menu__popup-content .line{
+
+.menu__popup-content .line {
     background: #EFE9FF;
     width: 100%;
     height: 1px;
     margin-top: 8px;
     margin-bottom: 8px;
 }
-.menu__popup-user-name.text-md{
+
+.menu__popup-user-name.text-md {
     color: var(--text00-color);
     font-weight: 500;
     font-size: 16px;
 }
-.menu__popup-header-div{ 
+
+.menu__popup-header-div {
     width: 32px;
 }
 
@@ -104,7 +108,7 @@
 }
 
 .some-popup__background {
-    position: fixed; 
+    position: fixed;
     height: 100vh;
     width: 100vw;
     top: 0;
@@ -131,18 +135,25 @@
     gap: 32px;
 }
 
-.some-popup__wrapper.fit-content {
-    width: fit-content;
+.some-popup__wrapper-content {
+    overflow: auto;
+    max-height: 100%;
+    padding-bottom: 75px;
 }
 
 .some-popup_active {
-    opacity: 1; 
+    opacity: 1;
     display: block;
 }
 
-.some-popup_active .some-popup__background{
-    opacity: .34; 
+.some-popup__title {
+    font-weight: 500;
 }
+
+.some-popup_active .some-popup__background {
+    opacity: .34;
+}
+
 .some-popup_active .some-popup__wrapper {
     opacity: 1;
 }
@@ -161,23 +172,21 @@
     border-radius: 8px;
     width: 56px;
     height: 56px;
+    cursor: pointer;
 }
- 
+
+.some-popup__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 
 @media (max-width: 800px) {
     .some-popup {
         width: 100%;
         height: 100%;
-    }
-    .some-popup__wrapper {
-        width: 100vw;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        transform: none;
-        border-radius: 0;
-        padding: 16px;
-        padding-top: 94px;
     }
 
     .some-popup__image-container {
@@ -195,5 +204,33 @@
     .some-popup__close-btn {
         width: 48px;
         height: 48px;
+    }
+
+    .some-popup_secondary .some-popup__wrapper {
+        margin: 0 16px;
+    }
+
+    .some-popup_not-full .some-popup__wrapper {
+        width: 90% !important;
+        max-height: 90%;
+        overflow: auto;
+        top: unset;
+        bottom: 30px;
+        transform: translate(-50%, 0);
+    }
+
+    .some-popup_full .some-popup__wrapper {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transform: none;
+        border-radius: 0;
+        padding: 16px;
+        padding-top: 94px;
+    }
+
+    .some-popup_not-full .some-popup__close-btn {
+        display: none;
     }
 }

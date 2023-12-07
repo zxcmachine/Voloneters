@@ -46,7 +46,8 @@
 /* lk_profile_org */
 
 @import url('../../pages/lk_org_profile/lk_profile_org.css');
-
+/* lc-reports */
+@import url('../../pages/lk_reports/lk_reports.css');
 @import url('../../pages/lk_org_events/lk_org_events.css');
 
 :root {
@@ -338,6 +339,18 @@ a {
     line-height: 20px;
 }
 
+.text-bold {
+    font-weight: 500;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-gray {
+    color: var(--text01-color);
+}
+
 .main__button {
     color: var(--primary-color);
     font-family: "Euclid Circular B";
@@ -348,7 +361,7 @@ a {
     font-weight: 500;
 }
 
-.main__button.pd-sm{
+.main__button.pd-sm {
     padding: 6px;
 }
 
@@ -369,9 +382,11 @@ a {
     width: 100%;
     text-align: center;
 }
-.half-width{
+
+.half-width {
     max-width: 560px;
 }
+
 @media(max-width:1199px) {
     .title-xl {
         font-size: 24px;
@@ -515,10 +530,12 @@ a {
     visibility: hidden;
     transition: .4s;
 }
+
 .universal__select.active {
     background: var(--white-color);
 }
-.universal__select.active .universal__select-inside{
+
+.universal__select.active .universal__select-inside {
     display: flex;
     flex-direction: column;
     background: var(--white-color);
@@ -537,7 +554,11 @@ a {
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15), 0px 4px 12px 3px rgba(0, 0, 0, 0.10);
     z-index: 10;
 }
-.universal__select-inside-item{
+
+.universal__select-inside-item {
     padding: 16px;
 }
+
+.universal__file-area {}
+
 /* event-card */
