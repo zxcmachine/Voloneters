@@ -131,6 +131,10 @@
     gap: 32px;
 }
 
+.some-popup__wrapper.fit-content {
+    width: fit-content;
+}
+
 .some-popup_active {
     opacity: 1; 
     display: block;
