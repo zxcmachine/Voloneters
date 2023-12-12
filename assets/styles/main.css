@@ -47,9 +47,7 @@
 
 @import url('../../pages/lk_org_profile/lk_profile_org.css');
 
-/* lk_org_events */
 @import url('../../pages/lk_org_events/lk_org_events.css');
-
 
 :root {
     --primary-color: #14004E;
@@ -349,6 +347,7 @@ a {
     width: fit-content;
     font-weight: 500;
 }
+
 .main__button.pd-sm{
     padding: 6px;
 }
