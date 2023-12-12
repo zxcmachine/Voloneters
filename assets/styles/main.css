@@ -41,6 +41,10 @@
 @import url('../../pages/lk_events_history/lk_events_history.css');
 
 
+/* lk_score__and__rating */
+@import url('../../pages/lk_score_and_rating/lk_scode_and_rating.css');
+
+
 :root {
     --primary-color: #14004E;
     --primary-hover-color: #423270;
@@ -337,6 +341,10 @@ a {
     border-radius: 8px;
     padding: 16px 24px;
     width: fit-content;
+    font-weight: 500;
+}
+.main__button.pd-sm{
+    padding: 6px;
 }
 .main__button.pd-sm{
     padding: 6px;
@@ -359,7 +367,9 @@ a {
     width: 100%;
     text-align: center;
 }
-
+.half-width{
+    max-width: 560px;
+}
 @media(max-width:1199px) {
     .title-xl {
         font-size: 24px;
