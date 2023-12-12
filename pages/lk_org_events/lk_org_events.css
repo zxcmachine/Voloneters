@@ -1,0 +1,35 @@
+.profile-right-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.detail__content-left-top{
+    display: flex;
+    justify-content: space-between;
+
+}
+.detail__content-left-top .main__button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.event__card-line-count.pink p{
+    color: var(--pink-color);
+}
+.detail__content-left-top .universal__filter{
+    display: none;
+}
+@media(max-width:1199px){
+    .detail__content-left-top .universal__filter{
+        display: flex;
+    }
+    .detail__content-left-top{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .detail__content-left-top .main__button{
+        width: 100%;
+        justify-content: center;
+    }
+    
+}
