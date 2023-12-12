@@ -40,8 +40,10 @@
 
 @import url('../../pages/lk_events_history/lk_events_history.css');
 
+
 /* lk_score__and__rating */
 @import url('../../pages/lk_score_and_rating/lk_scode_and_rating.css');
+
 
 :root {
     --primary-color: #14004E;
@@ -340,6 +342,9 @@ a {
     padding: 16px 24px;
     width: fit-content;
     font-weight: 500;
+}
+.main__button.pd-sm{
+    padding: 6px;
 }
 .main__button.pd-sm{
     padding: 6px;
