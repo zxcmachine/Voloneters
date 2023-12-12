@@ -40,9 +40,12 @@
 
 @import url('../../pages/lk_events_history/lk_events_history.css');
 
-
 /* lk_score__and__rating */
 @import url('../../pages/lk_score_and_rating/lk_scode_and_rating.css');
+
+/* lk_profile_org */
+
+@import url('../../pages/lk_org_profile/lk_profile_org.css');
 
 
 :root {
@@ -343,9 +346,7 @@ a {
     width: fit-content;
     font-weight: 500;
 }
-.main__button.pd-sm{
-    padding: 6px;
-}
+
 .main__button.pd-sm{
     padding: 6px;
 }
@@ -450,6 +451,10 @@ a {
 
 .dark {
     color: var(--text00-color);
+}
+
+.pink {
+    color: var(--pink-color);
 }
 
 .primary {
