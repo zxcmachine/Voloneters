@@ -1,0 +1,38 @@
+.profile-right-user.org_rekvz{
+    background: unset;
+}
+.profile-right-user-org{
+    flex-direction: column;
+    gap: 16px;
+    width: 50%;
+}
+.profile-right-user-reqs{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 24px;
+}
+
+.profile-right-user-reqs-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.profile-right-user-reqs-item.social{
+    flex-direction: unset;
+    align-items: center;
+    gap: 8px;
+}
+.profile-right-user-org.left .profile-right-user-reqs-item:nth-child(1){
+    width: calc(50% - 12px);
+}
+.profile-right-user-org.left .profile-right-user-reqs-item:nth-child(2){
+    width: calc(50% - 12px);
+
+}
+
+@media(max-width:1199px){
+    .profile-right-user-org{
+        width: 100%;
+    }
+}
