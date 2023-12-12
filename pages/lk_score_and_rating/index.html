@@ -142,9 +142,9 @@
     </div>
 
     <!-- history score empty -->
-    <div class="some-popup some-popup_active">
+    <div class="some-popup">
       <div class="some-popup__background"></div>
-      <div class="some-popup__wrapper fit-content">
+      <div class="some-popup__wrapper fit-content half-width">
         <div class="some-popup-score__and__history">
           <svg
             width="24"
@@ -159,7 +159,7 @@
             />
           </svg>
           <p class="title-sm dark">История баллов</p>
-          <p class="text-sm">
+          <p class="text-sm dark">
             У нас ещё не было ни одного начисления баллов. Чтобы зарабатывать
             баллы, участвуйте в мероприятиях
           </p>
@@ -173,19 +173,102 @@
 
     <!-- history score no empty -->
 
-    <div class="some-popup ">
-        <div class="some-popup__background"></div>
-        <div class="some-popup__wrapper fit-content">
-          <div class="some-popup-score__and__history">
-            <p class="title-sm dark">История баллов</p>
-          <div class="some-popup-score__and__history">
+    <div class="some-popup">
+      <div class="some-popup__background"></div>
+      <div class="some-popup__wrapper fit-content half-width">
+        <div class="some-popup-score__and__history">
+          
+          <p class="title-sm dark">История баллов</p>
+          <div class="some-popup-score-items">
+            <div class="some-popup-score-item">
+              <p class="some-popup-score-item-head text-md dark">13 сентября</p>
+              <div class="some-popup-score-item-bottom">
+                <div class="some-popup-score-item-bottom__img">
+                  <img src="../../assets/imgs/Avatars2.png" alt="img">
+                </div>
+                <p class="text-sm dark">Начисление бонусов за конкурс для участия в Волонтерской экспедиции «По пути с добром»...</p>
+                <div class="some-popup-score-item-bottom__score pink text-md">0 Б</div>
+              </div>
             </div>
+            <div class="some-popup-score-item">
+              <p class="some-popup-score-item-head text-md dark">13 сентября</p>
+              <div class="some-popup-score-item-bottom">
+                <div class="some-popup-score-item-bottom__img">
+                  <img src="../../assets/imgs/Avatars2.png" alt="img">
+                </div>
+                <p class="text-sm dark">Начисление бонусов за конкурс для участия в Волонтерской экспедиции «По пути с добром»...</p>
+                <div class="some-popup-score-item-bottom__score pink text-md">0 Б</div>
+              </div>
+            </div>
+            <div class="some-popup-score-item">
+              <p class="some-popup-score-item-head text-md dark">13 сентября</p>
+              <div class="some-popup-score-item-bottom">
+                <div class="some-popup-score-item-bottom__img">
+                  <img src="../../assets/imgs/Avatars2.png" alt="img">
+                </div>
+                <p class="text-sm dark">Начисление бонусов за конкурс для участия в Волонтерской экспедиции «По пути с добром»...</p>
+                <div class="some-popup-score-item-bottom__score pink text-md">500 Б</div>
+              </div>
+            </div>
+            <!-- <div id="loader"></div>  -->
+            <!-- place for loader -->
           </div>
+          <div class="main__button some-popup-score-btn full">Закрыть</div>
         </div>
-        <button class="some-popup__close-btn">
-          <img src="../../assets/imgs/icons/close-icon.svg" alt="" />
-        </button>
       </div>
+      <button class="some-popup__close-btn">
+        <img src="../../assets/imgs/icons/close-icon.svg" alt="" />
+      </button>
+    </div>
+
+    <!-- history placeinfo как начисляются баллы -->
+
+    <div class="some-popup">
+      <div class="some-popup__background"></div>
+      <div class="some-popup__wrapper fit-content half-width">
+        <div class="some-popup-score__and__history">
+          
+          <p class="title-sm dark">Как начисляются баллы?</p>
+          <p class="text-sm dark some-popup-score__and__history-text">Баллы волонтёра формируются на основе их активности и вклада в деятельность организации или проекта, в рамках которого они участвуют. Критерии начисления баллов могут варьироваться в зависимости от конкретной программы или организации, но обычно они включают в себя такие факторы, как количество отработанных часов, участие в мероприятиях, выполнение задач и достижение определенных целей.
+            <br><br>
+            Баллы могут начисляться по разным шкалам: например, определенное количество баллов за каждый отработанный час, дополнительные баллы за участие в сложных или важных мероприятиях, бонусные баллы за успешное выполнение задач. Кроме того, за активное участие и внесение значимого вклада в работу организации могут начисляться дополнительные поощрительные баллы.
+            <br><br>
+            Накопленные баллы волонтёры могут использовать для различных целей, таких как получение сертификатов, участие в дополнительных мероприятиях или обучающих программах, получение приоритета при выборе участия в определенных проектах и т.д. Это стимулирует волонтёров быть активными и преданными своей деятельности, способствуя более эффективной и успешной реализации целей организации или проекта.
+          </p>
+          <div class="main__button some-popup-score-btn full">Закрыть</div>
+        </div>
+      </div>
+      <button class="some-popup__close-btn">
+        <img src="../../assets/imgs/icons/close-icon.svg" alt="" />
+      </button>
+    </div>
+
+    <!-- history placeinfo Как формируется рейтинг? -->
+
+
+    <div class="some-popup ">
+      <div class="some-popup__background"></div>
+      <div class="some-popup__wrapper fit-content half-width">
+        <div class="some-popup-score__and__history">
+          
+          <p class="title-sm dark">Как формируется рейтинг?</p>
+          <p class="text-sm dark some-popup-score__and__history-text">Рейтинг волонтёра формируется на основе их активности и вклада в деятельность организации. Этот рейтинг отражает степень вовлеченности и ответственности волонтёра в выполнение задач и достижение целей организации. Основные факторы, влияющие на формирование рейтинга, включают:
+            <br><br>
+            <b> Участие и активность:</b> Частота и регулярность участия волонтёра в мероприятиях и проектах организации, его активность, инициативность и готовность брать на себя разнообразные задачи.<br><br>
+            <b>  Качество работы: </b> Способность волонтёра выполнять порученные задачи качественно и в срок. Отношение к деталям, ответственность за результат и готовность учиться новому также оказывают влияние на рейтинг.<br><br>
+            Сотрудничество и коммуникация: Умение эффективно работать в команде, поддерживать хорошие отношения с другими волонтёрами и сотрудниками организации, а также способность эффективно общаться.
+            Лидерство и инициатива: Если волонтёр проявляет лидерские качества, предлагает новые идеи и инициирует развитие новых проектов или программ, это может положительно сказаться на его рейтинге.
+            Долгосрочное участие: Волонтёры, которые долгое время остаются активными членами организации, как правило, получают более высокий рейтинг за свой вклад.
+            Обучение и развитие: Участие волонтёра в тренингах, семинарах и образовательных мероприятиях, а также его стремление к саморазвитию и приобретению новых навыков могут положительно повлиять на рейтинг.
+            Отзывы и рекомендации: Отзывы со стороны других волонтёров, сотрудников организации и тех, кто был вовлечен в их деятельность, могут быть также учтены при формировании рейтинга.
+            Соблюдение правил и ценностей: Поддержание этических норм, соблюдение правил организации и разделяемых ценностей оказывает влияние на оценку вклада волонтёра.</p>
+          <div class="main__button some-popup-score-btn full">Закрыть</div>
+        </div>
+      </div>
+      <button class="some-popup__close-btn">
+        <img src="../../assets/imgs/icons/close-icon.svg" alt="" />
+      </button>
+    </div>
 
     <div id="footer" class="mt-2xl">
       <div class="container">

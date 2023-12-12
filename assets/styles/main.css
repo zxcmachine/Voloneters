@@ -339,6 +339,7 @@ a {
     border-radius: 8px;
     padding: 16px 24px;
     width: fit-content;
+    font-weight: 500;
 }
 .main__button.pd-sm{
     padding: 6px;
@@ -361,7 +362,9 @@ a {
     width: 100%;
     text-align: center;
 }
-
+.half-width{
+    max-width: 560px;
+}
 @media(max-width:1199px) {
     .title-xl {
         font-size: 24px;
