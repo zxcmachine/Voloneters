@@ -8,7 +8,7 @@
     margin-top: 12px;
 }
 
-.motivation__list-btn p{
+.motivation__list-btn p {
     font-weight: 500;
 }
 
@@ -76,18 +76,19 @@
     border-radius: 24px;
 }
 
-.motivation-popup__wrapper_1{
+.motivation-popup__wrapper_1 {
     width: 898px;
     display: block;
     justify-content: space-between;
     gap: 24px;
 }
+
 .motivation-popup_active {
     opacity: 1;
     display: block;
 }
 
-.motivation-popup_active .motivation-popup__background{
+.motivation-popup_active .motivation-popup__background {
     opacity: .34;
 }
 
@@ -157,7 +158,8 @@
     transform: translateY(-50%);
 }
 
-.first-popup__info-balance-current-count_pink, .first-popup__info-balance-will-count_pink {
+.first-popup__info-balance-current-count_pink,
+.first-popup__info-balance-will-count_pink {
     color: var(--pink-color);
     font-weight: 500;
 }
@@ -167,7 +169,7 @@
 }
 
 
-.motivation-popup__wrapper_2{
+.motivation-popup__wrapper_2 {
     width: 450px;
     display: none;
     justify-content: space-between;
@@ -200,11 +202,11 @@
     width: 56px;
 }
 
-.second-popup__products-img-container img{
+.second-popup__products-img-container img {
     width: 100%;
 }
 
-.second-popup__prodcuts-text{
+.second-popup__prodcuts-text {
     margin-left: 16px;
     display: flex;
     flex-direction: column;
@@ -235,11 +237,14 @@
     margin-top: 24px;
 }
 
-.third-popup__address-label, .third-popup__phone-label .third-popup__email-label{
+.third-popup__address-label,
+.third-popup__phone-label .third-popup__email-label {
     color: var(--text01-color);
 }
 
-.third-popup__address-name, .third-popup__phone-name, .third-popup__email-name{
+.third-popup__address-name,
+.third-popup__phone-name,
+.third-popup__email-name {
     color: var(--primary-color);
     font-weight: 500;
 }
@@ -253,7 +258,7 @@
 }
 
 
-@media (max-width: 768px) {    
+@media (max-width: 768px) {
     .motivation__list-item {
         background-color: var(--white-color);
         border-radius: 16px;
@@ -263,9 +268,9 @@
 
     .motivation__list {
         gap: 24px;
-    } 
+    }
 
-    .motivation__filter button{
+    .motivation__filter button {
         width: 100%;
     }
 
@@ -283,6 +288,11 @@
 
     .motivation-popup__wrapper {
         width: 90%;
+        max-height: 90%;
+        overflow: auto;
+        top: unset;
+        bottom: 30px;
+        transform: translate(-50%, 0);
     }
 
     .first-popup__info-wrapper {
@@ -294,20 +304,22 @@
         width: 100%;
     }
 
-    .first-popup__info-title{
+    .first-popup__info-title {
         font-size: 20px;
         margin-top: 16px;
     }
 
-    .first-popup__info-balance-current-name, .first-popup__info-balance-will-name {
+    .first-popup__info-balance-current-name,
+    .first-popup__info-balance-will-name {
         font-size: 12px;
     }
 
-    .first-popup__info-balance-current-count_pink, .first-popup__info-balance-will-count_pink {
+    .first-popup__info-balance-current-count_pink,
+    .first-popup__info-balance-will-count_pink {
         font-size: 14px;
     }
 
-    .first-popup__info-btn {   
+    .first-popup__info-btn {
         margin-top: 32px;
     }
 

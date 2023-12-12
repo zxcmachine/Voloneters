@@ -17,8 +17,18 @@
   color: var(--primary-color)
 }
 
+.btn-pink {
+  background-color: #FFEDF5;
+  color: #EF036C;
+}
+
 .btn-outline {
-  background-color:transparent;
+  background-color: transparent;
   border: 1px solid var(--primary-container);
   color: var(--primary-color);
+}
+
+.btn-over {
+  padding: 6px 24px;
+  height: 100%;
 }
