@@ -71,34 +71,7 @@
                 </button>
             </div>
             <ul class="motivation__list">
-                <li class="motivation__list-item">
-                    <div class="motivation__list-item-img-container">
-                        <img src="../../assets/imgs/djinsovka.png" class="motivation__list-item-img" alt="">
-                    </div>
-                    <p class="motivation__list-item-title text-lg">Джинсовка</p>
-                    <button class="motivation__list-btn btn btn-secondary">
-                        <p class="text-md">100 баллов</p>
-                    </button>
-                </li>
-                <li class="motivation__list-item">
-                    <div class="motivation__list-item-img-container">
-                        <img src="../../assets/imgs/djinsovka.png" class="motivation__list-item-img" alt="">
-                    </div>
-                    <p class="motivation__list-item-title text-lg">Джинсовка</p>
-                    <button class="motivation__list-btn btn btn-secondary">
-                        <p class="text-md">100 баллов</p>
-                    </button>
-                </li>
-                <li class="motivation__list-item">
-                    <div class="motivation__list-item-img-container">
-                        <img src="../../assets/imgs/djinsovka.png" class="motivation__list-item-img" alt="">
-                    </div>
-                    <p class="motivation__list-item-title text-lg">Джинсовка</p>
-                    <button class="motivation__list-btn btn btn-secondary">
-                        <p class="text-md">100 баллов</p>
-                    </button>
-                </li>
-                <li class="motivation__list-item">
+                <li class="motivation__list-item" onclick="openMainPopup()">
                     <div class="motivation__list-item-img-container">
                         <img src="../../assets/imgs/djinsovka.png" class="motivation__list-item-img" alt="">
                     </div>
@@ -207,9 +180,9 @@
         </div>
     </div>
     <!-- motivation-popup_active -->
-    <div class="motivation__popup-1 motivation-popup motivation-popup_active some-popup_not-full">
-        <div class="motivation-popup__background" onclick="togglePartnerPopup(false)"></div>
-        <div class="motivation-popup__wrapper motivation-popup__wrapper_1 first-popup">
+    <div class="motivation__popup-1 some-popup some-popup_not-full">
+        <div class="some-popup__background" onclick="allClosePopup()"></div>
+        <div class="some-popup__wrapper motivation-popup__wrapper_1 first-popup">
             <div class="first-popup__img-container">
                 <img src="../../assets//imgs/djinsovka.png" alt="">
             </div>
@@ -231,20 +204,22 @@
                             <p class="first-popup__info-balance-will-count_pink text-md">258 баллов</p>
                         </div>
                     </div>
-                    <div class="first-popup__info-balance-only-current">
+                    <!-- <div class="first-popup__info-balance-only-current">
                         <div class="first-popup__info-balance-current">
                             <p class="first-popup__info-balance-current-name text-sm">Текущий баланс</p>
                             <p class="first-popup__info-balance-current-count_pink text-md">258 баллов</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-                <button class="btn btn-primary first-popup__info-btn text-md">Оформить заявку - 100 баллов</button>
-                <button class="btn btn-secondary first-popup__close-btn text-md">Закрыть</button>
+                <button class="btn btn-primary first-popup__info-btn text-md" onclick="orderProduct()">Оформить заявку -
+                    100 баллов</button>
+                <button class="btn btn-secondary first-popup__close-btn text-md"
+                    onclick="allClosePopup()">Закрыть</button>
 
             </div>
 
         </div>
-        <div class="motivation-popup__wrapper motivation-popup__wrapper_2 second-popup">
+        <!-- <div class="motivation-popup__wrapper motivation-popup__wrapper_2 second-popup">
             <img src="../../assets/imgs/icons/CheckCircle.svg" alt="">
             <p class="second-popup__title title-sm">Успешное оформление заявки</p>
             <p class="second-popup__desc text-md">
@@ -275,8 +250,54 @@
                 <p class="third-popup__email-label text-sm">E-mail</p>
                 <p class="third-popup__email-name text-md">vz.rb@yandex.ru</p>
             </div>
+        </div> -->
+        <button class="some-popup__close-btn" onclick="allClosePopup()">
+            <img src="../../assets/imgs/icons/close-icon.svg" alt="">
+        </button>
+    </div>
+
+    <div class="motivation-popup__success some-popup some-popup_not-full">
+        <div class="some-popup__background" onclick="allClosePopup()"></div>
+        <div class="motivation-popup__wrapper motivation-popup__wrapper_2 second-popup">
+            <img src="../../assets/imgs/icons/CheckCircle.svg" alt="">
+            <p class="second-popup__title title-sm">Успешное оформление заявки</p>
+            <p class="second-popup__desc text-md">
+                Для уточнение деталей заказа, *менеджер* свяжется с вами по <span>testmail@gmail.com</span>
+            </p>
+            <div class="second-popup__products">
+                <div class="second-popup__products-img-container">
+                    <img src="../../assets/imgs/djinsovka.png" alt="" class="second-popup__products-img">
+                </div>
+                <div class="second-popup__prodcuts-text">
+                    <p class="second-popup__products-name text-sm">Шоппер</p>
+                    <p class="second-popup__products-count text-md">100 баллов</p>
+                </div>
+            </div>
+            <button class="btn btn-primary text-md second-popup__btn" onclick="submitProduct()">Отлично</button>
         </div>
-        <button class="motivation-popup__close-btn">
+        <button class="some-popup__close-btn" onclick="allClosePopup()">
+            <img src="../../assets/imgs/icons/close-icon.svg" alt="">
+        </button>
+    </div>
+
+    <div class="motivation-popup__submit some-popup some-popup_not-full">
+        <div class="some-popup__background" onclick="allClosePopup()"></div>
+        <div class="motivation-popup__wrapper motivation-popup__wrapper_3 third-popup">
+            <p class="third-popup__title title-sm">Выдача подарков происходит в последнюю неделю квартала</p>
+            <div class="third-popup__address">
+                <p class="third-popup__address-label text-sm">Адрес</p>
+                <p class="third-popup__address-name text-md">г. Уфа, Молодежное пространство «Йэшлек.House»</p>
+            </div>
+            <div class="third-popup__phone">
+                <p class="third-popup__phone-label text-sm">Телефон</p>
+                <p class="third-popup__phone-name text-md">+ 7 (347) 251-89-76</p>
+            </div>
+            <div class="third-popup__email">
+                <p class="third-popup__email-label text-sm">E-mail</p>
+                <p class="third-popup__email-name text-md">vz.rb@yandex.ru</p>
+            </div>
+        </div>
+        <button class="some-popup__close-btn" onclick="allClosePopup()">
             <img src="../../assets/imgs/icons/close-icon.svg" alt="">
         </button>
     </div>

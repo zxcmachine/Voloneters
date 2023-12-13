@@ -23,6 +23,7 @@
     flex-basis: calc(25% - 24px);
     border-radius: 16px;
     padding: 16px;
+    cursor: pointer;
 }
 
 .motivation__list-item-img-container {
@@ -46,11 +47,6 @@
     justify-content: space-between;
 }
 
-
-.motivation-popup {
-    display: none;
-}
-
 .motivation-popup__background {
     position: fixed;
     height: 100vh;
@@ -71,22 +67,21 @@
     transform: translate(-50%, -50%);
     z-index: 5;
     padding: 24px;
-    opacity: 0;
     transition: .4s;
     border-radius: 24px;
 }
 
 .motivation-popup__wrapper_1 {
     width: 898px;
-    display: block;
+    display: flex;
     justify-content: space-between;
     gap: 24px;
 }
 
-.motivation-popup_active {
+/* .motivation-popup_active {
     opacity: 1;
     display: block;
-}
+} */
 
 .motivation-popup_active .motivation-popup__background {
     opacity: .34;
@@ -171,9 +166,10 @@
 
 .motivation-popup__wrapper_2 {
     width: 450px;
-    display: none;
+    display: block;
     justify-content: space-between;
     gap: 24px;
+    opacity: 1;
 }
 
 .second-popup__title {
@@ -230,7 +226,8 @@
 
 .motivation-popup__wrapper_3 {
     width: 540px;
-    display: none;
+    display: block;
+    opacity: 1;
 }
 
 .third-popup__address {
@@ -293,6 +290,10 @@
         top: unset;
         bottom: 30px;
         transform: translate(-50%, 0);
+    }
+
+    .motivation-popup__wrapper_1 {
+        flex-direction: column;
     }
 
     .first-popup__info-wrapper {

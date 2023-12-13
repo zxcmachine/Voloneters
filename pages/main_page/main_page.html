@@ -16,8 +16,8 @@
     <header id="header">
         <div class="container">
             <div class="header-wrapper ">
-                <div class="header-burger" onclick="openPopupMenu()"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                <div class="header-burger" onclick="openPopupMenu()"><svg width="40" height="40" viewBox="0 0 40 40"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0 4C0 1.79086 1.79086 0 4 0H36C38.2091 0 40 1.79086 40 4V36C40 38.2091 38.2091 40 36 40H4C1.79086 40 0 38.2091 0 36V4Z"
                             fill="#14004E" />
@@ -37,7 +37,7 @@
                     <div class="header-item">Афиша</div>
                 </div>
                 <!-- <div class="text-md">Войти</div> -->
-                <div class="header-login-items">
+                <div class="header-login-items header-login-items_hidden">
                     <div class="header-login-item count text-md">0 Б</div>
                     <div class="header-login-item">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,6 +50,9 @@
                         </svg>
 
                     </div>
+                </div>
+                <div class="header-login-items">
+                    <p class="header-login-items__login-btn text-md" onclick="openAuthPopup()">Войти</p>
                 </div>
             </div>
         </div>
@@ -578,8 +581,10 @@
                             class="about-us__about-info-novisible"></span>стремится к созданию
                         позитивных
                         изменений в жизни людей и окружающей среды.
-                        Мы верим, что даже маленькие действия могут иметь большое значение, а вместе мы способны сделать наш мир
-                        более добрым <span class="about-us__about-info-image"></span> <span class="about-us__about-info-span">и</span>
+                        Мы верим, что даже маленькие действия могут иметь большое значение, а вместе мы способны сделать
+                        наш мир
+                        более добрым <span class="about-us__about-info-image"></span> <span
+                            class="about-us__about-info-span">и</span>
                         <span class="vasek vasek-support">поддерживающим</span>
                     </p>
                 </div>
@@ -663,18 +668,23 @@
             </div>
             <div class="interaction-map">
                 <div class="interaction-map__text-info_mobile">
-                    <p class="interaction-map__text-info-title title-md"><span class="vasek">Волонтёрские</span>штабы　Республики
+                    <p class="interaction-map__text-info-title title-md"><span
+                            class="vasek">Волонтёрские</span>штабы　Республики
                         Башкортостан</p>
-                    <p class="interaction-map__text-info-subtitle text-md">*Добавить текст описания интерактивной карты*</p>
+                    <p class="interaction-map__text-info-subtitle text-md">*Добавить текст описания интерактивной карты*
+                    </p>
                 </div>
                 <div class="interaction-map__image-block">
-                    <img src="../../assets/imgs/rb-map.svg" class="interaction-map__image" alt="Карта республики башкортостан">
+                    <img src="../../assets/imgs/rb-map.svg" class="interaction-map__image"
+                        alt="Карта республики башкортостан">
                 </div>
                 <div class="interaction-map__info">
                     <div class="interaction-map__text-info">
-                        <p class="interaction-map__text-info-title title-md"><span class="vasek">Волонтёрские</span>штабы　Республики
+                        <p class="interaction-map__text-info-title title-md"><span
+                                class="vasek">Волонтёрские</span>штабы　Республики
                             Башкортостан</p>
-                        <p class="interaction-map__text-info-subtitle text-md">*Добавить текст описания интерактивной карты*</p>
+                        <p class="interaction-map__text-info-subtitle text-md">*Добавить текст описания интерактивной
+                            карты*</p>
                     </div>
                     <div class="interaction-map__info-area">
                         <ul class="area__list">
@@ -709,7 +719,7 @@
 
                 </div>
                 <button class="interaction-map__info-show-btn btn btn-primary"><span class="text-md">Список волонтёрских
-          штабов</span></button>
+                        штабов</span></button>
             </div>
         </main>
 
@@ -1167,7 +1177,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <div class="menu__popup">
         <div class="menu__popup-header">
             <div class="menu__popup-header-close" onclick="closePopupMenu()">
@@ -1207,25 +1217,29 @@
             <a class="text-md" href="#">Рейтинг волонтёров</a>
         </div>
     </div>
-    <div class="some-popup"> 
+    <div class="some-popup  auth-popup">
         <div class="some-popup__background"></div>
         <div class="some-popup__wrapper">
             <div class="auth-popup__image-container">
                 <div class="auth-popup__image-text">
                     <p class="auth-poup__image-container-hello vasek">Здравствуйте!
-                        <svg class="auth-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id="Vector 2" d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            
+                        <svg class="auth-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector 2"
+                                d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
                     </p>
-                    <p class="auth-poup__image-container-greeting text-md">Приятно снова видеть вас</p>                 
+                    <p class="auth-poup__image-container-greeting text-md">Приятно снова видеть вас</p>
                 </div>
                 <img src="../../assets/imgs/Rectangle 27.png" alt="" class="auth-popup__image">
             </div>
             <div class="auth-popup__form auth-form">
                 <div class="auth-form__up">
                     <p class="auth-form__title title-md">Вход</p>
-                    <p class="auth-form__title-desc text-sm">Еще нет аккаунта? <a href="">Зарегистрироваться</a></p>
+                    <p class="auth-form__title-desc text-sm">Еще нет аккаунта? <span class="auth-link"
+                            onclick="goRegValPopup()">Зарегистрироваться</span></p>
                     <button class="auth-form__vk-auth-btn btn">
                         <img src="../../assets/imgs/icons/Clip path group.svg" alt="">
                         <p class="text-md">ВКонтакте</p>
@@ -1239,50 +1253,55 @@
                         <p class="auth-form-input__label text-sm">
                             E-mail
                         </p>
-                        <input type="text" placeholder="testmail@gmail.com" class="auth-form-input__element"/>
-                    </label>  
+                        <input type="text" placeholder="testmail@gmail.com" class="auth-form-input__element" />
+                    </label>
                     <label class="auth-form-input">
                         <p class="auth-form-input__label text-sm">
                             Пароль
                         </p>
-                        <input type="password" placeholder="***********" class="auth-form-input__element"/>
-                    </label>  
-                    <p class="auth-form__forgot-password">
-                    <a href="" class="text-sm">Забыли пароль?</a>
-
+                        <input type="password" placeholder="***********" class="auth-form-input__element" />
+                    </label>
+                    <p class="auth-form__forgot-password text-sm auth-link" onclick="goResetPassPopup()">
+                        Забыли пароль?
                     </p>
                 </div>
                 <div class="auth-form__bottom">
                     <button class="auth-form__enter-btn btn btn-primary text-md">Войти</button>
-                    <button class="auth-form__register-org btn btn-outline text-md">Регистрация организации</button>
-                    <p class="auth-form__be-subtrext text-sm">Как стать: <a href="">волонтёром</a> или <a href="">волонтёром</a>?</p>
+                    <button class="auth-form__register-org btn btn-outline text-md"
+                        onclick="goRegOrgPopup()">Регистрация организации</button>
+                    <p class="auth-form__be-subtrext text-sm">Как стать: <a href="">волонтёром</a> или <a
+                            href="">волонтёром</a>?</p>
                 </div>
             </div>
         </div>
-        <button class="some-popup__close-btn">
-            <img src="../../assets/imgs/icons/close-icon.svg" alt="">       
+        <button class="some-popup__close-btn" onclick="closeAllHeaderPopups()">
+            <img src="../../assets/imgs/icons/close-icon.svg" alt="">
         </button>
     </div>
     <!-- some-popup_active -->
-    <div class="some-popup">  
+    <div class="some-popup register-valant-popup">
         <div class="some-popup__background"></div>
         <div class="some-popup__wrapper">
             <div class="reg-popup__image-container">
                 <div class="reg-popup__image-text">
                     <p class="reg-poup__image-container-hello vasek">Здравствуйте!
-                        <svg class="reg-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id="Vector 2" d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            
+                        <svg class="reg-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector 2"
+                                d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
                     </p>
-                    <p class="reg-poup__image-container-greeting text-md">Приятно снова видеть вас</p>                 
+                    <p class="reg-poup__image-container-greeting text-md">Приятно снова видеть вас</p>
                 </div>
                 <img src="../../assets/imgs/Rectangle 27.png" alt="" class="reg-popup__image">
             </div>
             <div class="reg-popup__form reg-form">
                 <div class="reg-form__up">
                     <p class="reg-form__title title-md">Регистрация волонтёра</p>
-                    <p class="reg-form__title-desc text-sm">У вас уже есть аккаунт? <a href="">Вход</a></p>
+                    <p class="reg-form__title-desc text-sm">У вас уже есть аккаунт? <span class="auth-link"
+                            onclick="openAuthPopup()">Вход</span></p>
                     <button class="reg-form__vk-reg-btn btn">
                         <img src="../../assets/imgs/icons/Clip path group.svg" alt="">
                         <p class="text-md">ВКонтакте</p>
@@ -1297,14 +1316,14 @@
                             <p class="reg-form-input__label text-sm">
                                 Фамилия
                             </p>
-                            <input type="text" placeholder="Иванов" class="reg-form-input__element"/>
-                        </label>  
+                            <input type="text" placeholder="Иванов" class="reg-form-input__element" />
+                        </label>
                         <label class="reg-form-input">
                             <p class="reg-form-input__label text-sm">
                                 Имя
                             </p>
-                            <input type="text" placeholder="Иван" class="reg-form-input__element"/>
-                        </label>  
+                            <input type="text" placeholder="Иван" class="reg-form-input__element" />
+                        </label>
                     </div>
                     <label class="reg-form-input">
                         <p class="reg-form-input__label text-sm">
@@ -1313,42 +1332,46 @@
                         <div placeholder="Уфа" class="reg-form__select">
                             <p class="reg-form__select-placeholder">Выберите организацию</p>
                         </div>
-                    </label> 
+                    </label>
                     <label class="reg-form-input">
                         <p class="reg-form-input__label text-sm">
                             Населенный пункт
                         </p>
-                        <input type="text" placeholder="Уфа" class="reg-form-input__element"/>
-                    </label>  
+                        <input type="text" placeholder="Уфа" class="reg-form-input__element" />
+                    </label>
                     <label class="reg-form-input">
                         <p class="reg-form-input__label text-sm">
                             E-mail
                         </p>
-                        <input type="text" placeholder="testmail@gmail.com" class="reg-form-input__element"/>
-                    </label>  
+                        <input type="text" placeholder="testmail@gmail.com" class="reg-form-input__element" />
+                    </label>
                 </div>
                 <div class="reg-form__bottom">
                     <button class="reg-form__enter-btn btn btn-primary text-md">Зарегистрироваться</button>
-                    <p class="reg-form__be-subtrext text-sm">Как стать: <a href="">волонтёром</a> или <a href="">волонтёром</a>?</p>
+                    <p class="reg-form__be-subtrext text-sm">Как стать: <a href="">волонтёром</a> или <a
+                            href="">волонтёром</a>?</p>
                 </div>
             </div>
         </div>
-        <button class="some-popup__close-btn">
-            <img src="../../assets/imgs/icons/close-icon.svg" alt="">       
+        <button class="some-popup__close-btn" onclick="closeAllHeaderPopups()">
+            <img src="../../assets/imgs/icons/close-icon.svg" alt="">
         </button>
     </div>
-    <div class="some-popup"> 
+    <!-- <div class="some-popup">
         <div class="some-popup__background"></div>
         <div class="some-popup__wrapper">
             <div class="reg-org-popup__image-container">
                 <div class="reg-org-popup__image-text">
                     <p class="reg-org-poup__image-container-hello vasek">Здравствуйте!
-                        <svg class="reg-org-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id="Vector 2" d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            
+                        <svg class="reg-org-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector 2"
+                                d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
                     </p>
-                    <p class="reg-org-poup__image-container-greeting text-md">Приятно снова видеть вас</p>                 
+                    <p class="reg-org-poup__image-container-greeting text-md">Приятно снова видеть вас</p>
                 </div>
                 <img src="../../assets/imgs/Rectangle 27.png" alt="" class="reg-org-popup__image">
             </div>
@@ -1370,14 +1393,14 @@
                             <p class="reg-org-form-input__label text-sm">
                                 Фамилия
                             </p>
-                            <input type="text" placeholder="Иванов" class="reg-org-form-input__element"/>
-                        </label>  
+                            <input type="text" placeholder="Иванов" class="reg-org-form-input__element" />
+                        </label>
                         <label class="reg-org-form-input">
                             <p class="reg-org-form-input__label text-sm">
                                 Имя
                             </p>
-                            <input type="text" placeholder="Иван" class="reg-org-form-input__element"/>
-                        </label>  
+                            <input type="text" placeholder="Иван" class="reg-org-form-input__element" />
+                        </label>
                     </div>
                     <label class="reg-org-form-input">
                         <p class="reg-org-form-input__label text-sm">
@@ -1386,42 +1409,46 @@
                         <div placeholder="Уфа" class="reg-org-form__select">
                             <p class="reg-org-form__select-placeholder">Выберите организацию</p>
                         </div>
-                    </label> 
+                    </label>
                     <label class="reg-org-form-input">
                         <p class="reg-org-form-input__label text-sm">
                             Населенный пункт
                         </p>
-                        <input type="text" placeholder="Уфа" class="reg-org-form-input__element"/>
-                    </label>  
+                        <input type="text" placeholder="Уфа" class="reg-org-form-input__element" />
+                    </label>
                     <label class="reg-org-form-input">
                         <p class="reg-org-form-input__label text-sm">
                             E-mail
                         </p>
-                        <input type="text" placeholder="testmail@gmail.com" class="reg-org-form-input__element"/>
-                    </label>  
+                        <input type="text" placeholder="testmail@gmail.com" class="reg-org-form-input__element" />
+                    </label>
                 </div>
                 <div class="reg-org-form__bottom">
                     <button class="reg-org-form__enter-btn btn btn-primary text-md">Зарегистрироваться</button>
-                    <p class="reg-org-form__be-subtrext text-sm">Как стать: <a href="">волонтёром</a> или <a href="">волонтёром</a>?</p>
+                    <p class="reg-org-form__be-subtrext text-sm">Как стать: <a href="">волонтёром</a> или <a
+                            href="">волонтёром</a>?</p>
                 </div>
             </div>
         </div>
-        <button class="some-popup__close-btn">
-            <img src="../../assets/imgs/icons/close-icon.svg" alt="">       
+        <button class="some-popup__close-btn" onclick="closeAllHeaderPopups()">
+            <img src="../../assets/imgs/icons/close-icon.svg" alt="">
         </button>
-    </div>
-    <div class="some-popup"> 
+    </div> -->
+    <div class="some-popup register-org-popup ">
         <div class="some-popup__background"></div>
         <div class="some-popup__wrapper reg-org-popup__wrapper">
             <div class="reg-org-popup__image-container">
                 <div class="reg-org-popup__image-text">
                     <p class="reg-org-poup__image-container-hello vasek">Здравствуйте!
-                        <svg class="reg-org-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id="Vector 2" d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            
+                        <svg class="reg-org-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector 2"
+                                d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
                     </p>
-                    <p class="reg-org-poup__image-container-greeting text-md">Приятно снова видеть вас</p>                 
+                    <p class="reg-org-poup__image-container-greeting text-md">Приятно снова видеть вас</p>
                 </div>
                 <img src="../../assets/imgs/reg-org.png" alt="" class="reg-org-popup__image">
             </div>
@@ -1442,102 +1469,115 @@
                         <p class="reg-org-form-input__label text-sm">
                             Название организации
                         </p>
-                        <input type="text" placeholder="OOO «Добрые дела»" class="reg-org-form-input__element"/>
-                    </label>  
+                        <input type="text" placeholder="OOO «Добрые дела»" class="reg-org-form-input__element" />
+                    </label>
                     <label class="reg-org-form-input">
                         <p class="reg-org-form-input__label text-sm">
                             Населенный пункт
                         </p>
-                        <input type="text" placeholder="Уфа" class="reg-org-form-input__element"/>
-                    </label> 
-                    
+                        <input type="text" placeholder="Уфа" class="reg-org-form-input__element" />
+                    </label>
+
                     <label class="reg-org-form-input">
                         <p class="reg-org-form-input__label text-sm">
                             E-mail
                         </p>
-                        <input type="text" placeholder="testmail@gmail.com" class="reg-org-form-input__element"/>
-                    </label>   
+                        <input type="text" placeholder="testmail@gmail.com" class="reg-org-form-input__element" />
+                    </label>
                     <label class="reg-org-form-input">
                         <p class="reg-org-form-input__label text-sm">
                             Телефон
                         </p>
-                        <input type="number" placeholder="+7 (999) 999-99-99" class="reg-org-form-input__element"/>
-                    </label>  
+                        <input type="number" placeholder="+7 (999) 999-99-99" class="reg-org-form-input__element" />
+                    </label>
                     <div class="reg-org-form__full-name">
                         <label class="reg-org-form-input">
                             <p class="reg-org-form-input__label text-sm">
                                 Пароль
                             </p>
-                            <input type="password" placeholder="Введите пароль" class="reg-org-form-input__element"/>
-                        </label>  
+                            <input type="password" placeholder="Введите пароль" class="reg-org-form-input__element" />
+                        </label>
                         <label class="reg-org-form-input">
                             <p class="reg-org-form-input__label text-sm">
                                 Повторите пароль
                             </p>
-                            <input type="password" placeholder="Повторите пароль" class="reg-org-form-input__element"/>
-                        </label> 
-                    </div>  
+                            <input type="password" placeholder="Повторите пароль" class="reg-org-form-input__element" />
+                        </label>
+                    </div>
                 </div>
                 <div class="reg-org-form__bottom">
                     <button class="reg-org-form__enter-btn btn btn-primary text-md">Зарегистрироваться</button>
-                    <p class="reg-org-form__be-subtrext text-sm">Нажимая кнопку «Зарегистрироваться», вы соглашаетесь c <a href="">политикой конфиденциальности</a></p>
+                    <p class="reg-org-form__be-subtrext text-sm">Нажимая кнопку «Зарегистрироваться», вы соглашаетесь c
+                        <a href="">политикой конфиденциальности</a>
+                    </p>
                 </div>
             </div>
         </div>
-        <button class="some-popup__close-btn">
-            <img src="../../assets/imgs/icons/close-icon.svg" alt="">       
+        <button class="some-popup__close-btn" onclick="closeAllHeaderPopups()">
+            <img src="../../assets/imgs/icons/close-icon.svg" alt="">
         </button>
     </div>
-    <div class="some-popup"> 
+    <div class="some-popup reset-pass-popup ">
         <div class="some-popup__background"></div>
         <div class="some-popup__wrapper ">
             <div class="reset-pass-popup__image-container">
                 <div class="reset-pass-popup__image-text">
                     <p class="reset-pass-poup__image-container-hello vasek">Здравствуйте!
-                        <svg class="reset-pass-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id="Vector 2" d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            
+                        <svg class="reset-pass-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector 2"
+                                d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
                     </p>
-                    <p class="reset-pass-poup__image-container-greeting some-popup__title text-md">Приятно снова видеть вас</p>                 
+                    <p class="reset-pass-poup__image-container-greeting some-popup__title text-md">Приятно снова видеть
+                        вас</p>
                 </div>
                 <img src="../../assets/imgs/Rectangle 27.png " alt="" class="reset-pass-popup__image">
             </div>
             <div class="reset-pass-popup__form reset-pass-form">
                 <div class="reset-pass-form__up">
                     <p class="reset-pass-form__title title-md">Восстановление пароля</p>
-                    <p class="reset-pass-form__title-desc text-sm">Введите адрес электронной почты, связанный с вашим аккаунтом, и мы вышлем вам ссылку для изменения пароля</p>
+                    <p class="reset-pass-form__title-desc text-sm">Введите адрес электронной почты, связанный с вашим
+                        аккаунтом, и мы вышлем вам ссылку для изменения пароля</p>
                     <label class="reset-pass-form-input">
                         <p class="reset-pass-form-input__label text-sm">
                             E-mail
                         </p>
-                        <input type="text" placeholder="testmail@gmail.com" class="reset-pass-form-input__element"/>
-                    </label>   
-                  
+                        <input type="text" placeholder="testmail@gmail.com" class="reset-pass-form-input__element" />
+                    </label>
+
                 </div>
                 <div class="reset-pass-form__bottom">
-                    <button class="reset-pass-form__enter-btn btn btn-primary text-md">Зарегистрироваться</button>
-                    <button class="reset-pass-form__secondary btn btn-outline text-md">Войти <span>или</span> зарегистрироваться</button>
+                    <button class="reset-pass-form__enter-btn btn btn-primary text-md"
+                        onclick="goNewPassPopup()">Сбросить пароль</button>
+                    <button class="reset-pass-form__secondary btn btn-outline text-md">Войти <span>или</span>
+                        зарегистрироваться</button>
 
                 </div>
             </div>
         </div>
-        <button class="some-popup__close-btn">
-            <img src="../../assets/imgs/icons/close-icon.svg" alt="">       
+        <button class="some-popup__close-btn" onclick="closeAllHeaderPopups()">
+            <img src="../../assets/imgs/icons/close-icon.svg" alt="">
         </button>
     </div>
-    <div class="some-popup"> 
+    <div class="some-popup new-pass-popup ">
         <div class="some-popup__background"></div>
         <div class="some-popup__wrapper ">
             <div class="new-pass-popup__image-container">
                 <div class="new-pass-popup__image-text">
                     <p class="new-pass-poup__image-container-hello vasek">Здравствуйте!
-                        <svg class="new-pass-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id="Vector 2" d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            
+                        <svg class="new-pass-popup__vasek-underline" width="219" height="15" viewBox="0 0 219 15"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector 2"
+                                d="M1 13.2891C12.0449 11.1972 22.4887 9.8619 33.1092 8.9867M68.4838 7.39975C88.8816 7.00064 112.239 7.02985 142.498 5.98395M157.192 5.40967C174.889 4.63765 194.813 3.47752 217.601 1.68681"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
                     </p>
-                    <p class="new-pass-poup__image-container-greeting some-popup__title text-md">Приятно снова видеть вас</p>                 
+                    <p class="new-pass-poup__image-container-greeting some-popup__title text-md">Приятно снова видеть
+                        вас</p>
                 </div>
                 <img src="../../assets/imgs/Rectangle 27.png " alt="" class="new-pass-popup__image">
             </div>
@@ -1549,29 +1589,31 @@
                         <p class="new-pass-form-input__label text-sm">
                             Пароль
                         </p>
-                        <input type="password" placeholder="**************" class="new-pass-form-input__element"/>
-                    </label>   
+                        <input type="password" placeholder="**************" class="new-pass-form-input__element" />
+                    </label>
                     <label class="new-pass-form-input">
                         <p class="new-pass-form-input__label text-sm">
                             Повторите пароль
                         </p>
-                        <input type="password" placeholder="**************" class="new-pass-form-input__element"/>
-                    </label>   
-                  
+                        <input type="password" placeholder="**************" class="new-pass-form-input__element" />
+                    </label>
+
                 </div>
                 <div class="new-pass-form__bottom">
                     <button class="new-pass-form__enter-btn btn btn-primary text-md">Изменить пароль</button>
-                    <button class="new-pass-form__secondary btn btn-outline text-md">Войти <span>или</span> зарегистрироваться</button>
+                    <button class="new-pass-form__secondary btn btn-outline text-md">Войти <span>или</span>
+                        зарегистрироваться</button>
 
                 </div>
             </div>
         </div>
-        <button class="some-popup__close-btn">
-            <img src="../../assets/imgs/icons/close-icon.svg" alt="">       
+        <button class="some-popup__close-btn" onclick="closeAllHeaderPopups()">
+            <img src="../../assets/imgs/icons/close-icon.svg" alt="">
         </button>
     </div>
     <script src="./main_page.js"></script>
     <script src="../about_us/about_us.js"></script>
+    <script src="../../assets/styles/header.js"></script>
 </body>
 
 </html>
