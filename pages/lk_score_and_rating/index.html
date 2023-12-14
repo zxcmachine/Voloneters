@@ -103,7 +103,7 @@
         <div class="profile-right score__and__rating">
           <p class="title-md dark">Баллы и рейтинг</p>
           <div class="profile-right-score__rating">
-            <div class="profile-right-score__rating-item">
+            <div class="profile-right-score__rating-item" onclick="openHistoryScore()">
               <div class="profile-right-score__rating-item-top gray text-md">
                 Баллов<svg
                   width="24"
@@ -121,7 +121,7 @@
               <div class="profile-right-score__rating-item-score title-md">
                 100 Б
               </div>
-              <div class="profile-right-score__rating-item-question text-md">
+              <div class="profile-right-score__rating-item-question text-md" onclick="history_score_how_to_balance()">
                 Как начисляются баллы?
               </div>
             </div>
@@ -132,7 +132,7 @@
               <div class="profile-right-score__rating-item-score title-md">
                 12
               </div>
-              <div class="profile-right-score__rating-item-question text-md">
+              <div class="profile-right-score__rating-item-question text-md" onclick="history_score_how_to_rating()">
                 Как формируется рейтинг?
               </div>
             </div>
@@ -142,7 +142,7 @@
     </div>
 
     <!-- history score empty -->
-    <div class="some-popup">
+    <div class="some-popup some-popup_not-full history_score_empty">
       <div class="some-popup__background"></div>
       <div class="some-popup__wrapper fit-content half-width">
         <div class="some-popup-score__and__history">
@@ -170,10 +170,8 @@
         <img src="../../assets/imgs/icons/close-icon.svg" alt="" />
       </button>
     </div>
-
     <!-- history score no empty -->
-
-    <div class="some-popup">
+    <div class="some-popup some-popup_not-full history_score_no_empty">
       <div class="some-popup__background"></div>
       <div class="some-popup__wrapper fit-content half-width">
         <div class="some-popup-score__and__history">
@@ -219,11 +217,9 @@
       <button class="some-popup__close-btn">
         <img src="../../assets/imgs/icons/close-icon.svg" alt="" />
       </button>
-    </div>
-
+    </div> 
     <!-- history placeinfo как начисляются баллы -->
-
-    <div class="some-popup">
+    <div class="some-popup some-popup_not-full history_score_how_to_balance">
       <div class="some-popup__background"></div>
       <div class="some-popup__wrapper fit-content half-width">
         <div class="some-popup-score__and__history">
@@ -241,12 +237,9 @@
       <button class="some-popup__close-btn">
         <img src="../../assets/imgs/icons/close-icon.svg" alt="" />
       </button>
-    </div>
-
+    </div> 
     <!-- history placeinfo Как формируется рейтинг? -->
-
-
-    <div class="some-popup ">
+    <div class="some-popup some-popup_not-full history_score_how_to_rating">
       <div class="some-popup__background"></div>
       <div class="some-popup__wrapper fit-content half-width">
         <div class="some-popup-score__and__history">
@@ -391,5 +384,6 @@
     </div>
     <script src="./main_page.js"></script>
     <script src="../about_us/about_us.js"></script>
+    <script src="../../assets/styles/header.js"></script>
   </body>
 </html>

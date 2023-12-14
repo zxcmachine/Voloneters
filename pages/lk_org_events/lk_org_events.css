@@ -19,6 +19,11 @@
 .detail__content-left-top .universal__filter{
     display: none;
 }
+.profile-add-info{
+    display: flex;
+    margin-top: 40px;
+    font-weight: 500;
+}
 @media(max-width:1199px){
     .detail__content-left-top .universal__filter{
         display: flex;
