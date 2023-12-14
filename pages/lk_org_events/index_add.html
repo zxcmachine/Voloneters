@@ -111,11 +111,12 @@
               <img src="../../assets/imgs/Frame 27177.png" alt="image" />
             </div>
             <div class="profile__text">
-              <p class="title-sm dark">Обложка мероприятия</p>
-              <div class="profile__edit text-sm">
+              <p class="text-lg dark ">Обложка мероприятия</p>
+              <div class="profile__edit org text-sm">
                 <div class="main__button">Добавить фотографию</div>
               </div>
             </div>
+            <p class="text-sm primary profile-add-info" onclick="openAddInfo()">Пример</p>
           </div>
 
           <div class="profile-right-user info-edit user-info-padding">
@@ -192,6 +193,54 @@
         </div>
       </div>
     </div>
+
+    <div class="some-popup some-popup_not-full some-popup_active">
+      <div class="some-popup__background"></div>
+      <div class="some-popup__wrapper fit-content half-width">
+        <div class="some-popup-score__and__history">
+          
+          <p class="title-sm dark">История баллов</p>
+          <div class="some-popup-score-items">
+            <div class="some-popup-score-item">
+              <p class="some-popup-score-item-head text-md dark">13 сентября</p>
+              <div class="some-popup-score-item-bottom">
+                <div class="some-popup-score-item-bottom__img">
+                  <img src="../../assets/imgs/Avatars2.png" alt="img">
+                </div>
+                <p class="text-sm dark">Начисление бонусов за конкурс для участия в Волонтерской экспедиции «По пути с добром»...</p>
+                <div class="some-popup-score-item-bottom__score pink text-md">0 Б</div>
+              </div>
+            </div>
+            <div class="some-popup-score-item">
+              <p class="some-popup-score-item-head text-md dark">13 сентября</p>
+              <div class="some-popup-score-item-bottom">
+                <div class="some-popup-score-item-bottom__img">
+                  <img src="../../assets/imgs/Avatars2.png" alt="img">
+                </div>
+                <p class="text-sm dark">Начисление бонусов за конкурс для участия в Волонтерской экспедиции «По пути с добром»...</p>
+                <div class="some-popup-score-item-bottom__score pink text-md">0 Б</div>
+              </div>
+            </div>
+            <div class="some-popup-score-item">
+              <p class="some-popup-score-item-head text-md dark">13 сентября</p>
+              <div class="some-popup-score-item-bottom">
+                <div class="some-popup-score-item-bottom__img">
+                  <img src="../../assets/imgs/Avatars2.png" alt="img">
+                </div>
+                <p class="text-sm dark">Начисление бонусов за конкурс для участия в Волонтерской экспедиции «По пути с добром»...</p>
+                <div class="some-popup-score-item-bottom__score pink text-md">500 Б</div>
+              </div>
+            </div>
+            <!-- <div id="loader"></div>  -->
+            <!-- place for loader -->
+          </div>
+          <div class="main__button some-popup-score-btn full">Закрыть</div>
+        </div>
+      </div>
+      <button class="some-popup__close-btn">
+        <img src="../../assets/imgs/icons/close-icon.svg" alt="" />
+      </button>
+    </div> 
 
     <script>
       function copyToClipBoard(element) {

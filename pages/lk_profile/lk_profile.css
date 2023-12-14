@@ -121,7 +121,9 @@
     font-weight: 500;
     white-space: nowrap;
 }
-
+.profile__edit.org{
+    margin-left: unset;
+} 
 .profile-right-user.organization {
     flex-direction: column;
     gap: 24px;
@@ -270,6 +272,16 @@
     .profile__edit .main__button {
         width: 100%;
         justify-content: center;
+    }
+
+    .profile-left-item.active .profile-left-item-line {
+      
+        display: none;
+    }
+    .profile-left-item.active {
+        border-bottom: 2px solid var(--primary-color);
+        border-radius: unset;
+        background: unset;
     }
 }
 

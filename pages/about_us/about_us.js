@@ -1,7 +1,7 @@
 const currentSlidesEl = document.querySelector(".swiper-pagination__current-slide");
 
 const totalSlidesEl = document.querySelector(".swiper-pagination__total-slide");
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.about-us__about-swiper', {
   direction: 'horizontal',
 
   navigation: {

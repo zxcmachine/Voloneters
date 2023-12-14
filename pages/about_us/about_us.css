@@ -167,7 +167,7 @@
 
 .about-us__running-lines {
   margin-bottom: 100px;
-  overflow-y: scroll;
+  overflow: hidden;
   color: var(--primary-color);
 }
 

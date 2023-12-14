@@ -431,3 +431,10 @@
         width: 40%;
     } */
 }
+.accordion-item .accordion-item-header svg{
+    transition: .4s;
+
+}
+.accordion-item.active .accordion-item-header svg{
+    transform: rotate(180deg);
+}
