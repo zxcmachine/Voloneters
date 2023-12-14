@@ -30,13 +30,13 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
-function openPopupMenu(){
+function openPopupMenu() {
   document.querySelector('.menu__popup').classList.add('active')
   document.querySelector('body').style.overflow = 'hidden'
 }
 
 
-function closePopupMenu(){
+function closePopupMenu() {
   document.querySelector('.menu__popup').classList.remove('active')
   document.querySelector('body').style.overflow = 'unset'
 }
@@ -45,4 +45,4 @@ function closePopupMenu(){
 
 // swiper.on('transitionEnd', function () {
 //   console.log('*** mySwiper.realIndex', swiper.activeIndex);
-// });
+// });  

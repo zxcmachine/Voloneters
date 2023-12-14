@@ -24,6 +24,7 @@
 .about-us {
   background-color: var(--base00-color);
   padding-bottom: 48px;
+  margin-top: 23px;
 }
 
 .about-us__about-block {
@@ -173,7 +174,7 @@
 .running-line__list {
   display: flex;
   position: relative;
-  left: -50px;
+  left: -20px;
 }
 
 .running-line__list:not(:last-child) {
@@ -276,6 +277,33 @@
 .interaction-map__text-info_mobile .interaction-map__text-info-title {
   margin-top: 13px;
 }
+
+.running-line__list {
+  animation-name: scroll;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.running-line__list-revert {
+  left: -600px;
+  animation-name: scroll;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-60%);
+  }
+
+  100% {
+    transform: translateX(60%);
+  }
+}
+
 
 /* 1440 1200 1199 600 */
 
