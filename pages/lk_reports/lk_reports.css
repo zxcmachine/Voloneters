@@ -224,6 +224,8 @@
     margin-top: 24px;
 }
 
+
+
 .send-report__line div {
     width: 50%;
 }
@@ -313,14 +315,28 @@
     justify-content: center;
 }
 
+.send-report__file-area-label-area_hidden {
+    display: none;
+}
+
 #send-report__file {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 2;
+    z-index: -1;
+    opacity: 0;
+}
+
+.send-report__file_over {
     display: none;
+
+}
+
+.send-report__file_over-active {
+    display: flex;
+    background-color: #EFE9FF;
 }
 
 #drop-area.highlight {

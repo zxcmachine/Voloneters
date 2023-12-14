@@ -207,11 +207,16 @@
           <textarea class="universal__input" placeholder="Я принимал участие..."></textarea>
         </div>
         <div class="send-report__file-area" id="drop-area">
-          <label class="send-report__file-area-label">
-            <div class="send-report__file-area-label-area">
+          <label class="send-report__file-area-label" for="send-report__file">
+            <div class="send-report__file-area-label-area send-report__file_not-over">
               <p class="send-report__file-area-label-first-line text-md text-primary">Перетащите <span
                   class="text-bold">фото</span> или <span class="text-bold">выберите файл</span></p>
               <p class="send-report__file-area-label-second-line text-sm text-primary">Загрузите не более 5-и фото</p>
+            </div>
+            <div class="send-report__file-area-label-area send-report__file_over">
+              <p class="send-report__file-area-label-first-line text-md text-primary">Перетащите файл сюда</p>
+              <img src="../../assets/imgs/icons/file-drag.svg" alt="" class="send-report__file_over">
+              <!-- <p class="send-report__file-area-label-second-line text-sm text-primary">Загрузите не более 5-и фото</p> -->
             </div>
             <input type="file" placeholder="hi" id="send-report__file" accept="image/*"
               onchange="handleFiles(this.files)">
