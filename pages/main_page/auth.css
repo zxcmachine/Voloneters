@@ -151,6 +151,7 @@
 
 .auth-form__forgot-password {
     margin-top: 8px;
+    margin-bottom: 8px;
     font-weight: 500;
     color: var(--primary-color);
 }
@@ -205,6 +206,7 @@
     }
 
     .auth-form__up {
+        margin-top: 50px;
         overflow: scroll;
     }
 }

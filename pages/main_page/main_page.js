@@ -1,41 +1,5 @@
-//HEADER
-
-const authPopup = document.querySelector(".auth-popup")
-const regValPopup = document.querySelector(".register-valant-popup")
-const regOrgPopup = document.querySelector(".register-org-popup")
-const resetPassPopup = document.querySelector(".reset-pass-popup")
-const newPassPopup = document.querySelector(".new-pass-popup")
-
-console.log(authPopup)
-function openAuthPopup() {
-  authPopup.classList.add("some-popup_active")
-  document.querySelector('body').style.overflow = 'hidden'
-}
-
-function goRegValPopup() {
-  closeAllHeaderPopups();
-  regValPopup.classList.add("some-popup_active");
-}
-
-function goRegOrgPopup() {
-  closeAllHeaderPopups();
-  resetPassPopup.classList.add("some-popup_active");
-}
-
-function resetPassPopup() {
-
-}
-
-function closeAllHeaderPopups() {
-  authPopup.classList.remove("some-popup_active")
-  document.querySelector('body').style.overflow = 'unset'
-}
 
 document.addEventListener("DOMContentLoaded", () => {
-  const headers = document.querySelectorAll('.accordion-item-header');
-  headers.forEach((header, index) => {
-    header.addEventListener('click', () => toggleAccordion(index + 1));
-  });
 
   new Swiper(".main__page-cards-swiper", {
     slidesPerView: 2,
@@ -55,14 +19,30 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
+
+  const headers = document.querySelectorAll('.accordion-item-header');
+  headers.forEach((header, index) => {
+    header.addEventListener('click', () => toggleAccordion(index + 1));
+  });
+
+
+  document.querySelectorAll('.universal__select').forEach(el=>{
+    el.addEventListener('click',()=>{
+      el.classList.toggle('active')
+    })
+  })
+  
+ 
 });
 
 function toggleAccordion(index) {
   const item = document.querySelectorAll('.accordion-item')[index - 1];
   const content = item.querySelector('.accordion-item-content');
   if (content.style.maxHeight) {
+    item.classList.remove('active')
     content.style.maxHeight = null;
   } else {
+    item.classList.add('active')
     content.style.maxHeight = content.scrollHeight + 'px';
   }
 }

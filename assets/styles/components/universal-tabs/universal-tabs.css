@@ -13,6 +13,7 @@
 }
 .universal__tab.primary{
     background: var(--primary-color);
+    color: var(--white-color);
 }
 .universal__tab.orange{
     background: var(--orange-color);

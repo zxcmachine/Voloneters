@@ -223,7 +223,11 @@
 .reset-pass-form__bottom {
     margin-top: 24px;
 }
-
+@media(max-width:1199px){
+    .reg-org-popup__wrapper{
+        min-width: unset;
+    }
+}
 @media (max-width: 800px) {
     .reset-pass-popup {
         width: 100%;
