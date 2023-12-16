@@ -1,40 +1,194 @@
-.profile-right-wrapper{
+.profile-right-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-.detail__content-left-top{
+
+.detail__content-left-top {
     display: flex;
     justify-content: space-between;
 
 }
-.detail__content-left-top .main__button{
+
+.detail__content-left-top .main__button {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-.event__card-line-count.pink p{
+
+.event__card-line-count.pink p {
     color: var(--pink-color);
 }
-.detail__content-left-top .universal__filter{
+
+.detail__content-left-top .universal__filter {
     display: none;
 }
-.profile-add-info{
+
+.profile-add-info {
     display: flex;
-    margin-top: 40px;
+    margin-top: 36px;
     font-weight: 500;
 }
-@media(max-width:1199px){
-    .detail__content-left-top .universal__filter{
+
+.some-popup-score-image {
+    position: relative;
+    max-width: 144px;
+    min-width: 144px;
+    max-height: 144px;
+}
+
+.some-popup-score-image-info {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.some-popup-score-image-info.pink {
+    background: var(--pink-color);
+}
+
+.some-popup-score-item.info {
+    margin-top: 24px;
+    align-items: center;
+    gap: 12px;
+}
+
+.some-popup-score-item.info2 {
+    flex-direction: unset;
+    justify-content: space-around;
+}
+
+.some-popup-score-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile__text.org_add {
+    gap: 16px;
+}
+
+.profile-right-user-osobennosti {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.profile-right-user-osobennosti-item {
+    padding: 8px 12px;
+    display: flex;
+    gap: 8px;
+    background: var(--base00-color);
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--text02-color);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.profile-right-user-osobennosti-item.active {
+    color: var(--primary-color);
+}
+
+.profile-right-user-osobennosti-item svg path {
+    fill: #B6C0CF;
+}
+
+.profile-right-user-osobennosti-item.active svg path {
+    fill: var(--primary-color);
+
+}
+
+.profile-right-user-osobennosti-item.patriotic.active{
+    color: rgba(98, 0, 234, 1);
+}
+
+.profile-right-user-osobennosti-item.patriotic.active svg path {
+    fill: rgba(98, 0, 234, 1);
+}
+
+.profile-right-user-osobennosti-item.eventy.active{
+    color: rgba(255, 111, 0, 1);
+}
+
+.profile-right-user-osobennosti-item.eventy.active svg path {
+    fill: rgba(255, 111, 0, 1);
+}
+
+.profile-right-user-osobennosti-item.social.active{
+    color: rgba(61, 90, 254, 1);
+}
+
+.profile-right-user-osobennosti-item.social.active svg path {
+    fill: rgba(61, 90, 254, 1);
+}
+.partners-dropdown-items{
+    display: flex;
+    flex-direction: column;
+}
+.partners-dropdown-item{
+    display: flex;
+    gap: 8px;
+    padding: 12px 16px;
+}
+.partners-dropdown-item-del{
+    margin-left: auto;
+}
+.universal__input-hidden{
+    position: absolute;
+    top: 30px;
+    height: 56px;
+    z-index: 1;
+    width: 100%;
+}
+.universal__input-hidden.two{
+    position: absolute;
+    left: 70px;
+    height: 56px;
+    z-index: 2;
+    width: unset;
+}
+
+.input-wrapper-flex{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+.universal__select.org-add{
+    gap: 16px;
+}
+.opacity-0{
+    opacity: 0;
+}
+@media(max-width:1199px) {
+    .detail__content-left-top .universal__filter {
         display: flex;
     }
-    .detail__content-left-top{
+
+    .detail__content-left-top {
         flex-direction: column;
         gap: 16px;
     }
-    .detail__content-left-top .main__button{
+
+    .detail__content-left-top .main__button {
         width: 100%;
         justify-content: center;
     }
-    
+
+}
+
+@media(max-width:800px) {
+    .some-popup-score-image {
+        position: relative;
+        max-width: 100px;
+        min-width: 100px;
+        max-height: 100px;
+    }
 }

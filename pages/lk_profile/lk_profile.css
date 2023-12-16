@@ -192,7 +192,7 @@
 }
 
 .profile-right.edit {
-    max-width: 522px;
+    max-width: 553px;
     width: 100%;
 }
 
@@ -204,6 +204,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    position: relative;
 }
 
 .profile-edit-buttons.edit-profile {

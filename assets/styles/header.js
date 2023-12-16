@@ -61,4 +61,3 @@ function openUnversalFilter(el){
   document.querySelector('.history_score_how_to_rating').classList.add('some-popup_active')
  }
 
- 
