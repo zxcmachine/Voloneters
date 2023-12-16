@@ -8,7 +8,6 @@ let isShowReportTooltip = false;
 
 function openRejectReportPopup() {
   rejectReportPopup.classList.add("some-popup_active")
-  console.log("open");
   document.querySelector('body').style.overflow = 'hidden'
 
 }
@@ -76,26 +75,12 @@ new Swiper('.pin-report__photo-swiper', {
     nextEl: '.pin-report__swiper-button-right',
     prevEl: '.pin-report__swiper-button-left',
   },
-  // renderCustom: function (swiper, current, total) {
-  //   console.log(current,);
-  // },
 
   spaceBetween: 10,
   speed: 400,
   scrollbar: {
     el: '.swiper-scrollbar',
   },
-
-  // on: {
-  //   init: function (sw) {
-  //     currentSlidesEl.innerHTML = sw.activeIndex + 1;
-  //     totalSlidesEl.innerHTML = "/" + sw.slides.length;
-  //   },
-  //   slideChange: function (sw) {
-  //     currentSlidesEl.innerHTML = sw.activeIndex + 1;
-  //     totalSlidesEl.innerHTML = "/" + sw.slides.length;
-  //   }
-  // }
 });
 
 new Swiper('.pin-report__video-swiper', {
@@ -105,26 +90,13 @@ new Swiper('.pin-report__video-swiper', {
     nextEl: '.pin-report__video-swiper-button-right',
     prevEl: '.pin-report__video-swiper-button-left',
   },
-  // renderCustom: function (swiper, current, total) {
-  //   console.log(current,);
-  // },
+
 
   spaceBetween: 10,
   speed: 400,
   scrollbar: {
     el: '.swiper-scrollbar',
   },
-
-  // on: {
-  //   init: function (sw) {
-  //     currentSlidesEl.innerHTML = sw.activeIndex + 1;
-  //     totalSlidesEl.innerHTML = "/" + sw.slides.length;
-  //   },
-  //   slideChange: function (sw) {
-  //     currentSlidesEl.innerHTML = sw.activeIndex + 1;
-  //     totalSlidesEl.innerHTML = "/" + sw.slides.length;
-  //   }
-  // }
 });
 
 
@@ -136,14 +108,6 @@ const reportLoadFileOver = document.querySelector(".send-report__file_over")
 const uploadInput = document.getElementById("send-report__file")
 let files = [];
 
-console.log(reportLoadFile);
-// ["dragover", "drop"].forEach(function (event) {
-//   document.addEventListener(event, function (evt) {
-//     evt.preventDefault()
-//     return false
-//   })
-// })
-
 ["dragover", "drop"].forEach(function (event) {
   document.addEventListener(event, function (evt) {
     evt.preventDefault()
@@ -151,28 +115,13 @@ console.log(reportLoadFile);
   })
 })
 
-// dragZoneFileDrop.addEventListener('dragover', function () {
-//   console.log("over");
-
-//   reportLoadFile.classList.add('send-report__file_over-active');
-//   reportLoadFile.classList.add(".send-report__file-area-label-area_hidden")
-// });
-
 reportLoadFile.addEventListener('dragenter', function (e) {
-  console.log("dragenter");
-  // if (e.target.classList[0] !== "send-report__file-area-label-area") {
   reportLoadFile.classList.add('send-report__file_over-active');
   reportLoadFile.innerHTML = '<p class="send-report__file-area-label-first-line text-md text-primary">Перетащите файл сюда</p><img src = "../../assets/imgs/icons/file-drag.svg" alt = "" class="send-report__file_over" > '
-  // }
-
-  // reportLoadFile.classList.add("send-report__file-area-label-area_hidden")
-
 });
 
 
 reportLoadFile.addEventListener('dragleave', function (e) {
-  console.log(e);
-  console.log("dragenter");
   if (e.target.classList[0] == "send-report__file-area-label-area") {
     reportLoadFile.classList.remove('send-report__file_over-active');
     reportLoadFile.innerHTML = '<p class="send-report__file-area-label-first-line text-md text-primary">Перетащите <span class="text-bold">фото</span> или <span class="text-bold">выберите файл</span></p><p class="send-report__file-area-label-second-line text-sm text-primary" > Загрузите не более 5 - и фото</p > '
@@ -213,13 +162,9 @@ reportLoadFile.addEventListener("drop", function () {
 })
 
 
-function handleFiles() {
-  console.log("handle");
+function handleFiles(file) {
   const filesLoad = uploadInput.files;
-  console.log(filesLoad);
-  console.log(files);
   files = [...files, ...filesLoad];
-  console.log(files);
   const reader = new FileReader();
 
   if (files.length) {
