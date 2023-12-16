@@ -10,7 +10,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
+    <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
 
@@ -136,7 +137,7 @@
           
             <div class="input-wrapper text-sm gray">
               Дата рождения
-              <input class="universal__input" type="date" placeholder="00.00.0000" />
+              <input class="universal__input" type="text" placeholder="00.00.0000" id="el" />
             </div>
             <div class="profile-edit-buttons edit-profile text-sm gray">
                 <p> Пол</p>
@@ -347,5 +348,9 @@
     <script src="../main_page/main_page.js"></script>
     <script src="../about_us/about_us.js"></script>
     <script src="../../assets/include/headers.js"></script>
+    <script>
+        new AirDatepicker('#el');
+
+    </script>
   </body>
 </html>

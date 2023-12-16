@@ -373,6 +373,17 @@ a {
     padding: 16px 24px;
     width: fit-content;
     font-weight: 500;
+    transition: .4s;
+    cursor: pointer;
+}
+.main__button:hover {
+    background: #E5DFF4;
+}
+.main__button.white:hover {
+    background: #E5DFF4;
+}
+.main__button.blue:hover{
+    background: #423270;
 }
 
 .main__button.pd-sm {
@@ -501,7 +512,9 @@ a {
     border: unset;
     height: 56px;
 }
-
+.input:focus {
+    background: #E6EFFD !important;
+}
 .universal__input::placeholder {
     color: var(--text02-color);
     font-size: 16px;
@@ -578,4 +591,18 @@ a {
 input{
     outline: none;
 }
+.relative{
+    position: relative;
+}
 /* event-card */
+
+.profile-left-item:hover{
+    color: var(--primary-color);
+}
+
+.footer-item p{
+    cursor: pointer;
+}
+.footer-bottom-item p{
+    cursor: pointer;
+}

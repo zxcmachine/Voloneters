@@ -20,6 +20,8 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    cursor: pointer;
+    transition: .4s;
 }
 
 .profile-left-item-placeholder {
@@ -252,6 +254,16 @@
 .mobile-clear{
     display: none
 }
+
+.profile-right-header{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
 @media(max-width:1199px) {
     .profile-right-user {
         flex-direction: column;

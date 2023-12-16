@@ -377,7 +377,7 @@
 .report-popup__footer {
     position: absolute;
     background-color: var(--white-color);
-    width: 90%;
+    width: 100%;
     padding-top: 24px;
     bottom: 20px;
     z-index: 100;
@@ -390,6 +390,7 @@
 .report-popup__footer-close {
     margin-top: 8px;
     display: none;
+    width: 100%;
 }
 
 .pin-report__photo-swiper {
@@ -526,11 +527,6 @@
     .send-report__tooltip {
         width: 80%;
     }
-
-    .reject-reports__popup-footer {
-        width: 81%;
-    }
-
     .report-popup__footer-close {
         display: block;
     }
