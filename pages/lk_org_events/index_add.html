@@ -13,9 +13,7 @@
   <link href="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
 </head>
-
 <body>
   <header id="header">
     <div class="container">
@@ -60,6 +58,7 @@
     </div>
   </header>
 
+
   <div class="container">
     <div class="profile mt-sm">
       <ul class="profile-left">
@@ -89,79 +88,22 @@
       <div class="profile-right edit">
         <div>
           <p class="title-sm dark">Создание мероприятия</p>
-          <p class="text-md gray">
-            Проверка мероприятия занимает от 1 до 3 дней
-          </p>
+          <p class="text-md gray">Проверка мероприятия занимает от 1 до 3 дней</p>
         </div>
         <div class="profile-right-user info user-info-padding">
           <div class="profile__avatar">
             <img src="../../assets/imgs/Avatars44.png" alt="image" />
           </div>
-          <div class="profile__text org_add">
-            <p class="text-lg dark">Обложка мероприятия</p>
+          <div class="profile__text">
+            <p class="text-lg dark ">Обложка мероприятия</p>
             <div class="profile__edit org text-sm">
               <div class="main__button">Добавить фотографию</div>
             </div>
           </div>
-          <p class="text-sm primary profile-add-info" onclick="openAddInfo()">
-            Пример
-          </p>
+          <p class="text-sm primary profile-add-info" onclick="openAddInfo()">Пример</p>
         </div>
-
-        <div class="profile-right-user info-edit user-info-padding">
-          <p class="title-sm dark">Информация о мероприятии</p>
-          <div class="input-wrapper text-sm gray">
-            Название
-            <input class="universal__input" type="text" placeholder="Название мероприятия" />
-          </div>
-          <div class="input-wrapper text-sm gray">
-            Название организации
-            <input class="universal__input" type="text" placeholder="Росмодежь.Добро" />
-    <div class="container">
-      <div class="profile mt-sm">
-
-        <ul class="profile-left">
-          <li class="profile-left-item text-md active">
-            Профиль
-            <div class="profile-left-item-line"></div>
-          </li>
-          <li class="profile-left-item text-md">
-            Мои мероприятия
-            <div class="profile-left-item-line"></div>
-            <p class="profile-left-item-placeholder text-sl blue">21</p>
-          </li>
-          <li class="profile-left-item text-md">
-            История мероприятий
-            <div class="profile-left-item-line"></div>
-          </li>
-          <li class="profile-left-item text-md">
-            Баллы и рейтинг
-            <div class="profile-left-item-line"></div>
-            <p class="profile-left-item-placeholder text-sl pink">0 Б</p>
-          </li>
-          <li class="profile-left-item text-md">
-            Отчёты
-            <div class="profile-left-item-line"></div>
-          </li>
-        </ul>
-        <div class="profile-right edit">
-            <div>
-                <p class="title-sm dark">Создание мероприятия</p>
-                <p class="text-md gray">Проверка мероприятия занимает от 1 до 3 дней</p>
-            </div>
-          <div class="profile-right-user info user-info-padding">
-            <div class="profile__avatar">
-              <img src="../../assets/imgs/Frame 27177.png" alt="image" />
-            </div>
-            <div class="profile__text">
-              <p class="text-lg dark ">Обложка мероприятия</p>
-              <div class="profile__edit org text-sm">
-                <div class="main__button">Добавить фотографию</div>
-              </div>
-            </div>
-            <p class="text-sm primary profile-add-info" onclick="openAddInfo()">Пример</p>
-          </div>
-
+        <div class="profile-right-user info user-info-padding info-edit">
+          <p class="text-xl dark">Информация о мероприятии</p>
           <div class="input-wrapper text-sm gray">
             Место проведения
             <input class="universal__input" type="text" placeholder="г. Уфа" />
@@ -190,24 +132,22 @@
               <div class="universal__select org-add text-md">
                 <p class="text-md text-bold primary"> 1:1</p>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.6925 7.94254L10.4425 14.1925C10.3845 14.2506 10.3156 14.2967 10.2397 14.3282C10.1638 14.3597 10.0825 14.3758 10.0003 14.3758C9.91821 14.3758 9.83688 14.3597 9.76101 14.3282C9.68514 14.2967 9.61621 14.2506 9.55816 14.1925L3.30816 7.94254C3.19088 7.82526 3.125 7.6662 3.125 7.50035C3.125 7.3345 3.19088 7.17544 3.30816 7.05816C3.42544 6.94088 3.5845 6.875 3.75035 6.875C3.9162 6.875 4.07526 6.94088 4.19253 7.05816L10.0003 12.8668L15.8082 7.05816C15.8662 7.00009 15.9352 6.95403 16.011 6.9226C16.0869 6.89117 16.1682 6.875 16.2503 6.875C16.3325 6.875 16.4138 6.89117 16.4897 6.9226C16.5655 6.95403 16.6345 7.00009 16.6925 7.05816C16.7506 7.11623 16.7967 7.18517 16.8281 7.26104C16.8595 7.33691 16.8757 7.41823 16.8757 7.50035C16.8757 7.58247 16.8595 7.66379 16.8281 7.73966C16.7967 7.81553 16.7506 7.88447 16.6925 7.94254Z" fill="#B6C0CF"/>
-                  </svg>
+                  <path
+                    d="M16.6925 7.94254L10.4425 14.1925C10.3845 14.2506 10.3156 14.2967 10.2397 14.3282C10.1638 14.3597 10.0825 14.3758 10.0003 14.3758C9.91821 14.3758 9.83688 14.3597 9.76101 14.3282C9.68514 14.2967 9.61621 14.2506 9.55816 14.1925L3.30816 7.94254C3.19088 7.82526 3.125 7.6662 3.125 7.50035C3.125 7.3345 3.19088 7.17544 3.30816 7.05816C3.42544 6.94088 3.5845 6.875 3.75035 6.875C3.9162 6.875 4.07526 6.94088 4.19253 7.05816L10.0003 12.8668L15.8082 7.05816C15.8662 7.00009 15.9352 6.95403 16.011 6.9226C16.0869 6.89117 16.1682 6.875 16.2503 6.875C16.3325 6.875 16.4138 6.89117 16.4897 6.9226C16.5655 6.95403 16.6345 7.00009 16.6925 7.05816C16.7506 7.11623 16.7967 7.18517 16.8281 7.26104C16.8595 7.33691 16.8757 7.41823 16.8757 7.50035C16.8757 7.58247 16.8595 7.66379 16.8281 7.73966C16.7967 7.81553 16.7506 7.88447 16.6925 7.94254Z"
+                    fill="#B6C0CF" />
+                </svg>
                 <div class="universal__select-inside ">
                   <p class="text-md text-bold primary"> 1:1</p>
                   <p class="text-md text-bold primary"> 1:1</p>
                 </div>
               </div>
             </div>
-
-
-
           </div>
           <div class="input-wrapper text-sm gray">
             Количество волонтёров
             <input class="universal__input" type="text" placeholder="30" />
           </div>
         </div>
-
         <div class="profile-right-user info-edit user-info-padding">
           <p class="title-sm dark">Особенности</p>
           <p class="text-md gray">
@@ -281,7 +221,6 @@
             </div>
           </div>
         </div>
-
         <div class="profile-right-user info-edit user-info-padding">
           <p class="title-sm dark">Контактное лицо</p>
           <div class="input-wrapper text-sm gray">
@@ -309,13 +248,11 @@
             <input class="universal__input" type="text" placeholder="testmail@gmail.com" />
           </div>
         </div>
-
         <div class="profile-right-user info-edit user-info-padding detail__news-left-add__comment-input">
           <p class="title-sm dark">Описание</p>
           <!-- bitrix component -->
           <textarea class="send-report__textarea"></textarea>
         </div>
-
         <div class="profile-right-user info-edit user-info-padding">
           <p class="title-sm dark">Партнёры</p>
           <div class="universal__select text-md">
@@ -377,147 +314,68 @@
       </div>
     </div>
   </div>
-
+  </div>
 
   <div class="some-popup some-popup_not-full some-popup-recomends-for-photo">
     <div class="some-popup__background" onclick="closeAddInfo()"></div>
     <div class="some-popup__wrapper fit-content half-width">
       <div class="some-popup-score__and__history">
-        <p class="title-sm dark">
-          Рекомендации по оформлению обложки мероприятия
-        </p>
+        <p class="title-sm dark">Рекомендации по оформлению обложки мероприятия</p>
         <div class="some-popup-score-items">
+
           <div class="some-popup-score-item info">
             <div class="some-popup-score-image">
               <img src="../../assets/imgs/Avatars33.png" alt="img" />
               <div class="some-popup-score-image-info">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <div class="some-popup some-popup_not-full some-popup_active">
-      <div class="some-popup__background"></div>
-      <div class="some-popup__wrapper fit-content half-width">
-        <div class="some-popup-score__and__history">
-          
-          <p class="title-sm dark">История баллов</p>
-          <div class="some-popup-score-items">
-            <div class="some-popup-score-item">
-              <p class="some-popup-score-item-head text-md dark">13 сентября</p>
-              <div class="some-popup-score-item-bottom">
-                <div class="some-popup-score-item-bottom__img">
-                  <img src="../../assets/imgs/Avatars2.png" alt="img">
-                </div>
-                <p class="text-sm dark">Начисление бонусов за конкурс для участия в Волонтерской экспедиции «По пути с добром»...</p>
-                <div class="some-popup-score-item-bottom__score pink text-md">0 Б</div>
-              </div>
-            </div>
-            <div class="some-popup-score-item">
-              <p class="some-popup-score-item-head text-md dark">13 сентября</p>
-              <div class="some-popup-score-item-bottom">
-                <div class="some-popup-score-item-bottom__img">
-                  <img src="../../assets/imgs/Avatars2.png" alt="img">
-                </div>
-                <p class="text-sm dark">Начисление бонусов за конкурс для участия в Волонтерской экспедиции «По пути с добром»...</p>
-                <div class="some-popup-score-item-bottom__score pink text-md">0 Б</div>
-              </div>
-            </div>
-            <div class="some-popup-score-item">
-              <p class="some-popup-score-item-head text-md dark">13 сентября</p>
-              <div class="some-popup-score-item-bottom">
-                <div class="some-popup-score-item-bottom__img">
-                  <img src="../../assets/imgs/Avatars2.png" alt="img">
-                </div>
-                <p class="text-sm dark">Начисление бонусов за конкурс для участия в Волонтерской экспедиции «По пути с добром»...</p>
-                <div class="some-popup-score-item-bottom__score pink text-md">500 Б</div>
-              </div>
-            </div>
-            <!-- <div id="loader"></div>  -->
-            <!-- place for loader -->
-          </div>
-          <div class="main__button some-popup-score-btn full">Закрыть</div>
-        </div>
-      </div>
-      <button class="some-popup__close-btn">
-        <img src="../../assets/imgs/icons/close-icon.svg" alt="" />
-      </button>
-    </div> 
-
-    <script>
-      function copyToClipBoard(element) {
-        const textArea = document.createElement("textarea");
-        textArea.value = element.innerText;
-        document.body.appendChild(textArea);
-        textArea.select();
-        document.execCommand("copy");
-        document.body.removeChild(textArea);
-      }
-    </script>
-
-    <div id="footer" class="mt-2xl">
-      <div class="container">
-        <div class="footer-wrapper">
-          <div class="footer-top">
-            <div class="footer-item phone">
-              <p class="text-sm">Телефон</p>
-              <p class="title-lg">+ 7 (999) 999-99-99</p>
-            </div>
-            <div class="footer-item email">
-              <p class="text-md">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
                   <path
                     d="M14.354 4.85403L6.35403 12.854C6.30759 12.9005 6.25245 12.9374 6.19175 12.9626C6.13105 12.9877 6.06599 13.0007 6.00028 13.0007C5.93457 13.0007 5.86951 12.9877 5.80881 12.9626C5.74811 12.9374 5.69296 12.9005 5.64653 12.854L2.14653 9.35403C2.05271 9.26021 2 9.13296 2 9.00028C2 8.8676 2.05271 8.74035 2.14653 8.64653C2.24035 8.55271 2.3676 8.5 2.50028 8.5C2.63296 8.5 2.76021 8.55271 2.85403 8.64653L6.00028 11.7934L13.6465 4.14653C13.7403 4.05271 13.8676 4 14.0003 4C14.133 4 14.2602 4.05271 14.354 4.14653C14.4478 4.24035 14.5006 4.3676 14.5006 4.50028C14.5006 4.63296 14.4478 4.76021 14.354 4.85403Z"
                     fill="white" />
                 </svg>
               </div>
             </div>
-            <p class="text-sm dark">
-              Чтобы изображение полностью поместилось, рекомендуемый формат
-              изображения 1:1 (например, 350х350px)
-            </p>
+            <p class="text-sm dark">Чтобы изображение полностью поместилось, рекомендуемый формат изображения 1:1
+              (например, 350х350px)</p>
           </div>
-          <div class="some-popup-score-item info2">
+
+          <div class="some-popup-score-item info">
+            <div class="some-popup-score-item info2">
             <div class="some-popup-score-image">
               <img src="../../assets/imgs/Avatars33.png" alt="img" />
               <div class="some-popup-score-image-info pink">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M14.354 4.85403L6.35403 12.854C6.30759 12.9005 6.25245 12.9374 6.19175 12.9626C6.13105 12.9877 6.06599 13.0007 6.00028 13.0007C5.93457 13.0007 5.86951 12.9877 5.80881 12.9626C5.74811 12.9374 5.69296 12.9005 5.64653 12.854L2.14653 9.35403C2.05271 9.26021 2 9.13296 2 9.00028C2 8.8676 2.05271 8.74035 2.14653 8.64653C2.24035 8.55271 2.3676 8.5 2.50028 8.5C2.63296 8.5 2.76021 8.55271 2.85403 8.64653L6.00028 11.7934L13.6465 4.14653C13.7403 4.05271 13.8676 4 14.0003 4C14.133 4 14.2602 4.05271 14.354 4.14653C14.4478 4.24035 14.5006 4.3676 14.5006 4.50028C14.5006 4.63296 14.4478 4.76021 14.354 4.85403Z"
-                    fill="white" />
-                </svg>
+                  <path d="M12.854 12.1465C12.9005 12.193 12.9373 12.2481 12.9625 12.3088C12.9876 12.3695 13.0006 12.4346 13.0006 12.5003C13.0006 12.566 12.9876 12.631 12.9625 12.6917C12.9373 12.7524 12.9005 12.8076 12.854 12.854C12.8076 12.9005 12.7524 12.9373 12.6917 12.9625C12.631 12.9876 12.566 13.0006 12.5003 13.0006C12.4346 13.0006 12.3695 12.9876 12.3088 12.9625C12.2481 12.9373 12.193 12.9005 12.1465 12.854L8.00028 8.70715L3.85403 12.854C3.76021 12.9478 3.63296 13.0006 3.50028 13.0006C3.3676 13.0006 3.24035 12.9478 3.14653 12.854C3.05271 12.7602 3 12.633 3 12.5003C3 12.3676 3.05271 12.2403 3.14653 12.1465L7.2934 8.00028L3.14653 3.85403C3.05271 3.76021 3 3.63296 3 3.50028C3 3.3676 3.05271 3.24035 3.14653 3.14653C3.24035 3.05271 3.3676 3 3.50028 3C3.63296 3 3.76021 3.05271 3.85403 3.14653L8.00028 7.2934L12.1465 3.14653C12.2403 3.05271 12.3676 3 12.5003 3C12.633 3 12.7602 3.05271 12.854 3.14653C12.9478 3.24035 13.0006 3.3676 13.0006 3.50028C13.0006 3.63296 12.9478 3.76021 12.854 3.85403L8.70715 8.00028L12.854 12.1465Z" fill="white"/>
+                  </svg>
+                  
               </div>
             </div>
             <div class="some-popup-score-image">
               <img src="../../assets/imgs/Avatars33.png" alt="img" />
               <div class="some-popup-score-image-info pink">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M14.354 4.85403L6.35403 12.854C6.30759 12.9005 6.25245 12.9374 6.19175 12.9626C6.13105 12.9877 6.06599 13.0007 6.00028 13.0007C5.93457 13.0007 5.86951 12.9877 5.80881 12.9626C5.74811 12.9374 5.69296 12.9005 5.64653 12.854L2.14653 9.35403C2.05271 9.26021 2 9.13296 2 9.00028C2 8.8676 2.05271 8.74035 2.14653 8.64653C2.24035 8.55271 2.3676 8.5 2.50028 8.5C2.63296 8.5 2.76021 8.55271 2.85403 8.64653L6.00028 11.7934L13.6465 4.14653C13.7403 4.05271 13.8676 4 14.0003 4C14.133 4 14.2602 4.05271 14.354 4.14653C14.4478 4.24035 14.5006 4.3676 14.5006 4.50028C14.5006 4.63296 14.4478 4.76021 14.354 4.85403Z"
-                    fill="white" />
-                </svg>
+                  <path d="M12.854 12.1465C12.9005 12.193 12.9373 12.2481 12.9625 12.3088C12.9876 12.3695 13.0006 12.4346 13.0006 12.5003C13.0006 12.566 12.9876 12.631 12.9625 12.6917C12.9373 12.7524 12.9005 12.8076 12.854 12.854C12.8076 12.9005 12.7524 12.9373 12.6917 12.9625C12.631 12.9876 12.566 13.0006 12.5003 13.0006C12.4346 13.0006 12.3695 12.9876 12.3088 12.9625C12.2481 12.9373 12.193 12.9005 12.1465 12.854L8.00028 8.70715L3.85403 12.854C3.76021 12.9478 3.63296 13.0006 3.50028 13.0006C3.3676 13.0006 3.24035 12.9478 3.14653 12.854C3.05271 12.7602 3 12.633 3 12.5003C3 12.3676 3.05271 12.2403 3.14653 12.1465L7.2934 8.00028L3.14653 3.85403C3.05271 3.76021 3 3.63296 3 3.50028C3 3.3676 3.05271 3.24035 3.14653 3.14653C3.24035 3.05271 3.3676 3 3.50028 3C3.63296 3 3.76021 3.05271 3.85403 3.14653L8.00028 7.2934L12.1465 3.14653C12.2403 3.05271 12.3676 3 12.5003 3C12.633 3 12.7602 3.05271 12.854 3.14653C12.9478 3.24035 13.0006 3.3676 13.0006 3.50028C13.0006 3.63296 12.9478 3.76021 12.854 3.85403L8.70715 8.00028L12.854 12.1465Z" fill="white"/>
+                  </svg>
+                  
               </div>
             </div>
           </div>
-          <p class="text-sm dark">
-            <span class="pink">Не рекомендуем </span> использовать изображения
-            горизонтального и вертикального формата
-          </p>
+            <p class="text-sm dark">Чтобы изображение полностью поместилось, рекомендуемый формат изображения 1:1
+              (например, 350х350px)</p>
+          </div>
+
+          <!-- <div id="loader"></div>  -->
+          <!-- place for loader -->
         </div>
-        <div class="main__button some-popup-score-btn full" onclick="closeAddInfo()">
-          Закрыть
-        </div>
+        <div class="main__button some-popup-score-btn full" onclick="closeAddInfo()">Закрыть</div>
       </div>
     </div>
     <button class="some-popup__close-btn" onclick="closeAddInfo()">
-      <img src="../../assets/imgs/icons/close-icon.svg" alt="" />
+      <img src="../../assets/imgs/icons/close-icon.svg" alt="img" />
     </button>
   </div>
+
   <!-- https://air-datepicker.com/ru/examples -->
   <script>
-
     flatpickr("#timeRange", {
       mode: "range",
       enableTime: true,
