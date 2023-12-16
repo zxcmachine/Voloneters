@@ -144,7 +144,14 @@
     max-height: 100%;
     padding-bottom: 75px;
 }
-
+.some-popup__wrapper-content.no-padding {
+    padding-bottom: unset;
+}
+.some-popup__wrapper-content.staff {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 .some-popup_active {
     opacity: 1;
     display: block;
@@ -203,8 +210,15 @@
     height: 100%;
 }
 
-
-
+.some-popup__wrapper.column{
+    flex-direction: column;
+    gap: 16px;
+}
+.some-popup__wrapper-content.column{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 @media (max-width: 800px) {
     .some-popup {
         width: 100%;
@@ -270,8 +284,16 @@
         padding: 16px;
     }
 
-
+    .some-popup__close-btn.mobile{
+        display: none;
+    }
     .some-popup__wrapper-footer {
         width: 81%;
+    }
+    .auth-popup .some-popup__wrapper{
+        border-radius: unset;
+    }
+    .register-valant-popup .some-popup__wrapper{
+        border-radius: unset;
     }
 }

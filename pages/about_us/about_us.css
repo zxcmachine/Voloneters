@@ -247,7 +247,8 @@
   align-items: center;
   flex-basis: calc(50% - 12px);
   /* 50% ширины с учетом отступа по 12px с обеих сторон */
-  box-sizing: border-box;/
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .area-list__item-name {
@@ -289,6 +290,7 @@
 .staff-item__list-item {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #E6EFFD;
 }
 
 .staff-item__list-item-number {
@@ -302,9 +304,9 @@
 
 .staff-item__list-item-info-tags {
   display: flex;
-  justify-content: space-between;
   gap: 8px;
   margin-top: 12px;
+  flex-wrap: wrap;
 }
 
 .staff-item__list-item-info-tags-event {
@@ -368,6 +370,71 @@
   animation-direction: reverse;
 }
 
+.area__list.hide{
+  display: none;
+}
+.area-list-state-item-right-middle{
+  display: flex;
+  gap: 8px;
+}
+.area-list-state-item-right{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.area-list-state-item-right-bottom{
+  padding: 16px;
+  background: var(--base00-color);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 8px;
+}
+.area-list-state-header-top{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+.area-list-state-header-bottom{
+  display: flex;
+  gap: 16px;
+}
+.area-list-state-header-bottom span{
+  margin-left: auto;
+}
+.area-list-state-content{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.area-list-state-item{
+  display: flex;
+  gap: 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #F6F8FC  ;
+}
+.area-list-state-item-left{
+  width: 48px;
+  display: flex;
+}
+.area-list-state{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+  overflow-y: scroll;
+  max-height: 436px;
+}
+.area-list-state.hide{
+  display: none;
+}
+.area-list-state-header-bottom {
+  padding: 8px 16px;
+  margin-top: 16px;
+  background: #F6F8FC;
+  border-radius: 8px;
+}
 @keyframes scroll {
   0% {
     transform: translateX(-60%);
@@ -497,6 +564,6 @@
 @media (max-width:600px) {
   .some-popup-score-btn {
     display: block;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 }
