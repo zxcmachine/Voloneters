@@ -63,6 +63,7 @@
 .some-popup-score-item.info2 {
     flex-direction: unset;
     justify-content: space-around;
+    width: 100%;
 }
 
 .some-popup-score-image img {
@@ -190,5 +191,11 @@
         max-width: 100px;
         min-width: 100px;
         max-height: 100px;
+    }
+    .input-wrapper-flex{
+        flex-direction: column;
+    }
+    .profile-add-info{
+        margin-top: unset;
     }
 }
