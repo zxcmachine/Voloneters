@@ -46,3 +46,25 @@ function closePopupMenu() {
 // swiper.on('transitionEnd', function () {
 //   console.log('*** mySwiper.realIndex', swiper.activeIndex);
 // });  
+
+function closeStaffListPopup() {
+  document.querySelector('#staff-list').classList.remove('some-popup_active')
+  document.querySelector('body').style.overflow = 'unset'
+}
+
+function openStaffListPopup() {
+  document.querySelector('#staff-list').classList.add('some-popup_active')
+  document.querySelector('body').style.overflow = 'unset'
+}
+
+function closeStaffListItemPopup() {
+  document.querySelector('#staff-item').classList.remove('some-popup_active')
+  document.querySelector('body').style.overflow = 'unset'
+}
+
+function openStaffListItemPopup() {
+  document.querySelector('#staff-list').classList.remove('some-popup_active')
+
+  document.querySelector('#staff-item').classList.add('some-popup_active')
+  document.querySelector('body').style.overflow = 'unset'
+}

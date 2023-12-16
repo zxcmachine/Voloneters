@@ -117,6 +117,49 @@
           <div class="input-wrapper text-sm gray">
             Название организации
             <input class="universal__input" type="text" placeholder="Росмодежь.Добро" />
+    <div class="container">
+      <div class="profile mt-sm">
+
+        <ul class="profile-left">
+          <li class="profile-left-item text-md active">
+            Профиль
+            <div class="profile-left-item-line"></div>
+          </li>
+          <li class="profile-left-item text-md">
+            Мои мероприятия
+            <div class="profile-left-item-line"></div>
+            <p class="profile-left-item-placeholder text-sl blue">21</p>
+          </li>
+          <li class="profile-left-item text-md">
+            История мероприятий
+            <div class="profile-left-item-line"></div>
+          </li>
+          <li class="profile-left-item text-md">
+            Баллы и рейтинг
+            <div class="profile-left-item-line"></div>
+            <p class="profile-left-item-placeholder text-sl pink">0 Б</p>
+          </li>
+          <li class="profile-left-item text-md">
+            Отчёты
+            <div class="profile-left-item-line"></div>
+          </li>
+        </ul>
+        <div class="profile-right edit">
+            <div>
+                <p class="title-sm dark">Создание мероприятия</p>
+                <p class="text-md gray">Проверка мероприятия занимает от 1 до 3 дней</p>
+            </div>
+          <div class="profile-right-user info user-info-padding">
+            <div class="profile__avatar">
+              <img src="../../assets/imgs/Frame 27177.png" alt="image" />
+            </div>
+            <div class="profile__text">
+              <p class="text-lg dark ">Обложка мероприятия</p>
+              <div class="profile__edit org text-sm">
+                <div class="main__button">Добавить фотографию</div>
+              </div>
+            </div>
+            <p class="text-sm primary profile-add-info" onclick="openAddInfo()">Пример</p>
           </div>
 
           <div class="input-wrapper text-sm gray">
@@ -335,6 +378,7 @@
     </div>
   </div>
 
+
   <div class="some-popup some-popup_not-full some-popup-recomends-for-photo">
     <div class="some-popup__background" onclick="closeAddInfo()"></div>
     <div class="some-popup__wrapper fit-content half-width">
@@ -348,6 +392,82 @@
               <img src="../../assets/imgs/Avatars33.png" alt="img" />
               <div class="some-popup-score-image-info">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="some-popup some-popup_not-full some-popup_active">
+      <div class="some-popup__background"></div>
+      <div class="some-popup__wrapper fit-content half-width">
+        <div class="some-popup-score__and__history">
+          
+          <p class="title-sm dark">История баллов</p>
+          <div class="some-popup-score-items">
+            <div class="some-popup-score-item">
+              <p class="some-popup-score-item-head text-md dark">13 сентября</p>
+              <div class="some-popup-score-item-bottom">
+                <div class="some-popup-score-item-bottom__img">
+                  <img src="../../assets/imgs/Avatars2.png" alt="img">
+                </div>
+                <p class="text-sm dark">Начисление бонусов за конкурс для участия в Волонтерской экспедиции «По пути с добром»...</p>
+                <div class="some-popup-score-item-bottom__score pink text-md">0 Б</div>
+              </div>
+            </div>
+            <div class="some-popup-score-item">
+              <p class="some-popup-score-item-head text-md dark">13 сентября</p>
+              <div class="some-popup-score-item-bottom">
+                <div class="some-popup-score-item-bottom__img">
+                  <img src="../../assets/imgs/Avatars2.png" alt="img">
+                </div>
+                <p class="text-sm dark">Начисление бонусов за конкурс для участия в Волонтерской экспедиции «По пути с добром»...</p>
+                <div class="some-popup-score-item-bottom__score pink text-md">0 Б</div>
+              </div>
+            </div>
+            <div class="some-popup-score-item">
+              <p class="some-popup-score-item-head text-md dark">13 сентября</p>
+              <div class="some-popup-score-item-bottom">
+                <div class="some-popup-score-item-bottom__img">
+                  <img src="../../assets/imgs/Avatars2.png" alt="img">
+                </div>
+                <p class="text-sm dark">Начисление бонусов за конкурс для участия в Волонтерской экспедиции «По пути с добром»...</p>
+                <div class="some-popup-score-item-bottom__score pink text-md">500 Б</div>
+              </div>
+            </div>
+            <!-- <div id="loader"></div>  -->
+            <!-- place for loader -->
+          </div>
+          <div class="main__button some-popup-score-btn full">Закрыть</div>
+        </div>
+      </div>
+      <button class="some-popup__close-btn">
+        <img src="../../assets/imgs/icons/close-icon.svg" alt="" />
+      </button>
+    </div> 
+
+    <script>
+      function copyToClipBoard(element) {
+        const textArea = document.createElement("textarea");
+        textArea.value = element.innerText;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+      }
+    </script>
+
+    <div id="footer" class="mt-2xl">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-top">
+            <div class="footer-item phone">
+              <p class="text-sm">Телефон</p>
+              <p class="title-lg">+ 7 (999) 999-99-99</p>
+            </div>
+            <div class="footer-item email">
+              <p class="text-md">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     d="M14.354 4.85403L6.35403 12.854C6.30759 12.9005 6.25245 12.9374 6.19175 12.9626C6.13105 12.9877 6.06599 13.0007 6.00028 13.0007C5.93457 13.0007 5.86951 12.9877 5.80881 12.9626C5.74811 12.9374 5.69296 12.9005 5.64653 12.854L2.14653 9.35403C2.05271 9.26021 2 9.13296 2 9.00028C2 8.8676 2.05271 8.74035 2.14653 8.64653C2.24035 8.55271 2.3676 8.5 2.50028 8.5C2.63296 8.5 2.76021 8.55271 2.85403 8.64653L6.00028 11.7934L13.6465 4.14653C13.7403 4.05271 13.8676 4 14.0003 4C14.133 4 14.2602 4.05271 14.354 4.14653C14.4478 4.24035 14.5006 4.3676 14.5006 4.50028C14.5006 4.63296 14.4478 4.76021 14.354 4.85403Z"
                     fill="white" />

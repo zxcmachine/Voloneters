@@ -201,10 +201,9 @@
             </li>
           </ul>
         </div>
-
-
       </div>
-      <button class="interaction-map__info-show-btn btn btn-primary"><span class="text-md">Список волонтёрских
+      <button class="interaction-map__info-show-btn btn btn-primary" onclick="openStaffListPopup()"><span
+          class="text-md">Список волонтёрских
           штабов</span></button>
     </div>
   </main>
@@ -263,6 +262,98 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div id="staff-list" class="staff-list-popup some-popup some-popup_not-full">
+    <div class="some-popup__background" onclick="closeStaffListPopup()"></div>
+    <div class="some-popup__wrapper some-popup__wrapper-column">
+      <div class="some-popup__wrapper-content">
+        <ul class="staff-list-popup__area-list">
+          <li class="staff-list-popup__area-list-item area-list__item" onclick="openStaffListItemPopup()">
+            <img src="../../assets/imgs/icons/Logo - Учалинский район.svg" width="32">
+            <p class="area-list__item-name text-md">Аургазинский район</p>
+            <p class="area-list__item-count text-sm">1 штаб</p>
+          </li>
+          <li class="staff-list-popup__area-list-item area-list__item" onclick="openStaffListItemPopup()">
+            <img src="../../assets/imgs/icons/Logo - Учалинский район.svg" width="32">
+            <p class="area-list__item-name text-md">Аургазинский район</p>
+            <p class="area-list__item-count text-sm">1 штаб</p>
+          </li>
+          <li class="staff-list-popup__area-list-item area-list__item" onclick="openStaffListItemPopup()">
+            <img src="../../assets/imgs/icons/Logo - Учалинский район.svg" width="32">
+            <p class="area-list__item-name text-md">Аургазинский район</p>
+            <p class="area-list__item-count text-sm">1 штаб</p>
+          </li>
+          <li class="staff-list-popup__area-list-item area-list__item" onclick="openStaffListItemPopup()">
+            <img src="../../assets/imgs/icons/Logo - Учалинский район.svg" width="32">
+            <p class="area-list__item-name text-md">Аургазинский район</p>
+            <p class="area-list__item-count text-sm">1 штаб</p>
+          </li>
+
+        </ul>
+        <div class="main__button some-popup-score-btn full" onclick="closeStaffListPopup()">Закрыть</div>
+      </div>
+    </div>
+    <button class="some-popup__close-btn" onclick="closeStaffListPopup()">
+      <img src="../../assets/imgs/icons/close-icon.svg" alt="">
+    </button>
+  </div>
+  <div id="staff-item" class="staff-item-popup some-popup some-popup_not-full">
+    <div class="some-popup__background" onclick="closeStaffListItemPopup()"></div>
+    <div class="some-popup__wrapper some-popup__wrapper-column">
+      <div class="some-popup__wrapper-content">
+        <div class="staff-item__header">
+          <div class="staff-item__header_left">
+            <img class="staff-item__header-icon" src="../../assets/imgs/icons/Logo - Учалинский район.svg" />
+            <p class="staff-item__header-name text-md">Учалинский район</p>
+          </div>
+          <p class="staff-item__header-count text-sm text-gray">2 штаба</p>
+        </div>
+        <ul class="staff-item__list">
+          <li class="staff-item__list-item">
+            <p class="text-md staff-item__list-item-number">1</p>
+            <div class="staff-item__list-item-info">
+              <p class="staff-item__list-item-info-title text-md">Название муниципального волонтерского штаба 1</p>
+              <p class="staff-item__list-item-info-address text-sm text-gray">г. Уфа, Аксакова 591</p>
+              <div class="staff-item__list-item-info-tags">
+                <div class="staff-item__list-item-info-tags-event">
+                  <img class="staff-item__list-item-info-tags-event-icon"
+                    src="../../assets//imgs/icons/event-tag.svg" />
+                  <div class="staff-item__list-item-info-tags-event-text text-sl">Событийное</div>
+                </div>
+                <div class="staff-item__list-item-info-tags-event">
+                  <img class="staff-item__list-item-info-tags-event-icon"
+                    src="../../assets//imgs/icons/event-tag.svg" />
+                  <div class="staff-item__list-item-info-tags-event-text text-sl">Патриотическое</div>
+                </div>
+              </div>
+              <div class="staff-item__list-item-info-block">
+                <p class="staff-item__list-item-info-block-title text-sm ">Саркисян Карина Самвеловна</p>
+                <p class="staff-item__list-item-info-block-subtitle text-sm text-gray">Заместитель начальника отдела</p>
+                <div class="staff-item__list-item-info-block-phone">
+                  <img src="../../assets/imgs/icons/phone-icon.svg" alt="">
+                  <p class="staff-item__list-item-info-block-phone-text text-sm">+7 (985) 993-26-16</p>
+                </div>
+                <div class="staff-item__list-item-info-block-email">
+                  <img src="../../assets/imgs/icons/email-icon.svg" alt="">
+                  <p class="staff-item__list-item-info-block-email-text text-sm">testmail@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+        <div class="reject-reports__popup-footer staff-item__footer report-popup__footer">
+          <button class="btn btn-secondary report-popup__footer-close" onclick="closeStaffListItemPopup()">
+            <p class="text-md">Закрыть</p>
+          </button>
+        </div>
+        <!-- <div class="main__button some-popup-score-btn full" onclick="closeStaffListPopup()">Закрыть</div> -->
+      </div>
+    </div>
+    <button class="some-popup__close-btn" onclick="closeStaffListItemPopup()">
+      <img src="../../assets/imgs/icons/close-icon.svg" alt="">
+    </button>
   </div>
   <div class="menu__popup">
     <div class="menu__popup-header">

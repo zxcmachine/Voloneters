@@ -6,15 +6,32 @@
   color: var(--white-color);
   cursor: pointer;
   white-space: nowrap;
+  transition: background-color .2s linear;
 }
+
+
 
 .btn-primary {
   background-color: var(--primary-color);
 }
 
+.btn-primary:hover {
+  background-color: var(--primary-hover-color);
+}
+
+.btn-primary:focus {
+  background-color: #372668;
+
+}
+
 .btn-secondary {
   background-color: var(--primary-container);
   color: var(--primary-color)
+}
+
+.btn-secondary {
+  background-color: #E5DFF4;
+
 }
 
 .btn-pink {

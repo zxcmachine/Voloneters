@@ -357,6 +357,10 @@ a {
     color: var(--primary-color);
 }
 
+.text-pink {
+    color: var(--pink-color)
+}
+
 .text-gray {
     color: var(--text01-color);
 }
