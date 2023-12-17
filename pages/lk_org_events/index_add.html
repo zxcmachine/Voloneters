@@ -11,8 +11,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 <body>
   <header id="header">
@@ -110,13 +108,29 @@
           </div>
           <div class="input-wrapper text-sm gray">
             Дата проведения
-            <input class="universal__input" type="text" placeholder="00.00.0000 - 00.00.0000" id="el" />
+            <div class="universal__input-wrapper">
+              <input class="universal__input" type="text" placeholder="00.00.0000 - 00.00.0000" id="el" />
+              <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.5 2H14.25V1.25C14.25 1.05109 14.171 0.860322 14.0303 0.71967C13.8897 0.579018 13.6989 0.5 13.5 0.5C13.3011 0.5 13.1103 0.579018 12.9697 0.71967C12.829 0.860322 12.75 1.05109 12.75 1.25V2H5.25V1.25C5.25 1.05109 5.17098 0.860322 5.03033 0.71967C4.88968 0.579018 4.69891 0.5 4.5 0.5C4.30109 0.5 4.11032 0.579018 3.96967 0.71967C3.82902 0.860322 3.75 1.05109 3.75 1.25V2H1.5C1.10218 2 0.720644 2.15804 0.43934 2.43934C0.158035 2.72064 0 3.10218 0 3.5V18.5C0 18.8978 0.158035 19.2794 0.43934 19.5607C0.720644 19.842 1.10218 20 1.5 20H16.5C16.8978 20 17.2794 19.842 17.5607 19.5607C17.842 19.2794 18 18.8978 18 18.5V3.5C18 3.10218 17.842 2.72064 17.5607 2.43934C17.2794 2.15804 16.8978 2 16.5 2ZM3.75 3.5V4.25C3.75 4.44891 3.82902 4.63968 3.96967 4.78033C4.11032 4.92098 4.30109 5 4.5 5C4.69891 5 4.88968 4.92098 5.03033 4.78033C5.17098 4.63968 5.25 4.44891 5.25 4.25V3.5H12.75V4.25C12.75 4.44891 12.829 4.63968 12.9697 4.78033C13.1103 4.92098 13.3011 5 13.5 5C13.6989 5 13.8897 4.92098 14.0303 4.78033C14.171 4.63968 14.25 4.44891 14.25 4.25V3.5H16.5V6.5H1.5V3.5H3.75ZM16.5 18.5H1.5V8H16.5V18.5Z" fill="#B6C0CF"/>
+                </svg>
+                
+            </div>
+
           </div>
-          <div class="input-wrapper text-sm gray">
+          <!-- <div class="input-wrapper text-sm gray">
             Время проведения
-            <input type="text" class="universal__input" type="time" placeholder="00:00 - 00:00" data-range="true"
+            <div class="universal__input-wrapper" onclick="openSetTime()">
+              <input type="text" class="universal__input" placeholder="00:00 - 00:00" id="datepickerButton">
+              <input type="text" class="universal__input"  placeholder="00:00 - 00:00" data-range="true" 
               id="el-time">
-          </div>
+              <input type="text" class="universal__input" placeholder="00:00 - 00:00" data-range="true" hidden
+              id="el-time2">
+
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.25C10.0716 2.25 8.18657 2.82183 6.58319 3.89317C4.97982 4.96451 3.73013 6.48726 2.99218 8.26884C2.25422 10.0504 2.06114 12.0108 2.43735 13.9021C2.81355 15.7934 3.74215 17.5307 5.10571 18.8943C6.46928 20.2579 8.20656 21.1865 10.0979 21.5627C11.9892 21.9389 13.9496 21.7458 15.7312 21.0078C17.5127 20.2699 19.0355 19.0202 20.1068 17.4168C21.1782 15.8134 21.75 13.9284 21.75 12C21.7473 9.41498 20.7192 6.93661 18.8913 5.10872C17.0634 3.28084 14.585 2.25273 12 2.25ZM12 20.25C10.3683 20.25 8.77326 19.7661 7.41655 18.8596C6.05984 17.9531 5.00242 16.6646 4.378 15.1571C3.75358 13.6496 3.5902 11.9908 3.90853 10.3905C4.22685 8.79016 5.01259 7.32015 6.16637 6.16637C7.32016 5.01259 8.79017 4.22685 10.3905 3.90852C11.9909 3.59019 13.6497 3.75357 15.1571 4.37799C16.6646 5.00242 17.9531 6.05984 18.8596 7.41655C19.7661 8.77325 20.25 10.3683 20.25 12C20.2475 14.1873 19.3775 16.2843 17.8309 17.8309C16.2843 19.3775 14.1873 20.2475 12 20.25ZM18 12C18 12.1989 17.921 12.3897 17.7803 12.5303C17.6397 12.671 17.4489 12.75 17.25 12.75H12C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12V6.75C11.25 6.55109 11.329 6.36032 11.4697 6.21967C11.6103 6.07902 11.8011 6 12 6C12.1989 6 12.3897 6.07902 12.5303 6.21967C12.671 6.36032 12.75 6.55109 12.75 6.75V11.25H17.25C17.4489 11.25 17.6397 11.329 17.7803 11.4697C17.921 11.6103 18 11.8011 18 12Z" fill="#B6C0CF"/>
+                </svg>
+              </div>
+          </div> -->
           <div class="input-wrapper-flex text-sm gray">
             <div class="input-wrapper text-sm gray">
               Доброчасы
@@ -376,31 +390,12 @@
 
   <!-- https://air-datepicker.com/ru/examples -->
   <script>
-    flatpickr("#timeRange", {
-      mode: "range",
-      enableTime: true,
-      noCalendar: true,
-      dateFormat: "H:i",
-      time_24hr: true,
-      onChange: function (selectedDates, dateStr, instance) {
-        if (selectedDates.length === 2) {
-          const startTime = selectedDates[0].toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-          const endTime = selectedDates[1].toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-          const timeRangeContainer = document.getElementById('timeRangeContainer');
-          timeRangeContainer.querySelector('input').value = `${startTime} - ${endTime}`;
-        }
-      }
-    });
 
     let datePicker = new AirDatepicker('#el', {
       range: true,
-      multipleDatesSeparator: ' - '
-    })
-    let timePicker = new AirDatepicker('#el-time', {
-      onlyTimepicker: true,
+      multipleDatesSeparator: ' - ',
       timepicker: true,
     })
-
     function copyToClipBoard(element) {
       const textArea = document.createElement("textarea");
       textArea.value = element.innerText;
@@ -527,6 +522,7 @@
       <a class="text-md" href="#">Рейтинг волонтёров</a>
     </div>
   </div>
+
   <script src="./main_page.js"></script>
   <script src="../about_us/about_us.js"></script>
 </body>
