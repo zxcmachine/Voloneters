@@ -3,6 +3,23 @@
     gap: 24px;
 }
 
+
+.profile-content__info {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+}
+
+.profile-content__title {
+    margin-top: 24px;
+}
+
+.profile-content__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .profile-left {
     display: flex;
     flex-direction: column;
@@ -123,9 +140,11 @@
     font-weight: 500;
     white-space: nowrap;
 }
-.profile__edit.org{
+
+.profile__edit.org {
     margin-left: unset;
-} 
+}
+
 .profile-right-user.organization {
     flex-direction: column;
     gap: 24px;
@@ -182,7 +201,7 @@
     display: flex;
     gap: 8px;
     width: 100%;
-    max-width: 437px;
+    max-width: 322px;
 }
 
 .profile-edit-buttons .main__button {
@@ -236,26 +255,31 @@
     line-height: 24px;
     /* 150% */
 }
-.input-wrapper.social{
+
+.input-wrapper.social {
     flex-wrap: wrap;
     flex-direction: unset;
 }
-.input-wrapper.social .universal__select{
+
+.input-wrapper.social .universal__select {
     width: calc(50% - 4px);
     color: var(--base02-color);
     font-weight: 500;
 }
-.input-wrapper.social .input-wrapper{
+
+.input-wrapper.social .input-wrapper {
     width: calc(50% - 4px);
 }
-.profile-text-social{
+
+.profile-text-social {
     width: 100%;
 }
-.mobile-clear{
+
+.mobile-clear {
     display: none
 }
 
-.profile-right-header{
+.profile-right-header {
     display: flex;
     gap: 8px;
     justify-content: space-between;
@@ -288,9 +312,10 @@
     }
 
     .profile-left-item.active .profile-left-item-line {
-      
+
         display: none;
     }
+
     .profile-left-item.active {
         border-bottom: 2px solid var(--primary-color);
         border-radius: unset;
@@ -317,21 +342,35 @@
     .profile-statistics-items {
         flex-direction: column;
     }
-    .profile-right.edit{
+
+    .profile-right.edit {
         max-width: unset;
     }
-    .input-wrapper.social .input-wrapper{
+
+    .input-wrapper.social .input-wrapper {
         width: calc(80% - 4px);
     }
-    .input-wrapper.social .universal__select{
+
+    .input-wrapper.social .universal__select {
         width: calc(80% - 4px);
     }
-    .btn-add-social{
+
+    .btn-add-social {
         width: 100%;
     }
-    .mobile-clear{
+
+    .mobile-clear {
         display: flex;
         align-items: center;
         margin-left: auto;
+    }
+
+    .profile-content__info {
+        flex-direction: column;
+    }
+
+    .profile-reports {
+        width: 100%;
+        max-width: unset;
     }
 }

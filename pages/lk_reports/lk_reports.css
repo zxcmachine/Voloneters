@@ -99,7 +99,6 @@
 
 .send-report__popup .some-popup__wrapper {
     width: 540px;
-    display: block;
 }
 
 .send-report__subtitle {
@@ -257,7 +256,6 @@
 .pin-report__popup .some-popup__wrapper {
     width: 540px;
     height: 755px;
-    display: block;
 }
 
 .pin-report__header-status {
@@ -365,17 +363,14 @@
 .accept-report__popup .some-popup__wrapper {
     width: 540px;
     height: 755px;
-    display: block;
 }
 
 .reject-report__popup .some-popup__wrapper {
     width: 540px;
     height: 755px;
-    display: block;
 }
 
-.report-popup__footer {
-    position: absolute;
+.check-report-popup__footer {
     background-color: var(--white-color);
     width: 100%;
     padding-top: 24px;
@@ -527,6 +522,11 @@
     .send-report__tooltip {
         width: 80%;
     }
+
+    .report-popup__footer {
+        bottom: 16px;
+    }
+
     .report-popup__footer-close {
         display: block;
     }

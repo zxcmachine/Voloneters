@@ -132,7 +132,7 @@
     border-radius: 24px;
     width: 1024px;
     display: flex;
-    gap: 32px;
+    flex-direction: column;
 }
 
 .some-popup__wrapper-column {
@@ -141,20 +141,24 @@
 
 .some-popup__wrapper-content {
     overflow: auto;
-    max-height: 100%;
-    padding-bottom: 75px;
+    /* max-height: 100%; */
+    position: relative;
+    padding-bottom: 25px;
 }
+
 .some-popup__wrapper-content.no-padding {
     padding-bottom: unset;
 }
+
 .some-popup__wrapper-content.staff {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
+
 .some-popup_active {
     opacity: 1;
-    display: block;
+    display: flex;
 }
 
 .some-popup__title {
@@ -187,10 +191,10 @@
 }
 
 .some-popup__wrapper-footer {
-    position: absolute;
     background-color: var(--white-color);
-    width: 90%;
+    width: 100%;
     padding-top: 24px;
+    width: 100%;
     bottom: 20px;
     z-index: 100;
 }
@@ -210,15 +214,18 @@
     height: 100%;
 }
 
-.some-popup__wrapper.column{
+
+.some-popup__wrapper.column {
     flex-direction: column;
     gap: 16px;
 }
-.some-popup__wrapper-content.column{
+
+.some-popup__wrapper-content.column {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
+
 @media (max-width: 800px) {
     .some-popup {
         width: 100%;
@@ -241,7 +248,8 @@
         width: 48px;
         height: 48px;
     }
-    .some-popup__wrapper{
+
+    .some-popup__wrapper {
         width: 100%;
         height: 100%;
     }
@@ -259,15 +267,14 @@
     .some-popup_not-full .some-popup__wrapper {
         width: 90% !important;
         max-height: 90%;
-        overflow: auto;
         top: unset;
         bottom: 30px;
         transform: translate(-50%, 0);
     }
 
     .some-popup_full .some-popup__wrapper {
-        width: 100vw;
-        height: 100vh;
+        width: 100vw !important;
+        height: 100vh !important;
         top: 0;
         left: 0;
         transform: none;
@@ -284,16 +291,16 @@
         padding: 16px;
     }
 
-    .some-popup__close-btn.mobile{
-        display: none;
-    }
+
     .some-popup__wrapper-footer {
-        width: 81%;
+        width: 100%;
     }
-    .auth-popup .some-popup__wrapper{
+
+    .auth-popup .some-popup__wrapper {
         border-radius: unset;
     }
-    .register-valant-popup .some-popup__wrapper{
+
+    .register-valant-popup .some-popup__wrapper {
         border-radius: unset;
     }
 }

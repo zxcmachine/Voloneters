@@ -160,6 +160,7 @@
     <div class="some-popup__background" onclick="closeSendReportPopup()"></div>
     <div class="some-popup__wrapper">
       <div class="some-popup__wrapper-content">
+
         <p class="send-report__title some-popup__title title-sm">Отправка отчёта</p>
         <p class="send-report__subtitle text-sm">Укажите сколько добрчасов вы работали и приложите фото или видео
           для отчёта.
@@ -226,7 +227,7 @@
 
       </div>
 
-      <div class="report-popup__footer">
+      <div class="report-popup__footer some-popup__wrapper-footer">
         <button class="send-report__btn btn btn-primary text-md">Отправить на проверку</button>
         <button class="btn btn-secondary report-popup__footer-close" onclick="closeAcceptReport()">
           <p class="text-md">Закрыть</p>
@@ -365,10 +366,12 @@
             </svg>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="reject-reports__popup-footer report-popup__footer">
+
+      </div>
+
+    </div>
+    <div class="reject-reports__popup-footer report-popup__footer some-popup__wrapper-footer">
       <button class="btn btn-secondary report-popup__footer-close" onclick="closePinReportPopup()">
         <p class="text-md">Закрыть</p>
       </button>
@@ -522,15 +525,15 @@
             </div>
           </div>
         </div>
-      </div>
 
+
+      </div>
       <div class="reject-reports__popup-footer report-popup__footer some-popup__wrapper-footer">
         <button class="btn btn-secondary report-popup__footer-close soe-popup__wrapper-footer-btn"
           onclick="closeAcceptReport()">
           <p class="text-md">Закрыть</p>
         </button>
       </div>
-
     </div>
     <button class="some-popup__close-btn" onclick="closeAcceptReport()">
       <img src="../../assets/imgs/icons/close-icon.svg" alt="">
@@ -677,10 +680,10 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="reject-reports__popup-footer report-popup__footer">
-        <button class="btn btn-primary btn-over">
+      </div>
+      <div class="report-popup__footer">
+        <button class="btn btn-primary">
           <p class="text-md">Редактировать</p>
           <p class="text-sm">Повторно отправить отчёт ещё 2 раза</p>
         </button>

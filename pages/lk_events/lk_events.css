@@ -18,10 +18,6 @@
     width: 100%;
 }
 
-.profile-right.events .event__card {
-    width: calc(32% - 8px);
-}
-
 @media(max-width:800px) {
     .profile-right.empty {
         height: 500px;
@@ -30,11 +26,13 @@
     .profile-right.events .event__card {
         width: 100%;
     }
-    .profile-right.events{
+
+    .profile-right.events {
         flex-direction: column;
     }
 }
-.profile-right-back{
+
+.profile-right-back {
     display: flex;
     gap: 8px;
     align-items: center;
