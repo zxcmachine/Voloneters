@@ -514,8 +514,18 @@ a {
     outline: none;
     border: unset;
     height: 56px;
+    width: 100%;
 }
-
+.universal__input-wrapper{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.universal__input-wrapper svg{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
 .input:focus {
     background: #E6EFFD !important;
 }
