@@ -438,3 +438,10 @@
 .accordion-item.active .accordion-item-header svg{
     transform: rotate(180deg);
 }
+
+.menu-popup-wrapper{
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh;
+    overflow: scroll;
+}
