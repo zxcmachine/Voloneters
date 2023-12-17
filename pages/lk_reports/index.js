@@ -65,7 +65,6 @@ function closeAcceptReport() {
 function openAcceptReport() {
   acceptReportPopup.classList.add("some-popup_active")
   document.querySelector('body').style.overflow = 'hidden'
-
 }
 
 new Swiper('.pin-report__photo-swiper', {

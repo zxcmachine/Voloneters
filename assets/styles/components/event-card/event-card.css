@@ -99,10 +99,11 @@
 }
 
 .event__card-bottom {
-    margin-top: 16px;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 60%;
+    align-items: flex-start;
 }
 
 .event__card-bottom .text-md {
