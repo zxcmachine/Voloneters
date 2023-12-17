@@ -39,3 +39,14 @@
     font-weight: 500;
     cursor: pointer;
 }
+.profile-right.no-column{
+    flex-direction: unset;
+}
+.profile-reports__list-empty{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+}
