@@ -133,7 +133,7 @@
     gap: 8px;
     background: var(--base00-color);
     padding: 12px 24px;
-    width: calc(25% - 18px);
+    width: calc(33.3% - 18px);
     border-radius: 16px;
 }
 

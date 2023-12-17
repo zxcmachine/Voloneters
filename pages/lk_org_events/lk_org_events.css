@@ -491,31 +491,33 @@
     .profile-add-info {
         margin-top: unset;
     }
-}
 
-.profile-reports {
-    width: 100%;
-    max-width: unset;
-}
 
-.event__card-event {
-    flex-direction: column !important;
-}
+    .event__card-event {
+        flex-direction: column !important;
+    }
 
-.event__card-bottom {
-    width: 100%;
-    margin-top: 8px;
-}
 
-.event__card-bottom-warning {
-    padding: 48px 0;
-}
+    .profile-reports {
+        width: 100%;
+        max-width: unset;
+    }
 
-.check-report-popup__footer-btns-item-text-hidden {
-    display: none;
-}
 
-.check-report-popup__footer-btns-item_right {
-    width: 20% !important;
-}
+    .event__card-bottom {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .event__card-bottom-warning {
+        padding: 48px 0;
+    }
+
+    .check-report-popup__footer-btns-item-text-hidden {
+        display: none;
+    }
+
+    .check-report-popup__footer-btns-item_right {
+        width: 20% !important;
+    }
 }
