@@ -43,6 +43,7 @@
 }
 .detail__content-left.lk-event{
     width: calc(50% - 12px);
+
 }
 .detail__content-left.profile {
     width: 100%;
