@@ -50,14 +50,14 @@ function openUnversalFilter(el){
  }
 
  function openHistoryScore(){
-  document.querySelector('.history_score_no_empty').classList.add('some-popup_active')
+  document.querySelector('.history_score_no_empty').classList.toggle('some-popup_active')
  }
 
  function history_score_how_to_balance(){
-  document.querySelector('.history_score_how_to_balance').classList.add('some-popup_active')
+  document.querySelector('.history_score_how_to_balance').classList.toggle('some-popup_active')
  }
 
  function history_score_how_to_rating(){
-  document.querySelector('.history_score_how_to_rating').classList.add('some-popup_active')
+  document.querySelector('.history_score_how_to_rating').classList.toggle('some-popup_active')
  }
 
