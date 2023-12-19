@@ -39,7 +39,7 @@
 }
 
 .detail__content-left {
-    width: calc(25% - 12px);
+    width: calc(33% - 12px);
 }
 
 .detail__content-left.profile {
