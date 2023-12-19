@@ -632,3 +632,6 @@ input {
     cursor: pointer;
 }
 
+.no-wrap {
+    flex-wrap: unset !important;
+}
