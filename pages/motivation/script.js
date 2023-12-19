@@ -7,6 +7,8 @@ const firstStepPopup = document.querySelector(".first-popup");
 const secondStepPopup = document.querySelector(".second-popup");
 const thirdStepPopup = document.querySelector(".third-popup");
 
+const filterSelect = document.querySelector(".motivation__filter-button");
+
 function openMainPopup() {
   mainPopup.classList.add("some-popup_active")
   document.querySelector('body').style.overflow = 'hidden'
