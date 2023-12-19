@@ -15,7 +15,10 @@
     align-items: center;
 
 }
-
+.header-logo{
+    display: flex;
+    max-width: 180px;
+}
 .header-item {
     font-weight: 500;
     color: var(--text00-color);

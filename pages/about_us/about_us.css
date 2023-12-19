@@ -40,6 +40,9 @@
   font-size: 100px;
   position: relative
 }
+.vasek-underline.volonters-map{
+  left: 50px;
+}
 
 .about-us__about-info-novisible {
   position: relative;

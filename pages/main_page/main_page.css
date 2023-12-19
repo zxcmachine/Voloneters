@@ -14,12 +14,13 @@
     font-size: 110px;
     color: var(--pink-color);
     position: relative;
+    top: 15px;
 }
 
 .vasek-underline {
     position: absolute;
-    left: -20px;
-    bottom: 0;
+    left: -7px;
+    bottom: 20px;
 }
 
 .main__page-title-wrapper {
@@ -347,6 +348,7 @@
         font-size: 56px;
         font-weight: 400;
         line-height: 32px;
+        top: 5px;
     }
 
     .vasek-underline {
