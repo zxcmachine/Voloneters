@@ -26,13 +26,24 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  document.querySelectorAll('.universal__select').forEach(el=>{
-    el.addEventListener('click',()=>{
+  document.querySelectorAll('.universal__select').forEach(el => {
+    el.addEventListener('click', () => {
       el.classList.toggle('active')
     })
   })
-  
- 
+
+  document.body.addEventListener("click", (e) => {
+    if (!e.target.closest('.universal__select')) {
+      document.querySelectorAll('.universal__select').forEach(el => {
+        el.classList.remove('active')        
+      })
+
+    } else {
+      e.preventDefault();
+    }
+  })
+
+
 });
 
 function toggleAccordion(index) {

@@ -156,7 +156,7 @@
     </div>
   </div>
 
-  <div id="send-report" class="send-report__popup some-popup some-popup_not-full">
+  <div id="send-report" class="send-report__popup some-popup some-popup_not-full report-popup">
     <div class="some-popup__background" onclick="closeSendReportPopup()"></div>
     <div class="some-popup__wrapper">
       <div class="some-popup__wrapper-content">
@@ -209,7 +209,8 @@
         </div>
         <div class="send-report__file-area" id="drop-area">
           <label class="send-report__file-area-label" for="send-report__file">
-            <div class="send-report__file-area-label-area send-report__file_not-over">
+            <div id="send-report__file-area-default" class="send-report__file-area-label-area send-report__file_not-over 
+            send-report__file_over">
               <p class="send-report__file-area-label-first-line text-md text-primary">Перетащите <span
                   class="text-bold">фото</span> или <span class="text-bold">выберите файл</span></p>
               <p class="send-report__file-area-label-second-line text-sm text-primary">Загрузите не более 5-и фото</p>
@@ -219,9 +220,24 @@
               <img src="../../assets/imgs/icons/file-drag.svg" alt="" class="send-report__file_over">
               <!-- <p class="send-report__file-area-label-second-line text-sm text-primary">Загрузите не более 5-и фото</p> -->
             </div>
+ 
             <input type="file" placeholder="hi" id="send-report__file" accept="image/*"
               onchange="handleFiles(this.files)">
           </label>
+          <div id="send-report__file-area-files-list" class="send-report__file-area-files-list">
+            <div class="send-report__file-area-files-list-item-box">
+              <img src="../../assets/imgs/about-us.png" alt="" class="send-report__file-area-files-list-item-img">
+              <img src="../../assets/imgs/icons/XCircle.svg" class="send-report__file-area-files-list-item-box-close" alt="">
+            </div>
+            <div class="send-report__file-area-files-list-item-box">
+              <img src="../../assets/imgs/about-us.png" alt="" class="send-report__file-area-files-list-item-img">
+              <img src="../../assets/imgs/icons/XCircle.svg" class="send-report__file-area-files-list-item-box-close" alt="">
+            </div>
+            <div class="send-report__file-area-files-list-item-box send-report__file-area-files-list-item-box_add">
+              <img src="../../assets/imgs/icons/Images.svg" alt="">
+            </div>
+            </div>
+          </div>
 
         </div>
 
@@ -240,7 +256,7 @@
     </button>
   </div>
 
-  <div id="pin-report" class="pin-report__popup some-popup some-popup_not-full"">
+  <div id="pin-report" class="pin-report__popup some-popup some-popup_not-full report-popup">
     <div class=" some-popup__background" onclick="closePinReportPopup()"></div>
   <div class="some-popup__wrapper">
     <div class="some-popup__wrapper-content">
@@ -382,7 +398,7 @@
   </button>
   </div>
 
-  <div id="accept-report" class="accept-report__popup some-popup some-popup_not-full">
+  <div id="accept-report" class="accept-report__popup some-popup some-popup_not-full report-popup">
     <div class=" some-popup__background" onclick="closeAcceptReport()"></div>
     <div class="some-popup__wrapper">
       <div class="some-popup__wrapper-content">
@@ -540,7 +556,7 @@
     </button>
   </div>
 
-  <div id="reject-report" class="reject-report__popup some-popup some-popup_not-full">
+  <div id="reject-report" class="reject-report__popup some-popup some-popup_not-full report-popup">
     <div class=" some-popup__background" onclick="closeRejectReportPopup()"></div>
     <div class="some-popup__wrapper">
       <div class="some-popup__wrapper-content">

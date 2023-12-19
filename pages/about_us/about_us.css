@@ -198,6 +198,10 @@
   color: var(--pink-color);
 }
 
+.about-us__running-lines .swiper-slide {
+  width: 830px !important;
+  max-width: 100%;
+}
 
 /* interaction-map */
 
@@ -356,20 +360,36 @@
 
 .running-line__list {
   animation-name: scroll;
-  animation-duration: 60s;
+  animation-duration: 100s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
 .running-line__list-revert {
-  left: -600px;
+  left: -1600px;
   animation-name: scroll;
-  animation-duration: 60s;
+  animation-duration: 100s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: reverse;
 }
 
+.running-line__list-revert_company {
+  left: -1600px;
+  animation-name: scroll;
+  animation-duration: 100s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+.running-list__list-norm {
+  left: -100%;
+}
+
+.running-list__list-norm_company {
+  left: -150%;
+}
 .area__list.hide{
   display: none;
 }
