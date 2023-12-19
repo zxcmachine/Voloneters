@@ -578,6 +578,21 @@ button{
     opacity: 0;
     visibility: hidden;
     transition: .4s;
+    display: flex;
+    flex-direction: column;
+    background: var(--white-color);
+    width: 100%;
+    left: 0;
+    top: 0px;
+    border-radius: 8px;
+    color: var(--base02-color);
+    gap: 4px;
+    max-height: 164px;
+    overflow: auto;
+    font-weight: 500;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15), 0px 4px 12px 3px rgba(0, 0, 0, 0.10);
+    z-index: 10;
+    
 }
 
 .universal__select.active {
@@ -585,23 +600,8 @@ button{
 }
 
 .universal__select.active .universal__select-inside {
-    display: flex;
-    flex-direction: column;
-    background: var(--white-color);
-    width: 100%;
-    left: 0;
-    top: 0px;
-    padding: 0 16px;
-    border-radius: 8px;
-    color: var(--base02-color);
-    gap: 4px;
-    max-height: 164px;
-    overflow: auto;
-    font-weight: 500;
     opacity: 1;
     visibility: visible;
-    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15), 0px 4px 12px 3px rgba(0, 0, 0, 0.10);
-    z-index: 10;
 }
 
 .universal__select-inside-item {

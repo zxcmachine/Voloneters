@@ -308,7 +308,9 @@
     gap: 16px;
     margin-top: 24px;
 }
-
+.profile-add-item-select{
+    padding: 16px;
+}
 
 .check-report__item {
     background-color: var(--base00-color);
