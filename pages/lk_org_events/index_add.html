@@ -95,10 +95,14 @@
           <div class="profile__text">
             <p class="text-lg dark ">Обложка мероприятия</p>
             <div class="profile__edit org text-sm">
-              <div class="main__button">Добавить фотографию</div>
+              <label for="add-file" class="main__button">Добавить фотографию
+                <input type="file" hidden id="add-file" name="add-file">
+              </label>
+      
+         
             </div>
           </div>
-          <p class="text-sm primary profile-add-info" onclick="openAddInfo()">Пример</p>
+          <button class="text-sm primary profile-add-info" onclick="openAddInfo()">Пример</button>
         </div>
         <div class="profile-right-user info user-info-padding info-edit">
           <p class="text-xl dark">Информация о мероприятии</p>

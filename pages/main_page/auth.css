@@ -1,5 +1,8 @@
 .auth-popup {
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
 }
 
 .auth-popup__background {

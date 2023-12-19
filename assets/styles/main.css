@@ -122,6 +122,13 @@ a {
     margin: 0 auto;
 }
 
+button{
+    outline: none;
+    border: unset;
+    cursor: pointer;
+    background: unset;
+}
+
 @media(max-width:1440px) {
     .container {
         margin: 0 40px;
@@ -624,3 +631,4 @@ input {
 .footer-bottom-item p {
     cursor: pointer;
 }
+
