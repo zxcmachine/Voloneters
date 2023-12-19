@@ -51,6 +51,7 @@
     font-size: 76px;
     line-height: 48px;
     position: relative;
+    top: 10px;
 }
 
 .what__need-swiper-slide-right .vasek .underline {
@@ -144,31 +145,41 @@
     left: 16px;
 }
 .underline.two-slide{
-    left: 0px;
+    top: 15px;
+    left: -5px;
 }
 .underline.three-slide{
     left: 0px;
+    top: 15px;
+    left: -10px;
 }
 .underline.four-slide{
-    left: 0px;
+    left: -15px;
+    top: 15px;
 }
 .underline.five-slide{
-    left: 20px;
+    left: 10px;
+    top: 15px;
 }
 .underline.vol-two-slide{
     left: 0px;
+    top: 15px;
 }
 .underline.vol-three-slide{
     left: 0px;
+    top: 15px;
 }
 .underline.vol-four-slide{
-    left: 0px;
+    left: -15px;
+    top: 15px;
 }
 .underline.vol-five-slide{
     left: 0px;
+    top: 15px;
 }
 .underline.vol-six-slide{
     left: 0px;
+    top: 15px;
 }
 .what__need-text__wrapper{
     margin-top: 16px;
@@ -188,6 +199,10 @@
     .what__need-text__wrapper{
         margin-top: 12px;
     }
+    .what__need-swiper-slide-right .vasek{
+        top: 8px;
+        left: 3px;
+    }
     .underline.underline.first-slide {
         width: 123px !important;
     }
@@ -199,15 +214,18 @@
     }
     .underline.underline.three-slide {
         width: 130px !important;
+        left: -1px;
     }
     .underline.underline.vol-three-slide {
         width: 130px !important;
     }
     .underline.underline.four-slide {
         width: 118px !important;
+        left: 0px;
     }
     .underline.underline.vol-four-slide {
         width: 76px !important;
+        left: -2px;
     }
     .underline.underline.five-slide {
         width: 122px !important;
