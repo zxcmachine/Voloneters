@@ -82,6 +82,9 @@
     overflow: auto;
 }
 @media (max-width:800px) {
+.some-popup-score__and__history-text{
+    max-height: unset;
+}
 .some-popup-score-items{
     max-height: unset;
 }
