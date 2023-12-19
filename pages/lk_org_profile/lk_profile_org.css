@@ -30,9 +30,16 @@
     width: calc(50% - 12px);
 
 }
-
+.lk-profile-edit-button{
+    padding: 8px 16px !important;
+    margin-top: 8px;
+}
 @media(max-width:1199px){
     .profile-right-user-org{
         width: 100%;
+    }
+    .lk-profile-edit-button{
+        width: 100% !important;
+        text-align: center;
     }
 }
