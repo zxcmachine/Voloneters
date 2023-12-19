@@ -141,7 +141,6 @@ reportLoadFile.addEventListener('dragleave', function (e) {
 // });
 
 
-
 reportLoadFile.addEventListener("drop", function () {
   reportLoadFile.classList.remove('send-report__file_over-active');
   reportLoadFile.innerHTML = '<p class="send-report__file-area-label-first-line text-md text-primary">Перетащите <span class="text-bold">фото</span> или <span class="text-bold">выберите файл</span></p><p class="send-report__file-area-label-second-line text-sm text-primary" > Загрузите не более 5 - и фото</p > '
@@ -161,20 +160,51 @@ reportLoadFile.addEventListener("drop", function () {
 })
 
 
+const fileAreaDefault = document.getElementById("send-report__file-area-default");
+const fileAreaListFiles = document.getElementById("send-report__file-area-files-list")
+
+console.log(fileAreaListFiles);
+
 function handleFiles(file) {
   const filesLoad = uploadInput.files;
   files = [...files, ...filesLoad];
   const reader = new FileReader();
 
   if (files.length) {
-    files.forEach(item => {
-      reader.onload = function (e) {
-        const img = document.createElement("img");
-        img.src = e.target.result;
-      }
+    reader.onload = function (e) {
+      console.log(e);
+      const img = document.createElement("img");
+      img.src = e.target.result;
+      
+        fileAreaDefault.classList.add("send-report__file_over")
+        fileAreaListFiles.classList.remove("send-report__file_over");
+    }
+    console.log(files)
+    files.forEach(async (item) => {
+      // console.log(item)w
+      // const blob = new Blob([item], { type: item.type });
+      // console.log(Blob);
 
-      reader.readAsDataURL(item);
+      // const arrayBuffer = await item.arrayBuffer();
+
+      // // Convert the ArrayBuffer to a Base64 string
+      // const base64String = arrayBufferToBase64(arrayBuffer);
+      // console.log(item);
+      // const baseFile = item.type + ":base64" + base64String
+      // console.log(baseFile); // This is your Base64 string
+ 
+      await reader.readAsDataURL(item);
     })
   }
 
+}
+
+function arrayBufferToBase64(buffer) {
+  var binary = '';
+  var bytes = new Uint8Array(buffer);
+  var len = bytes.byteLength;
+  for (var i = 0; i < len; i++) {
+      binary += String.fromCharCode(bytes[i]);
+  }
+  return window.btoa(binary);
 }
