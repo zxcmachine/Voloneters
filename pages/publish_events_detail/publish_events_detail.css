@@ -207,6 +207,9 @@
 
 
 @media(max-width:1199px) {
+    .detail__content-left.lk-event{
+        width: 100%;
+    }
     .detail__content {
         flex-direction: column;
     }
