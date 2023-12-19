@@ -38,6 +38,7 @@
     flex-direction: column;
     gap: 16px;
     overflow: auto;
+    max-height: 400px;
 }
 .some-popup-score-item{
     display: flex;
@@ -80,7 +81,11 @@
     max-height: 350px;
     overflow: auto;
 }
-
+@media (max-width:800px) {
+.some-popup-score-items{
+    max-height: unset;
+}
+}
 @media (max-width:600px) {
     .some-popup-score-btn{
         display: block;

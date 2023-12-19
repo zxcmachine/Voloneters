@@ -1,12 +1,3 @@
-.profile-right.empty {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 100%;
-    height: 640px;
-    text-align: center;
-}
 
 .profile-right.empty .main__button {
     margin-top: 8px;

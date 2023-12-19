@@ -41,7 +41,10 @@
 .detail__content-left {
     width: calc(33% - 12px);
 }
+.detail__content-left.lk-event{
+    width: calc(50% - 12px);
 
+}
 .detail__content-left.profile {
     width: 100%;
 }
@@ -205,6 +208,9 @@
 
 
 @media(max-width:1199px) {
+    .detail__content-left.lk-event{
+        width: 100%;
+    }
     .detail__content {
         flex-direction: column;
     }
