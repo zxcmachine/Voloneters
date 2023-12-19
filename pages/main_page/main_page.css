@@ -55,13 +55,22 @@
 .main__page-card-bg {
     position: absolute;
     top: 0;
+    left: 0;
 }
 
 .main__page-card-image {
     position: absolute;
-    top: -50px;
+    top: -70px;
     z-index: 2;
     right: -50px;
+    max-width: 530px;
+}
+.main__page-card-image.man-with-black-hodie {
+    top: 0px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    max-width: 335px;
 }
 
 .main__page-card .title-md {
@@ -324,6 +333,15 @@
 .accordion-item-header{
     font-weight: 500;
 }
+
+.main__page-card-image img {
+    width: 100%;
+    height: 100%;
+}
+.main__page-card.purple{
+    background: rgba(98, 0, 234, 1);
+}
+
 @media(max-width:1199px) {
     .main_page-title .vasek {
         font-size: 56px;

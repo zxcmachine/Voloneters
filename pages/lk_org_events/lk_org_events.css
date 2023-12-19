@@ -185,9 +185,7 @@
     display: flex;
 }
 
-.profile-right.events .event__card {
-    width: calc(32% - 8px);
-}
+
 
 .detail__content-left__event {
     width: 100%;

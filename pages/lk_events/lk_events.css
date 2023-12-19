@@ -17,7 +17,9 @@
     flex-direction: unset;
     width: 100%;
 }
-
+.profile-right.events .event__card {
+    width: calc(32% - 8px);
+}
 @media(max-width:800px) {
     .profile-right.empty {
         height: 500px;

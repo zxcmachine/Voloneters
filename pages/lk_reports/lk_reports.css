@@ -25,9 +25,7 @@
     font-weight: 500;
 }
 
-.profile-right.events .event__card {
-    width: calc(32% - 8px);
-}
+
 
 .reports__empty-icon-container {
     padding: 12px;
@@ -492,10 +490,6 @@
 @media(max-width:800px) {
     .profile-right.empty {
         height: 500px;
-    }
-
-    .profile-right.events .event__card {
-        width: 100%;
     }
 
     .profile-right.events {

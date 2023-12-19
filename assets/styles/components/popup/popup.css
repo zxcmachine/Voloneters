@@ -104,7 +104,9 @@
 }
 
 .some-popup {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
 }
 
 .some-popup__background {
@@ -132,7 +134,8 @@
     border-radius: 24px;
     width: 1024px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    gap: 20px;
 }
 
 .some-popup__wrapper-column {
@@ -158,7 +161,7 @@
 
 .some-popup_active {
     opacity: 1;
-    display: flex;
+    visibility: visible;
 }
 
 .some-popup__title {
