@@ -132,7 +132,6 @@
 
 .auth-form-input__label {
     color: var(--text01-color);
-    padding-bottom: 8px;
     margin-top: 8px;
 }
 
@@ -147,8 +146,14 @@
     border-radius: 8px;
     width: 100%;
 }
-
+.error{
+    border: 1px solid rgba(239, 3, 108, 1);
+    background: rgba(255, 237, 245, 1);
+}
 .auth-form-input:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     margin-bottom: 16px;
 }
 

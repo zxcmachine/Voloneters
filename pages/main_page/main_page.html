@@ -1258,7 +1258,7 @@
                         <p class="text-sm">Телефон</p>
                         <p class="title-lg">+ 7 (999) 999-99-99</p>
                     </div>
-                    <div class="footer-item email">
+                    <div class="footer-item supervisor">
                         <p class="text-md"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1266,6 +1266,7 @@
                                     fill="white" />
                             </svg>
                             Версия для слабовидящих</p>
+                            <div class="footer-item-social">
                         <a href="#"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1275,9 +1276,21 @@
                                     d="M30.2075 10.4553C30.0913 10.355 29.9499 10.2882 29.7986 10.2623C29.6473 10.2364 29.4917 10.2522 29.3487 10.3081L10.3494 17.7434C10.0801 17.8482 9.85214 18.0375 9.6998 18.283C9.54745 18.5284 9.47898 18.8168 9.50468 19.1045C9.53037 19.3923 9.64886 19.6639 9.84229 19.8785C10.0357 20.0931 10.2936 20.2391 10.5772 20.2944L15.5 21.2609V26.75C15.499 27.049 15.5879 27.3414 15.755 27.5893C15.9222 27.8372 16.1599 28.0291 16.4375 28.1403C16.7146 28.2535 17.0194 28.2806 17.3121 28.2183C17.6049 28.1559 17.8721 28.0069 18.0791 27.7906L20.4528 25.3288L24.2187 28.625C24.4904 28.866 24.8409 28.9994 25.2041 29C25.3632 28.9999 25.5214 28.9749 25.6728 28.9259C25.9203 28.8474 26.1428 28.7055 26.3183 28.5142C26.4938 28.3229 26.6162 28.0889 26.6731 27.8356L30.4784 11.2813C30.5125 11.132 30.5052 10.9762 30.4575 10.8307C30.4098 10.6852 30.3234 10.5554 30.2075 10.4553ZM24.4756 13.8303L16.0766 19.8453L11.4266 18.9331L24.4756 13.8303ZM17 26.75V22.2988L19.3241 24.3369L17 26.75ZM25.2059 27.5L17.4547 20.7031L28.6109 12.7072L25.2059 27.5Z"
                                     fill="#14004E" />
                             </svg>
+
                         </a>
+                        <a href="#"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 8C0 3.58172 3.58172 0 8 0H32C36.4183 0 40 3.58172 40 8V32C40 36.4183 36.4183 40 32 40H8C3.58172 40 0 36.4183 0 32V8Z" fill="#EFE9FF"/>
+                            <mask id="mask0_1667_15928" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="8" y="8" width="24" height="24">
+                            <path d="M31.8812 8H8.11877V32H31.8812V8Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#mask0_1667_15928)">
+                            <path d="M20.8039 25.925C14.6539 25.925 11.1462 21.702 11 14.675H14.0806C14.1818 19.8326 16.4528 22.0173 18.2517 22.4678V14.675H21.1524V19.1231C22.9288 18.9317 24.7949 16.9047 25.4245 14.675H28.3253C27.8419 17.4227 25.8181 19.4497 24.379 20.2831C25.8181 20.9587 28.123 22.7268 29 25.925H25.8069C25.1211 23.7853 23.4123 22.1299 21.1524 21.9047V25.925H20.8039Z" fill="#14004E"/>
+                            </g>
+                            </svg>
+                        </div>
+                    </a>
                     </div>
-                    <div class="footer-item supervisor">
+                    <div class="footer-item email ">
                         <p class="text-sm">E-mail</p>
                         <p class="title-lg">testmail@gmail.com</p>
                     </div>
@@ -1293,14 +1306,15 @@
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <div class="footer-bottom-item">
+                    <div class="footer-bottom-item mobile-column">
                         <p class="text-sl">© 2023 Добро.РБ</p>
+                        <p class="text-sl show-mobile">Сделано — <span> Yes Idea </span></p>
                     </div>
                     <div class="footer-bottom-item">
                         <p class="text-sl">Пользовательское соглашение</p>
                         <p class="text-sl">Политика конфиденциальности</p>
                         <p class="text-sl">Правила пользования</p>
-                        <p class="text-sl">Сделано — Yes Idea</p>
+                        <p class="text-sl hide-mobile">Сделано — <span> Yes Idea </span></p>
                     </div>
 
                 </div>
@@ -1386,7 +1400,8 @@
                         <p class="auth-form-input__label text-sm">
                             E-mail
                         </p>
-                        <input type="text" placeholder="testmail@gmail.com" class="auth-form-input__element" />
+                        <input type="text" placeholder="testmail@gmail.com" class="auth-form-input__element error" />
+                        <p class="error-text text-sl pink">Error text</p>
                     </label>
                     <label class="auth-form-input">
                         <p class="auth-form-input__label text-sm">
@@ -1433,7 +1448,7 @@
             <div class="reg-popup__form reg-form">
                 <div class="reg-form__up">
                     <p class="reg-form__title title-md">Регистрация волонтёра</p>
-                    <p class="reg-form__title-desc text-sm">У вас уже есть аккаунт? <span class="auth-link"
+                    <p class="reg-form__title-desc text-sm">У вас уже есть аккаунт? <span class="auth-link text-bold"
                             onclick="openAuthPopup()">Вход</span></p>
                     <button class="reg-form__vk-reg-btn btn">
                         <img src="../../assets/imgs/icons/Clip path group.svg" alt="">
@@ -1717,16 +1732,7 @@
             <div class="reg-org-popup__form reg-org-form">
                 <div class="reg-org-form__up">
                     <p class="reg-org-form__title title-md">Регистрация организации</p>
-                    <p class="reg-org-form__title-desc text-sm">У вас уже есть аккаунт? <a href="">Вход</a></p>
-                    <button class="reg-org-form__vk-reg-org-btn btn">
-                        <img src="../../assets/imgs/icons/Clip path group.svg" alt="">
-                        <p class="text-md">ВКонтакте</p>
-                    </button>
-                    <div class="reg-org-form__seporator">
-                        <div class="reg-org-form__seporator-left"></div>
-                        <p class="reg-org-form__seporator-text text-sm">или</p>
-                        <div class="reg-org-form__seporator-right"></div>
-                    </div>
+                    <p class="reg-org-form__title-desc text-sm">У вас уже есть аккаунт? <a href="" class="text-bold">Вход</a></p>
                     <label class="reg-org-form-input">
                         <p class="reg-org-form-input__label text-sm">
                             Название организации
