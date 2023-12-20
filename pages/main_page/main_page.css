@@ -212,6 +212,7 @@
     font-size: 100px;
     position: relative;
     color: var(--warning-color);
+    top: 15px;
 }
 
 .main__page-change__world-content__left .vasek .underline {
@@ -350,7 +351,9 @@
         line-height: 32px;
         top: 5px;
     }
-
+    .main__page-change__world-content__left .vasek {
+        top: 8px;
+    }
     .vasek-underline {
         position: absolute;
         left: -10px;
