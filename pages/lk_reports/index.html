@@ -209,8 +209,8 @@
         </div>
         <div class="send-report__file-area" id="drop-area">
           <label class="send-report__file-area-label" for="send-report__file">
-            <div id="send-report__file-area-default" class="send-report__file-area-label-area send-report__file_not-over 
-            send-report__file_over">
+            <div id="send-report__file-area-default" class="send-report__file-area-label-area send-report__file_not-over">
+            <!-- send-report__file_over -->
               <p class="send-report__file-area-label-first-line text-md text-primary">Перетащите <span
                   class="text-bold">фото</span> или <span class="text-bold">выберите файл</span></p>
               <p class="send-report__file-area-label-second-line text-sm text-primary">Загрузите не более 5-и фото</p>
@@ -221,21 +221,27 @@
               <!-- <p class="send-report__file-area-label-second-line text-sm text-primary">Загрузите не более 5-и фото</p> -->
             </div>
  
-            <input type="file" placeholder="hi" id="send-report__file" accept="image/*"
+            <input type="file" placeholder="hi" id="send-report__file" class="send-report_file-el" accept="image/*"
               onchange="handleFiles(this.files)">
           </label>
-          <div id="send-report__file-area-files-list" class="send-report__file-area-files-list">
-            <div class="send-report__file-area-files-list-item-box">
+          <div id="send-report__file-area-files-list" class="send-report__file-area-files-list send-report__file-area-files-list_hidden">
+            <!-- <div class="send-report__file-area-files-list-item-box">
               <img src="../../assets/imgs/about-us.png" alt="" class="send-report__file-area-files-list-item-img">
               <img src="../../assets/imgs/icons/XCircle.svg" class="send-report__file-area-files-list-item-box-close" alt="">
             </div>
             <div class="send-report__file-area-files-list-item-box">
               <img src="../../assets/imgs/about-us.png" alt="" class="send-report__file-area-files-list-item-img">
               <img src="../../assets/imgs/icons/XCircle.svg" class="send-report__file-area-files-list-item-box-close" alt="">
-            </div>
-            <div class="send-report__file-area-files-list-item-box send-report__file-area-files-list-item-box_add">
+            </div> -->
+
+            <label class="send-report__file-area-files-list-item-box send-report__file-area-files-list-item-box_add">
               <img src="../../assets/imgs/icons/Images.svg" alt="">
-            </div>
+              <input type="file" class="send-report__file-area-files-list-item-box_add-input" onchange="handleFiles(this.files)" accept="image/*">
+            </label>
+            <!-- <label class="send-report__file-area-files-list-item-box send-report__file-area-files-list-item-box_add">
+              <img src="../../assets/imgs/icons/Images.svg" alt="">
+              <input type="file" class="send-report__file-area-files-list-item-box_add-input" onchange="handleFiles(this.files)">
+            </label> -->
             </div>
           </div>
 
