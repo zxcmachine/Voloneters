@@ -12,7 +12,7 @@ const swiper = new Swiper('.about-us__about-swiper', {
     console.log(current,);
   },
 
-  spaceBetween: 30,
+  spaceBetween: 30, 
   speed: 400,
   scrollbar: {
     el: '.swiper-scrollbar',
