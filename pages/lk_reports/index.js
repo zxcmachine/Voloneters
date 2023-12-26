@@ -223,3 +223,19 @@ function arrayBufferToBase64(buffer) {
   }
   return window.btoa(binary);
 }
+
+const tabActive = document.getElementById("reports__tabs-list-active");
+const tabHistory = document.getElementById("reports__tabs-list-history");
+
+
+function setToHistory() {
+  tabHistory.classList.add("reports__tabs-list-item_active");
+  tabActive.classList.remove("reports__tabs-list-item_active")
+}
+
+function setToActive() {
+  tabHistory.classList.remove("reports__tabs-list-item_active");
+  tabActive.classList.add("reports__tabs-list-item_active")
+
+
+}
