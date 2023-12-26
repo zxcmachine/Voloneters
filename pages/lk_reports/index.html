@@ -60,30 +60,41 @@
   <div class="container">
     <div class="profile mt-sm">
       <ul class="profile-left ">
-        <li class="profile-left-item text-md ">Профиль
-          <div class="profile-left-item-line"></div>
-        </li>
-        <li class="profile-left-item text-md">Мои мероприятия
-          <div class="profile-left-item-line"></div>
-          <p class="profile-left-item-placeholder text-sl blue">21</p>
-        </li>
-        <li class="profile-left-item text-md">История мероприятий
-          <div class="profile-left-item-line"></div>
-        </li>
-        <li class="profile-left-item text-md">Баллы и рейтинг
-          <div class="profile-left-item-line"></div>
-          <p class="profile-left-item-placeholder text-sl pink">0 Б</p>
-        </li>
-        <li class="profile-left-item text-md active">Отчёты
-          <div class="profile-left-item-line"></div>
-        </li>
-      </ul>
+        <a href="/pages/lk_profile/">
+            <li class="profile-left-item text-md ">Профиль
+                <div class="profile-left-item-line"></div>
+            </li>
+        </a>
+        <a href="/pages/lk_events/">
+            <li class="profile-left-item text-md ">Мои мероприятия 
+                <div class="profile-left-item-line"></div>
+                <p class="profile-left-item-placeholder text-sl blue">21</p>
+            </li>
+        </a>
+        <a href="/pages/lk_events_history/">
+            <li class="profile-left-item text-md">История мероприятий
+                <div class="profile-left-item-line"></div>
+            </li>
+        </a>
+        <a href="/pages/lk_score_and_rating/">
+            <li class="profile-left-item text-md">Баллы и рейтинг
+                <div class="profile-left-item-line"></div>
+                <p class="profile-left-item-placeholder text-sl pink">0 Б</p>
+            </li>
+        </a>
+        <a href="/pages/lk_reports/">
+            <li class="profile-left-item text-md active">Отчёты
+                <div class="profile-left-item-line"></div>
+            </li>
+        </a>
+
+    </ul>
       <div class="profile-right reports">
         <div class="reports-wrapper">
           <h2 class="reports__title title-md">Отчёты</h2>
           <ul class="reports__tabs-list">
-            <li class="reports__tabs-list-item text-md reports__tabs-list-item_active">Активные</li>
-            <li class="reports__tabs-list-item text-md">История</li>
+            <li id="reports__tabs-list-active" class="reports__tabs-list-item text-md reports__tabs-list-item_active" onclick="setToActive()">Активные</li>
+            <li id="reports__tabs-list-history" class="reports__tabs-list-item text-md" onclick="setToHistory()">История</li>
           </ul>
           <ul class="reports__list">
             <li class="reports__list-item">
