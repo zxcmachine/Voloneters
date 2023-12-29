@@ -301,6 +301,7 @@
 .check-report_popup .some-popup__wrapper {
     width: 540px;
     height: 755px;
+    flex-direction: column;
 }
 
 .check-report__item {
@@ -308,7 +309,8 @@
     gap: 16px;
     margin-top: 24px;
 }
-.profile-add-item-select{
+
+.profile-add-item-select {
     padding: 16px;
 }
 
@@ -458,8 +460,15 @@
     margin-top: 16px;
 }
 
+.event__card-bottom.bottom-half-width {
+    width: 50%;
+}
 
 @media(max-width:1199px) {
+    .event__card-bottom.bottom-half-width {
+        width: 100%;
+    }
+
     .detail__content-left-top .universal__filter {
         display: flex;
     }
@@ -483,7 +492,9 @@
         min-width: 100px;
         max-height: 100px;
     }
-
+    .profile-right.no-column{
+        flex-direction: column;
+    }
     .input-wrapper-flex {
         flex-direction: column;
     }

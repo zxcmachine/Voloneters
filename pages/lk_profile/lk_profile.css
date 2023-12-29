@@ -195,6 +195,7 @@
     border-radius: 16px;
     background: var(--base00-color);
     align-items: center;
+    cursor: pointer;
 }
 
 .profile-edit-buttons {
@@ -373,4 +374,27 @@
         width: 100%;
         max-width: unset;
     }
+}
+
+.universal__checkbox-inside{
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.universal__checkbox-inside.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.main__button.active{
+    background-color: var(--primary-color);
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.main__button.active:hover{
+    background: #423270;
+}
+.checkbox{
+    cursor: pointer;
 }

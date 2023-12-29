@@ -572,6 +572,7 @@ button{
     border-radius: 8px;
     background: var(--base00-color);
     border: none;
+    cursor: pointer;
 }
 
 .universal__select-inside {
