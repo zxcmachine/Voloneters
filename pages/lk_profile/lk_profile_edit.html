@@ -115,7 +115,9 @@
             <div class="profile__text">
               <p class="title-sm dark">Фото профиля</p>
               <div class="profile__edit text-sm">
-                <div class="main__button">Добавить фотографию</div>
+                <label for="add-file" class="main__button lk-profile-edit-button">Добавить фотографию
+                  <input type="file" hidden id="add-file" name="add-file">
+                </label>
               </div>
             </div>
           </div>
@@ -147,8 +149,8 @@
             </div>
             <div class="profile-edit-buttons edit-profile text-sm gray">
                 <p> Пол</p>
-              <div class="main__button blue">Мужской</div>
-              <div class="main__button white">Женский</div>
+              <div class="main__button  select-sex ">Мужской</div>
+              <div class="main__button select-sex">Женский</div>
             </div>
             <div class="input-wrapper text-sm gray">
               Населенный пункт
@@ -356,7 +358,22 @@
     <script src="../../assets/include/headers.js"></script>
     <script>
         new AirDatepicker('#el');
-
     </script>
+
+    <script>
+      document.querySelectorAll('.checkbox').forEach(el=>el.addEventListener('click',()=>{
+        el.querySelector('.universal__checkbox-inside').classList.toggle('active')
+      }))
+
+      document.querySelectorAll('.select-sex').forEach(el=>{
+        el.addEventListener('click',()=>{
+          document.querySelectorAll('.select-sex').forEach(el=>{
+            el.classList.remove('active')
+          })
+          el.classList.add('active')
+        })
+      })
+    </script>
+
   </body>
 </html>
